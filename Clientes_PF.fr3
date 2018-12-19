@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="5.1.1" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42950,4753577662" ReportOptions.Description.Text="" ReportOptions.LastChange="43063,742980787" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False">
+  <Datasets>
+    <item DataSet="frxDBDataset1" DataSetName="frxPessoa_Consulta"/>
+    <item DataSet="frxPessoa_RefC" DataSetName="frxPessoa_RefC"/>
+    <item DataSet="frxPessoa_RefP" DataSetName="frxPessoa_RefP"/>
+    <item DataSet="frxPF_Autorizados" DataSetName="frxPF_Autorizados"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="34,01577" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxMemoView Name="Memo2" Left="209,763915" Top="7,55906" Width="298,58287" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="FICHA CADASTRAL DO CLIENTE"/>
+      <TfrxSysMemoView Name="SysMemo1" Left="623,62245" Top="0" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[DATE]"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="355,27582" Left="0" Top="158,74026" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset1" DataSetName="frxPessoa_Consulta" RowCount="0">
+      <TfrxShapeView Name="Shape1" Left="0" Top="0" Width="718,1107" Height="90,70872" Shape="skRoundRectangle"/>
+      <TfrxMemoView Name="Memo3" Left="94,26778" Top="2" Width="325,03958" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;CODIGO&#34;] - [frxPessoa_Consulta.&#34;NOME&#34;]"/>
+      <TfrxMemoView Name="Memo4" Left="94,26778" Top="18,89765" Width="691,65399" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[&#60;frxPessoa_Consulta.&#34;ENDERECO&#34;&#62;], [&#60;frxPessoa_Consulta.&#34;NUM_END&#34;&#62;], [&#60;frxPessoa_Consulta.&#34;COMPLEMENTO_END&#34;&#62;]"/>
+      <TfrxMemoView Name="Memo5" Left="0" Top="2" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Nome:"/>
+      <TfrxMemoView Name="Memo6" Left="0" Top="18,89765" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Endereço:"/>
+      <TfrxMemoView Name="Memo7" Left="563,70903" Top="2" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;DTNASCIMENTO&#34;]"/>
+      <TfrxMemoView Name="Memo8" Left="491,3389" Top="2" Width="71,81107" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Dt. Nasc.:"/>
+      <TfrxMemoView Name="Memo9" Left="94,26778" Top="36,01577" Width="207,87415" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;CIDADE&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo10" Left="0" Top="36,01577" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Cidade:"/>
+      <TfrxMemoView Name="Memo11" Left="404,18924" Top="36,01577" Width="49,13389" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;UF&#34;]"/>
+      <TfrxMemoView Name="Memo12" Left="309,92146" Top="36,01577" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Estado:"/>
+      <TfrxMemoView Name="Memo13" Left="562,9295" Top="36,01577" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;CEP&#34;]"/>
+      <TfrxMemoView Name="Memo14" Left="468,66172" Top="36,01577" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="CEP:"/>
+      <TfrxMemoView Name="Memo15" Left="94,26778" Top="52,91342" Width="207,87415" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[(&#60;frxPessoa_Consulta.&#34;DDDFONE1&#34;&#62;)] [&#60;frxPessoa_Consulta.&#34;TELEFONE1&#34;&#62;] /  [&#60;frxPessoa_Consulta.&#34;TELEFONE2&#34;&#62;]"/>
+      <TfrxMemoView Name="Memo16" Left="0" Top="52,91342" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Fone:"/>
+      <TfrxMemoView Name="Memo17" Left="94,26778" Top="69,81107" Width="207,87415" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;EMAIL_NFE&#34;]"/>
+      <TfrxMemoView Name="Memo18" Left="0" Top="69,81107" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Email:"/>
+      <TfrxShapeView Name="Shape2" Left="0" Top="94,26778" Width="718,1107" Height="64,25201" Shape="skRoundRectangle"/>
+      <TfrxMemoView Name="Memo19" Left="94,26778" Top="101,82684" Width="325,03958" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;RG&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo20" Left="0" Top="101,82684" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="CPF:"/>
+      <TfrxMemoView Name="Memo21" Left="94,26778" Top="118,72449" Width="325,03958" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;CNPJ_CPF&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo22" Left="0" Top="118,72449" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="RG:"/>
+      <TfrxMemoView Name="Memo23" Left="94,26778" Top="135,84261" Width="325,03958" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;NUM_CART_TRAB&#34;]"/>
+      <TfrxMemoView Name="Memo24" Left="0" Top="135,84261" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="CTPS:"/>
+      <TfrxShapeView Name="Shape3" Left="0" Top="161,85838" Width="718,1107" Height="79,37013" Shape="skRoundRectangle"/>
+      <TfrxMemoView Name="Memo25" Left="94,26778" Top="169,41744" Width="325,03958" Height="17,00787402" DataField="MAE_NOME" DataSet="frxDBDataset1" DataSetName="frxPessoa_Consulta" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;MAE_NOME&#34;]"/>
+      <TfrxMemoView Name="Memo26" Left="0" Top="169,41744" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Pai:"/>
+      <TfrxMemoView Name="Memo27" Left="94,26778" Top="186,31509" Width="325,03958" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;PAI_NOME&#34;]"/>
+      <TfrxMemoView Name="Memo28" Left="0" Top="186,31509" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Mãe:"/>
+      <TfrxMemoView Name="Memo29" Left="94,26778" Top="203,43321" Width="325,03958" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;CONJUGE_NOME&#34;]"/>
+      <TfrxMemoView Name="Memo30" Left="0" Top="203,43321" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Cônjuge:"/>
+      <TfrxMemoView Name="Memo31" Left="513,79561" Top="203,43321" Width="173,85838" Height="17,00787402" DataField="CONJUGE_CPF" DataSet="frxDBDataset1" DataSetName="frxPessoa_Consulta" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;CONJUGE_CPF&#34;]"/>
+      <TfrxMemoView Name="Memo32" Left="419,52783" Top="203,43321" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="CPF:"/>
+      <TfrxShapeView Name="Shape4" Left="0" Top="271,68522" Width="718,1107" Height="79,37013" Shape="skRoundRectangle"/>
+      <TfrxMemoView Name="Memo33" Left="94,26778" Top="278,46475" Width="366,61441" Height="17,00787402" DataField="NOME_EMP" DataSet="frxDBDataset1" DataSetName="frxPessoa_Consulta" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;NOME_EMP&#34;]"/>
+      <TfrxMemoView Name="Memo34" Left="0" Top="278,46475" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Empresa:"/>
+      <TfrxMemoView Name="Memo35" Left="94,26778" Top="295,3624" Width="325,03958" Height="17,00787402" DataField="ENDERECO_EMP" DataSet="frxDBDataset1" DataSetName="frxPessoa_Consulta" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;ENDERECO_EMP&#34;]"/>
+      <TfrxMemoView Name="Memo36" Left="0" Top="295,3624" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Endereço:"/>
+      <TfrxMemoView Name="Memo37" Left="94,26778" Top="312,48052" Width="325,03958" Height="17,00787402" DataField="FONE_EMP" DataSet="frxDBDataset1" DataSetName="frxPessoa_Consulta" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;FONE_EMP&#34;]"/>
+      <TfrxMemoView Name="Memo38" Left="0" Top="312,48052" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Fone:"/>
+      <TfrxMemoView Name="Memo39" Left="562,9295" Top="278,46475" Width="102,04731" Height="17,00787402" DataField="DTADMISSAO_EMP" DataSet="frxDBDataset1" DataSetName="frxPessoa_Consulta" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;DTADMISSAO_EMP&#34;]"/>
+      <TfrxMemoView Name="Memo40" Left="468,66172" Top="278,46475" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Admissão:"/>
+      <TfrxMemoView Name="Memo41" Left="94,26778" Top="329,37817" Width="325,03958" Height="17,00787402" DataField="CARGO_EMP" DataSet="frxDBDataset1" DataSetName="frxPessoa_Consulta" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;CARGO_EMP&#34;]"/>
+      <TfrxMemoView Name="Memo42" Left="0" Top="329,37817" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Cargo:"/>
+      <TfrxMemoView Name="Memo43" Left="562,9295" Top="329,59864" Width="102,04731" Height="17,00787402" DataField="VLR_SALARIO_BRUTO_EMP" DataSet="frxDBDataset1" DataSetName="frxPessoa_Consulta" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxPessoa_Consulta.&#34;VLR_SALARIO_BRUTO_EMP&#34;]"/>
+      <TfrxMemoView Name="Memo44" Left="468,66172" Top="329,59864" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Salário:"/>
+      <TfrxMemoView Name="Memo45" Left="94,26778" Top="220,33086" Width="98,26778" Height="17,00787402" DataField="CONJUGE_DTNASCIMENTO" DataSet="frxDBDataset1" DataSetName="frxPessoa_Consulta" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" ParentFont="False" Text="[frxPessoa_Consulta.&#34;CONJUGE_DTNASCIMENTO&#34;]"/>
+      <TfrxMemoView Name="Memo46" Left="0" Top="220,33086" Width="94,48825" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Dt. Nasc.:"/>
+      <TfrxMemoView Name="Memo70" Left="0" Top="250,22851" Width="718,1107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Fill.BackColor="3385832" ParentFont="False" Text="DADOS PROFISSIONAIS"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="98,26778" Left="0" Top="891,96908" Width="718,1107">
+      <TfrxMemoView Name="Memo1" Left="642,5201" Top="79,37013" Width="75,5906" Height="18,89765" HAlign="haRight" Text="[Page#]"/>
+      <TfrxLineView Name="Line1" Left="404,40971" Top="37,7953" Width="306,14193" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo47" Left="400,63018" Top="41,57483" Width="317,48052" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="ARial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxPessoa_Consulta.&#34;NOME&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+    </TfrxPageFooter>
+    <TfrxMasterData Name="MasterData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="600,94527" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxPF_Autorizados" DataSetName="frxPF_Autorizados" RowCount="0">
+      <TfrxMemoView Name="Memo48" Left="0" Top="0" Width="359,05535" Height="18,89765" Text="[frxPF_Autorizados.&#34;NOME&#34;]"/>
+      <TfrxMemoView Name="Memo51" Left="359,05535" Top="0" Width="151,18110236" Height="18,89765" Text="[frxPF_Autorizados.&#34;PARENTESCO&#34;]"/>
+      <TfrxMemoView Name="Memo52" Left="510,23655" Top="0" Width="207,87405236" Height="18,89765" Text="[frxPF_Autorizados.&#34;OBS&#34;]"/>
+    </TfrxMasterData>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="41,57483" Left="0" Top="536,69326" Width="718,1107">
+      <TfrxMemoView Name="Memo50" Left="0" Top="3" Width="718,1107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="3" Fill.BackColor="3385832" ParentFont="False" Text="PESSOAS AUTORIZADAS"/>
+      <TfrxMemoView Name="Memo53" Left="0" Top="22,67718" Width="359,05535" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="9" ParentFont="False" Text="Nome"/>
+      <TfrxMemoView Name="Memo54" Left="359,05535" Top="22,67718" Width="151,18110236" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="Parentesco"/>
+      <TfrxMemoView Name="Memo55" Left="510,23655" Top="22,67718" Width="207,87405236" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="10" ParentFont="False" Text="Observações"/>
+    </TfrxHeader>
+    <TfrxHeader Name="Header2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="113,3859" Width="718,1107">
+      <TfrxMemoView Name="Memo49" Left="0" Top="0" Width="718,1107" Height="18,89765" Fill.BackColor="3385832" Text="DADOS PESSOAIS"/>
+    </TfrxHeader>
+    <TfrxMasterData Name="MasterData3" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="706,77211" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxPessoa_RefP" DataSetName="frxPessoa_RefP" RowCount="0">
+      <TfrxMemoView Name="Memo56" Left="0" Top="0" Width="359,05535" Height="18,89765" Text="[frxPessoa_RefP.&#34;NOME&#34;]"/>
+      <TfrxMemoView Name="Memo57" Left="359,05535" Top="0" Width="151,18110236" Height="18,89765" Text="[frxPessoa_RefP.&#34;FONE&#34;]"/>
+      <TfrxMemoView Name="Memo58" Left="510,23655" Top="0" Width="207,87405236" Height="18,89765" Text="[frxPessoa_RefP.&#34;OBS&#34;]"/>
+    </TfrxMasterData>
+    <TfrxHeader Name="Header3" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="41,57483" Left="0" Top="642,5201" Width="718,1107">
+      <TfrxMemoView Name="Memo59" Left="0" Top="3" Width="718,1107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="3" Fill.BackColor="3385832" ParentFont="False" Text="REFERÊNCIAS PESSOAIS"/>
+      <TfrxMemoView Name="Memo60" Left="0" Top="22,67718" Width="359,05535" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="9" ParentFont="False" Text="Nome"/>
+      <TfrxMemoView Name="Memo61" Left="359,05535" Top="22,67718" Width="151,18110236" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="Telefone"/>
+      <TfrxMemoView Name="Memo62" Left="510,23655" Top="22,67718" Width="207,87405236" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="10" ParentFont="False" Text="Observações"/>
+    </TfrxHeader>
+    <TfrxMasterData Name="MasterData4" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="812,59895" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxPessoa_RefC" DataSetName="frxPessoa_RefC" RowCount="0">
+      <TfrxMemoView Name="Memo63" Left="0" Top="0" Width="359,05535" Height="18,89765" Text="[frxPessoa_RefC.&#34;NOME&#34;]"/>
+      <TfrxMemoView Name="Memo64" Left="359,05535" Top="0" Width="151,18110236" Height="18,89765" Text="[frxPessoa_RefC.&#34;TEMPO&#34;]"/>
+      <TfrxMemoView Name="Memo65" Left="510,23655" Top="0" Width="207,87405236" Height="18,89765" Text="[frxPessoa_RefC.&#34;OBS&#34;]"/>
+    </TfrxMasterData>
+    <TfrxHeader Name="Header4" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="41,57483" Left="0" Top="748,34694" Width="718,1107">
+      <TfrxMemoView Name="Memo66" Left="0" Top="3" Width="718,1107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="3" Fill.BackColor="3385832" ParentFont="False" Text="REFERÊNCIAS COMERCIAIS"/>
+      <TfrxMemoView Name="Memo67" Left="0" Top="22,67718" Width="359,05535" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="9" ParentFont="False" Text="Nome"/>
+      <TfrxMemoView Name="Memo68" Left="359,05535" Top="22,67718" Width="151,18110236" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="Tempo"/>
+      <TfrxMemoView Name="Memo69" Left="510,23655" Top="22,67718" Width="207,87405236" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="10" ParentFont="False" Text="Observações"/>
+    </TfrxHeader>
+  </TfrxReportPage>
+</TfrxReport>

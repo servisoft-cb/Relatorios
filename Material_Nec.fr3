@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" EngineOptions.PrintIfEmpty="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43137,6340867708" ReportOptions.Description.Text="" ReportOptions.LastChange="43137,7259668171" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+  <Datasets>
+    <item DataSet="frxMaterial_Nec" DataSetName="frxMaterial_Nec"/>
+  </Datasets>
+  <Variables>
+    <item Name=" New Category1"/>
+    <item Name="OpcaoImp"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="8" RightMargin="8" TopMargin="8" BottomMargin="8" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Height="42,3306989" Left="0" ParentFont="False" Top="18,89765" Width="733,22882" Child="Child1" Stretched="True">
+      <TfrxMemoView Name="Memo2" Left="166,29932" Top="3,77953" Width="260,78757" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="5" HAlign="haCenter" ParentFont="False" Text="Relatório de Materiais para Compras"/>
+      <TfrxSysMemoView Name="SysMemo2" Left="635,96104" Top="0,75590551" Width="94,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" ParentFont="False" Text=".Pag.: [Page]"/>
+      <TfrxSysMemoView Name="SysMemo3" Left="635,96104" Top="13,33859" Width="94,48825" Height="10,96062992" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" ParentFont="False" Text=".Data: [Date]"/>
+      <TfrxMemoView Name="Memo3" Left="3" Top="25,67718" Width="34,01577" Height="12,47244094" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Opção:"/>
+      <TfrxMemoView Name="Memo4" Left="41,35436" Top="25,67718" Width="687,87446" Height="12,47244094" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OpcaoImp]"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="162,51979" Width="733,22882" ColumnWidth="0" ColumnGap="0" DataSet="frxMaterial_Nec" DataSetName="frxMaterial_Nec" RowCount="0">
+      <TfrxMemoView Name="Memo14" Left="0" Top="1,88979307" Width="34,01577" Height="11,33859" DataSet="frxMaterial_Nec" DataSetName="frxMaterial_Nec" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxMaterial_Nec.&#34;ID_MATERIAL&#34;]"/>
+      <TfrxMemoView Name="Memo15" Left="35,7953" Top="1,88979307" Width="294,80334" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxMaterial_Nec.&#34;MATERIAL&#34;] [frxMaterial_Nec.&#34;NOME_COR&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="330,26005" Top="1,77953" Width="26,45671" Height="11,33859" DataField="UNIDADE" DataSet="frxMaterial_Nec" DataSetName="frxMaterial_Nec" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxMaterial_Nec.&#34;UNIDADE&#34;]"/>
+      <TfrxMemoView Name="Memo17" Left="358,49629" Top="1,77953" Width="64,62992126" Height="11,33859" DataSet="frxMaterial_Nec" DataSetName="frxMaterial_Nec" DisplayFormat.FormatStr="%2.4n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxMaterial_Nec.&#34;QTD_ESTOQUE&#34;]"/>
+      <TfrxMemoView Name="Memo18" Left="424,52783" Top="1,77953" Width="64,62992126" Height="11,33859" DataSet="frxMaterial_Nec" DataSetName="frxMaterial_Nec" DisplayFormat.FormatStr="%2.4n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxMaterial_Nec.&#34;QTD_REM&#34;]"/>
+      <TfrxMemoView Name="Memo19" Left="490,55937" Top="1,77953" Width="64,62992126" Height="11,33859" DataSet="frxMaterial_Nec" DataSetName="frxMaterial_Nec" DisplayFormat.FormatStr="%2.4n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxMaterial_Nec.&#34;QTD_PED&#34;]"/>
+      <TfrxMemoView Name="Memo20" Left="556,03185" Top="1,77953" Width="53,29133126" Height="11,33859" DataSet="frxMaterial_Nec" DataSetName="frxMaterial_Nec" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxMaterial_Nec.&#34;QTD_ESTOQUE_MIN&#34;]"/>
+      <TfrxMemoView Name="Memo21" Left="671,41775" Top="1,77953" Width="60,85039126" Height="11,33859" DataSet="frxMaterial_Nec" DataSetName="frxMaterial_Nec" DisplayFormat.FormatStr="%2.4n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxMaterial_Nec.&#34;QTD_SALDO&#34;]"/>
+      <TfrxMemoView Name="Memo22" Left="609,94527" Top="1,77953" Width="60,85039126" Height="11,33859" DataSet="frxMaterial_Nec" DataSetName="frxMaterial_Nec" DisplayFormat.FormatStr="%2.4n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxMaterial_Nec.&#34;QTD_OC&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="241,88992" Width="733,22882">
+      <TfrxMemoView Name="Memo1" Left="623,62245" Top="3,77953" Width="94,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Material_Nec.fr3"/>
+    </TfrxPageFooter>
+    <TfrxChild Name="Child1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="83,14966" Width="733,22882">
+      <TfrxMemoView Name="Memo5" Left="1,77953" Top="5,55906" Width="34,01577" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Código"/>
+      <TfrxLineView Name="Line1" Left="0,55906" Top="1,77953" Width="733,22882" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line2" Left="0" Top="18,67718" Width="733,22882" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo6" Left="37,57483" Top="5,55906" Width="294,80334" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Material"/>
+      <TfrxMemoView Name="Memo7" Left="332,03958" Top="5,44879693" Width="26,45671" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Unid."/>
+      <TfrxMemoView Name="Memo8" Left="360,27582" Top="5,44879693" Width="64,62992126" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Estoque"/>
+      <TfrxMemoView Name="Memo9" Left="426,30736" Top="5,44879693" Width="64,62992126" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Remessas"/>
+      <TfrxMemoView Name="Memo10" Left="492,3389" Top="5,44879693" Width="64,62992126" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Pedido"/>
+      <TfrxMemoView Name="Memo11" Left="557,81138" Top="5,44879693" Width="53,29133126" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Q.Mínima"/>
+      <TfrxMemoView Name="Memo12" Left="671,19728" Top="5,44879693" Width="60,85039126" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Saldo"/>
+      <TfrxMemoView Name="Memo13" Left="611,7248" Top="5,44879693" Width="57,07086126" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Q.Comprada"/>
+    </TfrxChild>
+  </TfrxReportPage>
+</TfrxReport>

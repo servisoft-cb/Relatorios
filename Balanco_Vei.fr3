@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="5.1.1" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42494,60700375" ReportOptions.Description.Text="" ReportOptions.LastChange="42494,6973203588" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;procedure PageHeader1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  Memo2.Text := 'Relat�rio Balan�o do Estoque - Data Ref: ' + &#60;ImpOpcao&#62;;  &#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False">
+  <Datasets>
+    <item DataSet="frxDBDataset5" DataSetName="frxBalanco_Vei"/>
+  </Datasets>
+  <Variables>
+    <item Name=" New Category1"/>
+    <item Name="ImpOpcao"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="8" RightMargin="8" TopMargin="8" BottomMargin="8" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="19,55906" Left="0" Top="124,72449" Width="733,22882" AllowSplit="True" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset5" DataSetName="frxBalanco_Vei" RowCount="0" Stretched="True">
+      <TfrxLineView Name="Line1" Left="1" Top="1,49598" Width="728,77953" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo11" Left="44" Top="4,49598" Width="196,92919" Height="11,33859" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxBalanco_Vei.&#34;NOME&#34;]"/>
+      <TfrxMemoView Name="Memo12" Left="243,44094" Top="4,49598" Width="97,81107" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxBalanco_Vei.&#34;CNPJ_CPF&#34;]"/>
+      <TfrxMemoView Name="Memo13" Left="2" Top="4,49598" Width="40,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxBalanco_Vei.&#34;ID_PRODUTO&#34;]"/>
+      <TfrxMemoView Name="Memo14" Left="343,76376" Top="4,49598" Width="230,94496" Height="11,33859" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxBalanco_Vei.&#34;DADOS_VEICULO&#34;]"/>
+      <TfrxMemoView Name="Memo15" Left="575,44094" Top="4,49598" Width="29,14966" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxBalanco_Vei.&#34;QTD_ESTOQUE&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="608,10235" Top="4,49598" Width="59,3859" Height="11,33859" DisplayFormat.FormatStr="%2.2f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxBalanco_Vei.&#34;clPreco_Medio&#34;]"/>
+      <TfrxMemoView Name="Memo17" Left="669" Top="4,49598" Width="63,16543" Height="11,33859" DisplayFormat.FormatStr="%2.2f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxBalanco_Vei.&#34;clVlr_Total&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="204,09462" Width="733,22882">
+      <TfrxMemoView Name="Memo18" Left="647,25201" Top="5,12585" Width="78,91342" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Balanco_Vei.fr3"/>
+    </TfrxPageFooter>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="46,11812" Left="0" Top="18,89765" Width="733,22882" OnBeforePrint="PageHeader1OnBeforePrint">
+      <TfrxMemoView Name="Memo2" Left="170" Top="3,10235" Width="397,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="5" HAlign="haCenter" ParentFont="False" Text="Relatório Balanço do Estoque - Data Ref:"/>
+      <TfrxSysMemoView Name="SysMemo1" Left="642,29133126" Top="16,57479095" Width="73,7007874" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[DATE]"/>
+      <TfrxSysMemoView Name="SysMemo2" Left="641,29133126" Top="4,10235" Width="73,7007874" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[PAGE#] / [TOTALPAGES#]"/>
+      <TfrxMemoView Name="Memo3" Left="612" Top="4,10235" Width="26,45671" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Pág.:"/>
+      <TfrxMemoView Name="Memo4" Left="612" Top="16,57479095" Width="26,45671" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Data:"/>
+      <TfrxMemoView Name="Memo1" Left="44" Top="33,10235" Width="196,92919" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Nome Pessoa"/>
+      <TfrxMemoView Name="Memo5" Left="243,44094" Top="33,10235" Width="120,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="CPF/CNPJ:"/>
+      <TfrxMemoView Name="Memo6" Left="2" Top="33,10235" Width="40,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Código"/>
+      <TfrxMemoView Name="Memo7" Left="367,44094" Top="33,10235" Width="204,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Dados Veículo"/>
+      <TfrxMemoView Name="Memo8" Left="576,44094" Top="33,10235" Width="29,14966" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Saldo"/>
+      <TfrxMemoView Name="Memo9" Left="631,44094" Top="33,10235" Width="40,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Pr.Médio"/>
+      <TfrxMemoView Name="Memo10" Left="680" Top="33,10235" Width="51,82684" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Vlr. Total"/>
+    </TfrxPageHeader>
+  </TfrxReportPage>
+</TfrxReport>

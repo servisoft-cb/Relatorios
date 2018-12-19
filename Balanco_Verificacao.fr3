@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43284,725669537" ReportOptions.Description.Text="" ReportOptions.LastChange="43284,7397731134" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+  <Datasets>
+    <item DataSet="frxmBalanco_Ver" DataSetName="frxmBalanco_Ver"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="8" RightMargin="8" TopMargin="8" BottomMargin="8" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="41,57483" Left="0" Top="18,89765" Width="733,22882">
+      <TfrxMemoView Name="Memo2" Left="185,19697" Top="3,77953" Width="219,21274" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="5" ParentFont="False" Text="Verificação do Balanço"/>
+      <TfrxMemoView Name="Memo3" Left="2,55906" Top="26,45671" Width="56,69295" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Referência"/>
+      <TfrxMemoView Name="Memo4" Left="61,25201" Top="26,45671" Width="257,00804" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Nome"/>
+      <TfrxMemoView Name="Memo5" Left="323,48052" Top="26,45671" Width="83,14966" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Preço Menor"/>
+      <TfrxMemoView Name="Memo6" Left="409,40971" Top="26,45671" Width="71,81107" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Dt Menor Preço"/>
+      <TfrxMemoView Name="Memo7" Left="484,22078" Top="26,45671" Width="71,81107" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Preço Maior"/>
+      <TfrxMemoView Name="Memo8" Left="558,59091" Top="26,45671" Width="68,03154" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Dt Maior Preço"/>
+      <TfrxMemoView Name="Memo9" Left="628,5201" Top="26,45671" Width="56,69295" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="% Diferença"/>
+      <TfrxMemoView Name="Memo17" Left="689,09493" Top="5" Width="41,57483" Height="34,01577" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Possui&#13;&#10;Unidade&#13;&#10;Diferente"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="120,94496" Width="733,22882" ColumnWidth="0" ColumnGap="0" DataSet="frxmBalanco_Ver" DataSetName="frxmBalanco_Ver" RowCount="0" Stretched="True">
+      <TfrxLineView Name="Line1" Left="0" Top="18,11812" Width="729,44929" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo10" Left="0" Top="0,77953" Width="56,69295" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxmBalanco_Ver.&#34;Referencia&#34;]"/>
+      <TfrxMemoView Name="Memo11" Left="58,69295" Top="0,77953" Width="257,00804" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxmBalanco_Ver.&#34;Nome_Produto&#34;]"/>
+      <TfrxMemoView Name="Memo12" Left="320,92146" Top="0,77953" Width="83,14966" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxmBalanco_Ver.&#34;Preco_Menor&#34;]"/>
+      <TfrxMemoView Name="Memo13" Left="406,85065" Top="0,77953" Width="71,81107" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxmBalanco_Ver.&#34;DtPreco_Menor&#34;]"/>
+      <TfrxMemoView Name="Memo14" Left="481,66172" Top="0,77953" Width="71,81107" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxmBalanco_Ver.&#34;Preco_Maior&#34;]"/>
+      <TfrxMemoView Name="Memo15" Left="556,03185" Top="0,77953" Width="68,03154" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxmBalanco_Ver.&#34;DtPreco_Maior&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="625,96104" Top="0,77953" Width="56,69295" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxmBalanco_Ver.&#34;Perc_Diferenca&#34;]"/>
+      <TfrxMemoView Name="Memo18" Left="689,09493" Top="0,77953" Width="37,7953" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxmBalanco_Ver.&#34;Possui_Unid_dif&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="200,31509" Width="733,22882">
+      <TfrxMemoView Name="Memo1" Left="642,5201" Top="0" Width="75,5906" Height="18,89765" HAlign="haRight" Text="[Page#]"/>
+    </TfrxPageFooter>
+  </TfrxReportPage>
+</TfrxReport>

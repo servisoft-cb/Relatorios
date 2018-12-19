@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Tag="1" Version="5.1.5" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintMode="pmSplit" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42671,4195466782" ReportOptions.Description.Text="" ReportOptions.LastChange="43110,6952734606" ScriptLanguage="PascalScript" ScriptText.Text="procedure Header2OnAfterPrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure MasterData1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if &#60;frxPedidoImp.&#34;TIPO_REG&#34;&#62; = 'P' then&#13;&#10;    Memo7.Text := &#60;frxPedidoImp.&#34;PEDIDO_CLIENTE&#34;&#62;&#13;&#10;  else&#13;&#10;    Memo7.Text := &#60;frxPedidoImp.&#34;NUM_ORCAMENTO&#34;&#62;;&#13;&#10;&#13;&#10;  if &#60;frxPedidoImp.&#34;NOME_CLIENTE&#34;&#62; = 'CONSUMIDOR' then                  &#13;&#10;    Memo25.Text := &#60;frxPedidoImp.&#34;NOME_CONSUMIDOR&#34;&#62;;  &#13;&#10;&#13;&#10;  if &#60;frxPedidoImp.&#34;FONE_CLIENTE&#34;&#62; = '' then                           &#13;&#10;    Memo12.text := '(' + &#60;frxPedidoImp.&#34;DDD_PEDIDO&#34;&#62; + ')' + &#60;frxPedidoImp.&#34;FONE_PEDIDO&#34;&#62;;                &#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+  <Datasets>
+    <item DataSet="frxDBDataset1" DataSetName="frxPedidoImp"/>
+    <item DataSet="frxDBDataset2" DataSetName="frxPedidoImp_Cli"/>
+    <item DataSet="frxDBDataset3" DataSetName="frxPedidoImp_Itens"/>
+    <item DataSet="frxDBDataset4" DataSetName="frxPedidoServicoImp"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="78" PaperHeight="600" PaperSize="256" LeftMargin="5" RightMargin="3" TopMargin="3" BottomMargin="5" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="113,3859" Left="0" Top="18,89765" Width="264,5671" OnBeforePrint="MasterData1OnBeforePrint" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset1" DataSetName="frxPedidoImp" RowCount="0" Stretched="True">
+      <TfrxMemoView Name="Memo15" Left="65,03154" Top="40,018924" Width="79,37013" Height="13,22834646" DataSet="frxDBDataset1" DataSetName="frxPedidoImp" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="0" ParentFont="False" Text="[frxPedidoImp.&#34;DTEMISSAO&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo23" Left="0" Top="40,018924" Width="64,25201" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="0" HAlign="haRight" ParentFont="False" Text="DATA:"/>
+      <TfrxMemoView Name="Memo24" Left="0" Top="54,581138" Width="64,25201" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="0" HAlign="haRight" ParentFont="False" Text="CLIENTE:"/>
+      <TfrxMemoView Name="Memo25" Left="65,03154" Top="54,581138" Width="204,09462" Height="13,22834646" DataSet="frxDBDataset1" DataSetName="frxPedidoImp" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="0" ParentFont="False" Text="[frxPedidoImp.&#34;NOME_CLIENTE&#34;]"/>
+      <TfrxMemoView Name="Memo4" Left="66,141775" Top="3,77953" Width="139,84261" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Lucida Console" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="PEDIDO"/>
+      <TfrxMemoView Name="Memo1" Left="154,96073" Top="40,018924" Width="79,37013" Height="13,22834646" DataSet="frxDBDataset1" DataSetName="frxPedidoImp" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="0" ParentFont="False" Text="[frxPedidoImp.&#34;HRUSUARIO&#34;]"/>
+      <TfrxMemoView Name="Memo2" Left="0" Top="69,143352" Width="64,25201" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Retirada:"/>
+      <TfrxMemoView Name="Memo3" Left="65,03154" Top="69,143352" Width="204,09462" Height="13,22834646" DataSet="frxDBDataset1" DataSetName="frxPedidoImp" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="0" ParentFont="False" Text="[frxPedidoImp.&#34;NOME_PRODUTO_PROPOSTA&#34;]"/>
+      <TfrxMemoView Name="Memo7" Left="65,03154" Top="25,45671" Width="79,37013" Height="13,22834646" DataSet="frxDBDataset1" DataSetName="frxPedidoImp" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="0" ParentFont="False" Text="[frxPedidoImp.&#34;NUM_ORCAMENTO&#34;]"/>
+      <TfrxMemoView Name="Memo8" Left="0" Top="25,45671" Width="64,25201" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="0" HAlign="haRight" ParentFont="False" Text="NÚMERO:"/>
+      <TfrxMemoView Name="Memo9" Left="0" Top="83,705566" Width="64,25201" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="0" HAlign="haRight" ParentFont="False" Text="OBS.:"/>
+      <TfrxMemoView Name="Memo10" Left="65,03154" Top="83,705566" Width="196,53556" Height="13,22834646" StretchMode="smActualHeight" DataSet="frxDBDataset1" DataSetName="frxPedidoImp" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="0" ParentFont="False" Text="[frxPedidoImp.&#34;NOME_GRUPO_PESSOA&#34;]"/>
+      <TfrxMemoView Name="Memo11" Left="0" Top="98,26778" Width="64,25201" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Fone:"/>
+      <TfrxMemoView Name="Memo12" Left="65,03154" Top="98,26778" Width="196,53556" Height="13,22834646" StretchMode="smActualHeight" DataSet="frxDBDataset1" DataSetName="frxPedidoImp" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="0" ParentFont="False" Text="([frxPedidoImp.&#34;DDD_CLIENTE&#34;])[frxPedidoImp.&#34;FONE_CLIENTE&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+    </TfrxMasterData>
+    <TfrxDetailData Name="DetailData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="226,7718" Width="264,5671" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset3" DataSetName="frxPedidoImp_Itens" RowCount="0" Stretched="True">
+      <TfrxMemoView Name="Memo5" Left="31,12598425" Top="3,77953" Width="181,41734969" Height="15,11812" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="0" ParentFont="False" Text="[frxPedidoImp_Itens.&#34;NOMEPRODUTO&#34;]"/>
+      <TfrxMemoView Name="Memo19" Left="2" Top="3,77953" Width="30,23614969" Height="15,11812" DataSet="frxDBDataset2" DataSetName="frxPedidoImp_Cli" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxPedidoImp_Itens.&#34;QTD&#34;]"/>
+      <TfrxMemoView Name="Memo20" Left="215,21274" Top="3,77953" Width="49,13379969" Height="15,11812" DataSet="frxDBDataset2" DataSetName="frxPedidoImp_Cli" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxPedidoImp_Itens.&#34;VLR_TOTAL&#34;]"/>
+    </TfrxDetailData>
+    <TfrxHeader Name="Header2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="49,13389" Left="0" Top="154,96073" Width="264,5671" OnAfterPrint="Header2OnAfterPrint">
+      <TfrxMemoView Name="Memo14" Left="33,01577" Top="30,23624" Width="192,75603" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="1" ParentFont="False" Text="Descrição"/>
+      <TfrxMemoView Name="Memo16" Left="2" Top="30,23624" Width="30,23624" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="1" ParentFont="False" Text="Qtd."/>
+      <TfrxMemoView Name="Memo17" Left="228,55133" Top="30,23624" Width="41,57483" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="1" ParentFont="False" Text="Valor"/>
+      <TfrxLineView Name="Line3" Left="0" Top="46,35436" Width="268,34663" Height="0" Color="0" Frame.Typ="4"/>
+    </TfrxHeader>
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="79,37013" Left="0" Top="268,34663" Width="264,5671">
+      <TfrxLineView Name="Line4" Left="0" Top="1" Width="268,34663" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo21" Left="120,72439969" Top="3" Width="143,62214" Height="15,11812" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Lucida Console" Font.Style="1" HAlign="haRight" ParentFont="False" Text="TOTAL: R$ [frxPedidoImp.&#34;VLR_TOTAL&#34;]"/>
+      <TfrxMemoView Name="Memo6" Left="3,77953" Top="52,91342" Width="257,00804" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="Ass.:"/>
+    </TfrxFooter>
+  </TfrxReportPage>
+</TfrxReport>

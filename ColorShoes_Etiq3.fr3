@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Tag="1" Version="5.1.1" DotMatrixReport="False" EngineOptions.PrintIfEmpty="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41928,5781444097" ReportOptions.Description.Text="" ReportOptions.LastChange="42891,6305670023" ScriptLanguage="PascalScript" ScriptText.Text="procedure MasterData1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10; // BarCode1.Visible := (&#60;frxDBDataSet1.&#34;CodBarra&#34;&#62; &#60;&#62; '');                                                                   &#13;&#10;end;&#13;&#10;&#13;&#10; begin&#13;&#10; end.             " StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+  <Datasets>
+    <item DataSet="frxDBDataset1" DataSetName="frxmEtiq_Individual"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="107" PaperHeight="50" PaperSize="256" LeftMargin="1" RightMargin="1" TopMargin="1" BottomMargin="1" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="162,51979" Left="0" Top="18,89765" Width="396,85065" OnBeforePrint="MasterData1OnBeforePrint" Columns="3" ColumnWidth="128,503937007874" ColumnGap="3,77952755905512" DataSet="frxDBDataset1" DataSetName="frxmEtiq_Individual" RowCount="0">
+      <TfrxMemoView Name="Memo1" Left="0,55906" Top="4,77953" Width="15,1181078" Height="154,96073" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Rotation="90" Text="Ref.: [frxmEtiq_Individual.&#34;Referencia&#34;]"/>
+      <TfrxMemoView Name="Memo2" Left="16,45671" Top="4,77953" Width="15,11811024" Height="154,96073" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" Rotation="90" Text="[frxmEtiq_Individual.&#34;Nome_Produto&#34;]"/>
+      <TfrxMemoView Name="Memo3" Left="64,25201" Top="4,77953" Width="45,35434535" Height="151,1812" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="1" ParentFont="False" Rotation="90" Text="[frxmEtiq_Individual.&#34;Tamanho&#34;]"/>
+      <TfrxMemoView Name="Memo4" Left="31,57483" Top="4,77953" Width="30,23623024" Height="154,96073" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Rotation="90" Text="[frxmEtiq_Individual.&#34;NomeCombinacao&#34;]"/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>

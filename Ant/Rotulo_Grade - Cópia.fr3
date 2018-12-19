@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="5.1.1" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41928,5781444097" ReportOptions.Description.Text="" ReportOptions.LastChange="42479,6728907407" ScriptLanguage="PascalScript" ScriptText.Text="BEGIN&#13;&#10;END.              " StoreInDFM="False">
+  <Datasets>
+    <item DataSet="frxDBDataset17" DataSetName="frxmRotulos2"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="100" PaperHeight="85" PaperSize="256" LeftMargin="3" RightMargin="3" TopMargin="4" BottomMargin="1" ColumnWidth="31,7" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="278,52752976" Left="0" Top="18,89765" Width="355,27582" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset17" DataSetName="frxmRotulos2" RowCount="0">
+      <TfrxShapeView Name="Shape13" Left="0" Top="21,10235" Width="358,33086" Height="255,11811024"/>
+      <TfrxShapeView Name="Shape2" Left="240" Top="1,10235" Width="119,15739" Height="19,65354331"/>
+      <TfrxShapeView Name="Shape1" Left="0" Top="1,10235" Width="240,10235" Height="19,65354331"/>
+      <TfrxMemoView Name="Memo1" Left="3,88188" Top="4,10235" Width="229,3859" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxmRotulos2.&#34;Nome_Filial&#34;]"/>
+      <TfrxMemoView Name="Memo2" Left="243,55906" Top="4,10235" Width="113,3859" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Entrega: [frxmRotulos2.&#34;DtEntrega&#34;]"/>
+      <TfrxMemoView Name="Memo3" Left="4" Top="27,10235" Width="37,7953" Height="14,740157480315" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Cliente:"/>
+      <TfrxMemoView Name="Memo4" Left="45" Top="27,10235" Width="302,7953" Height="14,740157480315" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxmRotulos2.&#34;Nome_Cliente&#34;]"/>
+      <TfrxMemoView Name="Memo5" Left="4" Top="45,10235" Width="37,7953" Height="14,740157480315" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="OC:"/>
+      <TfrxMemoView Name="Memo6" Left="44" Top="45,10235" Width="112,69295" Height="14,740157480315" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxmRotulos2.&#34;Pedido_Cliente&#34;]"/>
+      <TfrxMemoView Name="Memo7" Left="164,11812" Top="44,10235" Width="41,57483" Height="14,740157480315" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Rem/OS:"/>
+      <TfrxMemoView Name="Memo8" Left="206,11812" Top="44,10235" Width="140,13389" Height="14,740157480315" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxmRotulos2.&#34;Num_OS&#34;]"/>
+      <TfrxMemoView Name="Memo9" Left="4" Top="63,10235" Width="37,7953" Height="14,74015748" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="REF:"/>
+      <TfrxMemoView Name="Memo10" Left="44" Top="63,10235" Width="112,69295" Height="14,74015748" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxmRotulos2.&#34;Referencia&#34;]"/>
+      <TfrxMemoView Name="Memo11" Left="174" Top="63,10235" Width="26,45671" Height="14,74015748" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Cor:"/>
+      <TfrxMemoView Name="Memo12" Left="203" Top="63,10235" Width="146,70872" Height="14,74015748" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxmRotulos2.&#34;Nome_Cor&#34;]"/>
+      <TfrxMemoView Name="Memo13" Left="3" Top="86,10235" Width="41,57483" Height="14,740157480315" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Material:"/>
+      <TfrxMemoView Name="Memo14" Left="47" Top="86,10235" Width="302,57483" Height="14,740157480315" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxmRotulos2.&#34;Material&#34;]"/>
+      <TfrxShapeView Name="Shape3" Left="3,77952755905512" Top="112,76376" Width="71,4330708661417" Height="26,33859"/>
+      <TfrxMemoView Name="Memo15" Left="11" Top="116,76376" Width="60,47248" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Tamanho"/>
+      <TfrxShapeView Name="Shape4" Left="74,8346456692913" Top="112,76376" Width="97,511811023622" Height="26,33859"/>
+      <TfrxMemoView Name="Memo16" Left="81,77953" Top="116,76376" Width="86,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[frxmRotulos2.&#34;Tamanho&#34;]"/>
+      <TfrxShapeView Name="Shape5" Left="3,77952755905512" Top="138,76376" Width="71,4330708661417" Height="26,33859"/>
+      <TfrxMemoView Name="Memo17" Left="11,05504" Top="142,76376" Width="60,47248" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Nº Matriz"/>
+      <TfrxShapeView Name="Shape6" Left="74,8346456692913" Top="138,76376" Width="97,511811023622" Height="26,33859"/>
+      <TfrxMemoView Name="Memo18" Left="81,83457" Top="142,76376" Width="86,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[frxmRotulos2.&#34;Tam_Matriz&#34;]"/>
+      <TfrxShapeView Name="Shape7" Left="3,77952755905512" Top="164,76376" Width="71,4330708661417" Height="26,33859"/>
+      <TfrxMemoView Name="Memo19" Left="10,77953" Top="168,76376" Width="60,47248" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Qtde"/>
+      <TfrxShapeView Name="Shape8" Left="74,8346456692913" Top="164,76376" Width="97,511811023622" Height="26,33859"/>
+      <TfrxMemoView Name="Memo20" Left="81,55906" Top="168,76376" Width="86,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[frxmRotulos2.&#34;Qtd&#34;]"/>
+      <TfrxShapeView Name="Shape9" Left="4" Top="190,76376" Width="207,14966" Height="30,11812"/>
+      <TfrxMemoView Name="Memo21" Left="8" Top="197,76376" Width="52,91342" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Operador:"/>
+      <TfrxShapeView Name="Shape10" Left="211" Top="190,76376" Width="142,89765" Height="30,11812"/>
+      <TfrxMemoView Name="Memo22" Left="215" Top="198,76376" Width="34,01577" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Box:"/>
+      <TfrxShapeView Name="Shape11" Left="4" Top="220,76376" Width="349,60629921" Height="22,55906"/>
+      <TfrxMemoView Name="Memo23" Left="8" Top="223,76376" Width="52,91342" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Carimbo:"/>
+      <TfrxMemoView Name="Memo24" Left="67" Top="223,76376" Width="283,91342" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxmRotulos2.&#34;Carimbo&#34;]"/>
+      <TfrxShapeView Name="Shape12" Left="4" Top="243,10235" Width="349,60629921" Height="30,11812"/>
+      <TfrxMemoView Name="Memo25" Left="9" Top="251,10235" Width="33,91342" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Obs:"/>
+      <TfrxMemoView Name="Memo26" Left="193" Top="171,10235" Width="103,01577" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Talão: [frxmRotulos2.&#34;Num_Rotulo&#34;] / [frxmRotulos2.&#34;Qtd_Rotulo&#34;]"/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>

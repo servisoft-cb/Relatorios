@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43248,6731057639" ReportOptions.Description.Text="" ReportOptions.LastChange="43249,7633186458" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+  <Datasets>
+    <item DataSet="frxRemessa_Ref" DataSetName="frxRemessa_Ref"/>
+  </Datasets>
+  <Variables>
+    <item Name=" New Category1"/>
+    <item Name="ImpOpcao"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="8" RightMargin="8" TopMargin="8" BottomMargin="8" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="181,41744" Width="733,22882" ColumnWidth="0" ColumnGap="0" DataSet="frxRemessa_Ref" DataSetName="frxRemessa_Ref" RowCount="0" Stretched="True">
+      <TfrxLineView Name="Line2" Left="0" Top="0,377952755905512" Width="718,1107" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo11" Left="0" Top="1,77953" Width="37,7953" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxRemessa_Ref.&#34;NUM_LOTE&#34;]"/>
+      <TfrxMemoView Name="Memo12" Left="41,57483" Top="1,77953" Width="102,04731" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxRemessa_Ref.&#34;REFERENCIA&#34;]"/>
+      <TfrxMemoView Name="Memo13" Left="145,62214" Top="1,77953" Width="521,57514" Height="15,11812" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxRemessa_Ref.&#34;OBSMATERIAL&#34;]"/>
+      <TfrxMemoView Name="Memo14" Left="668,19728" Top="1,77953" Width="60,47248" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxRemessa_Ref.&#34;QTD&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="13,9842519685039" Left="0" Top="351,49629" Width="733,22882">
+      <TfrxMemoView Name="Memo1" Left="627,40198" Top="0,755905511811024" Width="98,26778" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Remessa_Ref.fr3"/>
+    </TfrxPageFooter>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Height="68,03154" Left="0" ParentFont="False" Top="18,89765" Width="733,22882">
+      <TfrxMemoView Name="Memo2" Left="211,65368" Top="2,77953" Width="219,21274" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="verdana" Font.Style="4" ParentFont="False" Text="Talões Por Remessa"/>
+      <TfrxSysMemoView Name="SysMemo1" Left="665,19728" Top="1,77953" Width="37,7953" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[PAGE#]"/>
+      <TfrxMemoView Name="Memo3" Left="640,29963" Top="1,77953" Width="22,67718" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Pág:"/>
+      <TfrxSysMemoView Name="SysMemo2" Left="665,19728" Top="15,89765" Width="49,13389" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[DATE]"/>
+      <TfrxMemoView Name="Memo4" Left="640,29963" Top="15,89765" Width="22,67718" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Data:"/>
+      <TfrxMemoView Name="Memo5" Left="2,55906" Top="27,23624" Width="34,01577" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Opção:"/>
+      <TfrxMemoView Name="Memo6" Left="39,57483" Top="27,45671" Width="593,38621" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[ImpOpcao]"/>
+      <TfrxMemoView Name="Memo7" Left="0,77953" Top="44,22047244" Width="37,7953" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Lotes"/>
+      <TfrxLineView Name="Line1" Left="-0,22047" Top="41,35436" Width="733,22882" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo8" Left="42,35436" Top="44,2204724409449" Width="102,04731" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Referência"/>
+      <TfrxMemoView Name="Memo9" Left="146,40167" Top="44,22047244" Width="521,57514" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Produto"/>
+      <TfrxMemoView Name="Memo10" Left="668,97681" Top="44,22047244" Width="60,47248" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Quantidade"/>
+    </TfrxPageHeader>
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="11,33859" Left="0" Top="147,40167" Width="733,22882" Condition="frxRemessa_Ref.&#34;REF_ORDENADA&#34;"/>
+    <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="222,99227" Width="733,22882">
+      <TfrxLineView Name="Line3" Left="0" Top="3,77953" Width="733,22882" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line4" Left="-0,22047" Top="5,33859" Width="733,22834646" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo15" Left="499,00031" Top="7,55906" Width="132,28355" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Quantidade Por Modelo:"/>
+      <TfrxSysMemoView Name="SysMemo3" Left="634,96104" Top="7,55906" Width="94,48825" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxRemessa_Ref.&#34;QTD&#34;&#62;,MasterData1)]"/>
+    </TfrxGroupFooter>
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="268,34663" Width="733,22882">
+      <TfrxMemoView Name="Memo16" Left="536,69326" Top="4" Width="94,48825" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Quantidade Total:"/>
+      <TfrxSysMemoView Name="SysMemo4" Left="634,85869" Top="4" Width="94,48825" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxRemessa_Ref.&#34;QTD&#34;&#62;,MasterData1)]"/>
+      <TfrxLineView Name="Line5" Left="0" Top="2,77953" Width="733,22834646" Height="0" Color="0" Frame.Typ="4"/>
+    </TfrxFooter>
+  </TfrxReportPage>
+</TfrxReport>

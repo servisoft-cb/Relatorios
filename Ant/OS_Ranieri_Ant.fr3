@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="5.1.1" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42543,3658603125" ReportOptions.Description.Text="" ReportOptions.LastChange="42543,4134986806" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False">
+  <Datasets>
+    <item DataSet="frxDBDataset8" DataSetName="OSIMP_Otica"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="845,67718" Left="0" Top="18,89765" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset8" DataSetName="OSIMP_Otica" RowCount="0">
+      <TfrxShapeView Name="Shape1" Left="6" Top="2,10235" Width="150,48825" Height="77,67718"/>
+      <TfrxMemoView Name="Memo2" Left="8" Top="19,77953" Width="144,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Ótica & Relojoaria"/>
+      <TfrxMemoView Name="Memo3" Left="8" Top="42,77953" Width="144,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Ranieri"/>
+      <TfrxMemoView Name="Memo4" Left="357" Top="3,77952756" Width="154,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Data: [OSIMP_Otica.&#34;DTEMISSAO&#34;]"/>
+      <TfrxMemoView Name="Memo5" Left="578" Top="3,77952756" Width="128,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="N º OS: [OSIMP_Otica.&#34;NUM_OS&#34;]"/>
+      <TfrxLineView Name="Line1" Left="156" Top="80,55906" Width="560,77953" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo6" Left="15" Top="88,22047" Width="50,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Cliente:"/>
+      <TfrxMemoView Name="Memo7" Left="69" Top="88,22047" Width="598,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;CLI_NOME&#34;]"/>
+      <TfrxMemoView Name="Memo8" Left="15" Top="111,22047" Width="50,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="End.....:"/>
+      <TfrxMemoView Name="Memo9" Left="69" Top="111,22047" Width="598,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;CLI_ENDERECO&#34;], [OSIMP_Otica.&#34;CLI_NUM_END&#34;]  [OSIMP_Otica.&#34;CLI_COMPL_END&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo10" Left="15" Top="131,22047" Width="50,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Cidade:"/>
+      <TfrxMemoView Name="Memo11" Left="69" Top="131,22047" Width="597,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;CLI_CIDADE&#34;] / [OSIMP_Otica.&#34;CLI_UF&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo12" Left="15" Top="151,22047" Width="50,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Bairro..:"/>
+      <TfrxMemoView Name="Memo13" Left="69" Top="151,22047" Width="597,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;CLI_BAIRRO&#34;]  -  Cep: [OSIMP_Otica.&#34;CLI_CEP&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo14" Left="158,74015748" Top="29,10235" Width="433,07885" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;FIL_NOME&#34;]"/>
+      <TfrxMemoView Name="Memo15" Left="158,74015748" Top="45,10235" Width="431,07885" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="CNPJ: [OSIMP_Otica.&#34;FIL_CNPJ&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="158,74015748" Top="61,10235" Width="430,07885" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Fone:[OSIMP_Otica.&#34;FIL_DDD1&#34;] [OSIMP_Otica.&#34;FIL_FONE1&#34;]"/>
+      <TfrxMemoView Name="Memo17" Left="15" Top="172,10235" Width="50,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Fone...:"/>
+      <TfrxMemoView Name="Memo18" Left="69" Top="172,10235" Width="272,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;DDDFONE1&#34;] [OSIMP_Otica.&#34;TELEFONE1&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo19" Left="346" Top="172,10235" Width="35,81107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="CPF:"/>
+      <TfrxMemoView Name="Memo20" Left="384" Top="172,10235" Width="272,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;CLI_CNPJ&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxLineView Name="Line2" Left="3" Top="208,10235" Width="716" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo21" Left="253" Top="212,10235" Width="110,48825" Height="35,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="REFRAÇÃO PARA LONGE"/>
+      <TfrxMemoView Name="Memo22" Left="113" Top="221,44094" Width="110,48825" Height="23,77953" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="D"/>
+      <TfrxMemoView Name="Memo23" Left="433" Top="220,10235" Width="110,48825" Height="23,77953" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="E"/>
+      <TfrxMemoView Name="Memo24" Left="27,11812" Top="249,98425197" Width="26,5906" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Esf:"/>
+      <TfrxMemoView Name="Memo25" Left="57,11812" Top="249,984251968504" Width="170,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;LONGE_ESF_DIR&#34;]"/>
+      <TfrxMemoView Name="Memo26" Left="380,11812" Top="249,984251968504" Width="26,5906" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Esf:"/>
+      <TfrxMemoView Name="Memo27" Left="410,11812" Top="249,984251968504" Width="170,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;LONGE_ESF_ESQ&#34;]"/>
+      <TfrxMemoView Name="Memo28" Left="31,11812" Top="271,12598425" Width="22,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Cil:"/>
+      <TfrxMemoView Name="Memo29" Left="57,11812" Top="271,125984251969" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;LONGE_CIL_DIR&#34;]"/>
+      <TfrxMemoView Name="Memo30" Left="192,11812" Top="271,125984251969" Width="34,14966" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Fixo:"/>
+      <TfrxMemoView Name="Memo31" Left="228,11812" Top="271,125984251969" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;LONGE_FIXO_DIR&#34;]"/>
+      <TfrxMemoView Name="Memo32" Left="380,11812" Top="271,125984251969" Width="26,5906" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Cil:"/>
+      <TfrxMemoView Name="Memo33" Left="410,11812" Top="271,125984251969" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;LONGE_CIL_ESQ&#34;]"/>
+      <TfrxMemoView Name="Memo34" Left="545,11812" Top="271,125984251969" Width="34,14966" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Fixo:"/>
+      <TfrxMemoView Name="Memo35" Left="581,11812" Top="271,125984251969" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;LONGE_FIXO_ESQ&#34;]"/>
+      <TfrxMemoView Name="Memo36" Left="4,66141" Top="293,10235" Width="49,26778" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Prisma:"/>
+      <TfrxMemoView Name="Memo37" Left="57,11812" Top="293,10235" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;LONGE_PRISMA_DIR&#34;]"/>
+      <TfrxMemoView Name="Memo38" Left="188,11812" Top="293,10235" Width="37,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Base:"/>
+      <TfrxMemoView Name="Memo39" Left="228,11812" Top="293,10235" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;LONGE_BASE_DIR&#34;]"/>
+      <TfrxMemoView Name="Memo40" Left="358" Top="292,10235" Width="49,26778" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Prisma:"/>
+      <TfrxMemoView Name="Memo41" Left="410,45671" Top="292,10235" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;LONGE_PRISMA_ESQ&#34;]"/>
+      <TfrxMemoView Name="Memo42" Left="541,45671" Top="292,10235" Width="37,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Base:"/>
+      <TfrxMemoView Name="Memo43" Left="581,45671" Top="292,10235" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;LONGE_BASE_ESQ&#34;]"/>
+      <TfrxMemoView Name="Memo44" Left="182" Top="314,10235" Width="45,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="D.N.P:"/>
+      <TfrxMemoView Name="Memo45" Left="229" Top="314,10235" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;LONGE_DNP&#34;]"/>
+      <TfrxMemoView Name="Memo46" Left="372,33859" Top="314,10235" Width="34,14966" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="M/M:"/>
+      <TfrxMemoView Name="Memo47" Left="410" Top="314,10235" Width="170,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;LONGE_MM&#34;]"/>
+      <TfrxLineView Name="Line3" Left="3" Top="336,10235" Width="716" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo48" Left="253" Top="340,10235" Width="110,48825" Height="35,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="REFRAÇÃO PARA PERTO"/>
+      <TfrxMemoView Name="Memo49" Left="113" Top="349,44094" Width="110,48825" Height="23,77953" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="D"/>
+      <TfrxMemoView Name="Memo50" Left="433" Top="348,10235" Width="110,48825" Height="23,77953" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="E"/>
+      <TfrxMemoView Name="Memo51" Left="27,11812" Top="404,44096197" Width="26,5906" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Esf:"/>
+      <TfrxMemoView Name="Memo52" Left="57,11812" Top="404,44096197" Width="170,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;PERTO_ESF_DIR&#34;]"/>
+      <TfrxMemoView Name="Memo53" Left="380,11812" Top="404,44096197" Width="26,5906" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Esf:"/>
+      <TfrxMemoView Name="Memo54" Left="410,11812" Top="404,44096197" Width="170,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;PERTO_ESF_ESQ&#34;]"/>
+      <TfrxMemoView Name="Memo55" Left="31,11812" Top="425,58269425" Width="22,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Cif:"/>
+      <TfrxMemoView Name="Memo56" Left="57,11812" Top="425,58269425" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;PERTO_CIL_DIR&#34;]"/>
+      <TfrxMemoView Name="Memo57" Left="192,11812" Top="425,58269425" Width="34,14966" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Fixo:"/>
+      <TfrxMemoView Name="Memo58" Left="228,11812" Top="425,58269425" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;PERTO_FIXO_DIR&#34;]"/>
+      <TfrxMemoView Name="Memo59" Left="380,11812" Top="425,58269425" Width="26,5906" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Cif:"/>
+      <TfrxMemoView Name="Memo60" Left="410,11812" Top="425,58269425" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;PERTO_CIL_ESQ&#34;]"/>
+      <TfrxMemoView Name="Memo61" Left="545,11812" Top="425,58269425" Width="34,14966" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Fixo:"/>
+      <TfrxMemoView Name="Memo62" Left="581,11812" Top="425,58269425" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;PERTO_FIXO_ESQ&#34;]"/>
+      <TfrxMemoView Name="Memo63" Left="4,66141" Top="447,55906" Width="49,26778" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Prisma:"/>
+      <TfrxMemoView Name="Memo64" Left="57,11812" Top="447,55906" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;PERTO_PRISMA_DIR&#34;]"/>
+      <TfrxMemoView Name="Memo65" Left="188,11812" Top="447,55906" Width="37,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Base:"/>
+      <TfrxMemoView Name="Memo66" Left="228,11812" Top="447,55906" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;PERTO_BASE_DIR&#34;]"/>
+      <TfrxMemoView Name="Memo67" Left="358" Top="446,55906" Width="49,26778" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Prisma:"/>
+      <TfrxMemoView Name="Memo68" Left="410,45671" Top="446,55906" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;PERTO_PRISMA_ESQ&#34;]"/>
+      <TfrxMemoView Name="Memo69" Left="541,45671" Top="446,55906" Width="37,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Base:"/>
+      <TfrxMemoView Name="Memo70" Left="581,45671" Top="446,55906" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;PERTO_BASE_ESQ&#34;]"/>
+      <TfrxMemoView Name="Memo71" Left="182" Top="468,55906" Width="45,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="D.N.P:"/>
+      <TfrxMemoView Name="Memo72" Left="229" Top="468,55906" Width="93,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;PERTO_DNP&#34;]"/>
+      <TfrxMemoView Name="Memo73" Left="372,33859" Top="468,55906" Width="34,14966" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="M/M:"/>
+      <TfrxMemoView Name="Memo74" Left="410" Top="468,55906" Width="170,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;PERTO_MM&#34;]"/>
+      <TfrxMemoView Name="Memo75" Left="6" Top="381,10235" Width="47,5906" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Adição:"/>
+      <TfrxMemoView Name="Memo76" Left="57" Top="381,10235" Width="649,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;PERTO_ADICAO&#34;]"/>
+      <TfrxLineView Name="Line4" Left="3" Top="491,10235" Width="716" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo1" Left="3,02362205" Top="497,10235" Width="62,74015748" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Lente:"/>
+      <TfrxMemoView Name="Memo77" Left="70,33859" Top="497,10235" Width="630,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;NOME_LENTE&#34;]"/>
+      <TfrxMemoView Name="Memo78" Left="3,02362205" Top="523,10235" Width="62,74015748" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Alt.Seg:"/>
+      <TfrxMemoView Name="Memo79" Left="70,33859" Top="523,10235" Width="630,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;ALT_SEG&#34;]"/>
+      <TfrxMemoView Name="Memo80" Left="3,02362204724409" Top="545,10235" Width="62,740157480315" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Cor:"/>
+      <TfrxMemoView Name="Memo81" Left="70,33859" Top="545,10235" Width="630,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;NOME_COR&#34;]"/>
+      <TfrxMemoView Name="Memo82" Left="3,02362204724409" Top="566,10235" Width="62,740157480315" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Arm:"/>
+      <TfrxMemoView Name="Memo83" Left="70,33859" Top="566,10235" Width="630,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;NOME_ARMACAO&#34;]"/>
+      <TfrxMemoView Name="Memo84" Left="3,02362205" Top="588,10235" Width="62,74015748" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Tam.Arm:"/>
+      <TfrxMemoView Name="Memo85" Left="70,33859" Top="588,10235" Width="630,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;TAM_ARMACAO&#34;]"/>
+      <TfrxMemoView Name="Memo86" Left="2" Top="611,10235" Width="62,74015748" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Obs:"/>
+      <TfrxMemoView Name="Memo87" Left="69,31496795" Top="611,10235" Width="630,48825" Height="71,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OSIMP_Otica.&#34;OBS&#34;]"/>
+      <TfrxMemoView Name="Memo88" Left="9" Top="702,10235" Width="694,74015748" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Doutor(a): [OSIMP_Otica.&#34;NOME_DOUTOR&#34;]"/>
+      <TfrxMemoView Name="Memo89" Left="8" Top="752,10235" Width="225,74015748" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Prometido Para: [OSIMP_Otica.&#34;DTENTREGA&#34;]"/>
+      <TfrxMemoView Name="Memo90" Left="525,44094" Top="753,10235" Width="85,74015748" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Vlr. Total R$:"/>
+      <TfrxMemoView Name="Memo91" Left="614,44094" Top="753,10235" Width="93,29921748" Height="18,89765" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[OSIMP_Otica.&#34;VLR_TOTAL&#34;]"/>
+      <TfrxMemoView Name="Memo92" Left="518" Top="774,10235" Width="93,29921748" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Vlr. Adiant. R$:"/>
+      <TfrxMemoView Name="Memo93" Left="614" Top="774,10235" Width="93,29921748" Height="18,89765" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[OSIMP_Otica.&#34;VLR_ENTRADA&#34;]"/>
+      <TfrxMemoView Name="Memo94" Left="518" Top="797,10235" Width="93,29921748" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Saldo R$:"/>
+      <TfrxMemoView Name="Memo95" Left="614" Top="797,10235" Width="93,29921748" Height="18,89765" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[OSIMP_Otica.&#34;VLR_RESTANTE&#34;]"/>
+      <TfrxMemoView Name="Memo96" Left="415" Top="819,88188" Width="292,29921748" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Cond. Pagamento: [OSIMP_Otica.&#34;NOME_CONDPGTO&#34;]"/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>

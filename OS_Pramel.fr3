@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41864,6688586227" ReportOptions.Description.Text="" ReportOptions.LastChange="43432,5810310301" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." StoreInDFM="False">
+  <Datasets>
+    <item DataSet="frxDBDataset1" DataSetName="OS_IMP"/>
+    <item DataSet="frxDBDataset6" DataSetName="OS_ITEM"/>
+    <item DataSet="frxmOS_Mat" DataSetName="OS_Mat"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="3" BottomMargin="5" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="540,47244094" Left="0" Top="18,89765" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset6" DataSetName="OS_ITEM" RowCount="0">
+      <TfrxMemoView Name="Memo1" Left="0" Top="30,23624" Width="718,1107" Height="22,67718" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="ORDEM DE SERVIÇO"/>
+      <TfrxMemoView Name="Memo2" Left="64,25201" Top="128,72449" Width="653,85869" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="2" ParentFont="False" Text="[OS_ITEM.&#34;NOME_PRODUTO&#34;]"/>
+      <TfrxMemoView Name="Memo3" Left="120,94496" Top="223,7718" Width="597,16574" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="10" ParentFont="False" Text="[OS_ITEM.&#34;DEFEITO_ALEGADO&#34;]"/>
+      <TfrxMemoView Name="Memo4" Left="64,25201" Top="147,62214" Width="185,19697" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OS_ITEM.&#34;MARCA&#34;]"/>
+      <TfrxMemoView Name="Memo5" Left="64,25201" Top="56,69295" Width="226,7718" Height="22,67718" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[OS_IMP.&#34;NUM_OS&#34;]"/>
+      <TfrxMemoView Name="Memo6" Left="0" Top="128,72449" Width="64,25201" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="1" HAlign="haRight" ParentFont="False" Text="Produto:"/>
+      <TfrxMemoView Name="Memo7" Left="0" Top="147,62214" Width="64,25201" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="1" HAlign="haRight" ParentFont="False" Text="Marca:"/>
+      <TfrxMemoView Name="Memo8" Left="0" Top="223,7718" Width="120,94496" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="9" HAlign="haRight" ParentFont="False" Text="Defeito alegado:"/>
+      <TfrxMemoView Name="Memo9" Left="120,94496" Top="248,22851" Width="597,16574" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="[OS_ITEM.&#34;DEFEITO_ENCONTRADO&#34;]"/>
+      <TfrxMemoView Name="Memo10" Left="0" Top="248,22851" Width="120,94496" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Defeito encontrado:"/>
+      <TfrxMemoView Name="Memo11" Left="64,25201" Top="79,5906" Width="207,87415" Height="18,89765" Text="[OS_IMP.&#34;ID_CLIENTE&#34;]"/>
+      <TfrxMemoView Name="Memo12" Left="0" Top="79,5906" Width="64,25201" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Cliente:"/>
+      <TfrxMemoView Name="Memo13" Left="532,91373" Top="147,62214" Width="185,19697" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="2" ParentFont="False" Text="[OS_ITEM.&#34;NUM_SERIE&#34;]"/>
+      <TfrxMemoView Name="Memo14" Left="468,66172" Top="147,62214" Width="64,25201" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Nº Série:"/>
+      <TfrxMemoView Name="Memo15" Left="336,37817" Top="79,5906" Width="136,06308" Height="18,89765" Text="[OS_IMP.&#34;NUM_OC&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="272,12616" Top="79,5906" Width="64,25201" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="OC:"/>
+      <TfrxMemoView Name="Memo17" Left="551,81138" Top="79,5906" Width="166,29932" Height="18,89765" Text="[OS_IMP.&#34;NUM_NOTA&#34;]"/>
+      <TfrxMemoView Name="Memo18" Left="491,3389" Top="79,5906" Width="60,47248" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Nº Nota:"/>
+      <TfrxMemoView Name="Memo19" Left="313,70099" Top="147,62214" Width="154,96073" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OS_ITEM.&#34;MODELO&#34;]"/>
+      <TfrxMemoView Name="Memo20" Left="249,44898" Top="147,62214" Width="64,25201" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Modelo:"/>
+      <TfrxMemoView Name="Memo21" Left="120,94496" Top="185,19697" Width="597,16574" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="2" ParentFont="False" Text="[OS_ITEM.&#34;OBS&#34;]"/>
+      <TfrxMemoView Name="Memo22" Left="0" Top="185,19697" Width="120,94496" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="1" HAlign="haRight" ParentFont="False" Text="Obs.:"/>
+      <TfrxMemoView Name="Memo23" Left="120,94496" Top="204,09462" Width="597,16574" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="2" ParentFont="False" Text="[OS_ITEM.&#34;ACESSORIOS&#34;]"/>
+      <TfrxMemoView Name="Memo24" Left="0" Top="204,09462" Width="120,94496" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="1" HAlign="haRight" ParentFont="False" Text="Acessórios:"/>
+      <TfrxMemoView Name="Memo25" Left="0" Top="267,34663" Width="718,1107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo26" Left="0" Top="286,24428" Width="718,1107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo27" Left="0" Top="305,14193" Width="718,1107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo28" Left="566,9295" Top="56,69295" Width="151,1812" Height="22,67718" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Data: [OS_IMP.&#34;DTEMISSAO&#34;]"/>
+      <TfrxMemoView Name="Memo29" Left="0" Top="56,69295" Width="64,25201" Height="22,67718" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="OS:"/>
+      <TfrxMemoView Name="Memo30" Left="120,94496" Top="331,59864" Width="597,16574" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo31" Left="0" Top="331,59864" Width="120,94496" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Componentes:"/>
+      <TfrxMemoView Name="Memo32" Left="0" Top="350,71676" Width="718,1107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo33" Left="0" Top="369,61441" Width="718,1107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo34" Left="0" Top="388,51206" Width="718,1107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo35" Left="0" Top="0" Width="434,64595" Height="22,67718" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OS_IMP.&#34;FIL_NOME&#34;]"/>
+      <TfrxMemoView Name="Memo36" Left="434,64595" Top="0" Width="283,46460354" Height="22,67718" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Fone: [&#60;OS_IMP.&#34;FIL_DDD1&#34;&#62;] [&#60;OS_IMP.&#34;FIL_FONE1&#34;&#62;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo37" Left="166,29932" Top="423,30736" Width="75,5906" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Hora Início:"/>
+      <TfrxMemoView Name="Memo38" Left="241,88992" Top="423,30736" Width="71,81102362" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" HAlign="haRight" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo39" Left="313,70099" Top="423,30736" Width="79,37013" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Hora Fim:"/>
+      <TfrxMemoView Name="Memo40" Left="393,07112" Top="423,30736" Width="71,81107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" HAlign="haRight" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo41" Left="120,94496" Top="472,44125" Width="597,16574" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo42" Left="0" Top="472,44125" Width="120,94496" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Observações:"/>
+      <TfrxMemoView Name="Memo43" Left="0" Top="491,55937" Width="718,1107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo44" Left="0" Top="510,45702" Width="718,1107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo45" Left="464,88219" Top="423,30736" Width="60,47248" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Técnico:"/>
+      <TfrxMemoView Name="Memo46" Left="525,35467" Top="423,30736" Width="192,75603" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" HAlign="haRight" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo47" Left="0" Top="109,60629921" Width="495,11843" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="5" ParentFont="False" Text="                          (    ) Interna                       (    ) Externa                      (    ) Garantia"/>
+      <TfrxLineView Name="Line1" Left="0" Top="537,91373" Width="718,1107" Height="0" Color="0" Frame.Style="fsDash" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo49" Left="0" Top="166,51979" Width="120,94496" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="1" HAlign="haRight" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo50" Left="430,86642" Top="166,29932" Width="287,24428" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="2" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo48" Left="0" Top="423,30736" Width="56,69295" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Data:"/>
+      <TfrxMemoView Name="Memo51" Left="56,69295" Top="423,30736" Width="109,60632362" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" HAlign="haRight" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo52" Left="495,11843" Top="109,60637" Width="222,99227" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="6" HAlign="haRight" ParentFont="False" Text="Lote: [OS_IMP.&#34;QTD_ITENS&#34;] peças"/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>

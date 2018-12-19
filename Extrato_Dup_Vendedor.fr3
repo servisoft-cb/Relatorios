@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="5.1.1" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42534,6239003935" ReportOptions.Description.Text="" ReportOptions.LastChange="42535,434733831" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;procedure PageHeader1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if &#60;ImpOpcao&#62; = Null then&#13;&#10;    Memo21.Text := ''&#13;&#10;  else                  &#13;&#10;    Memo21.Text := 'Op��o: ' + &#60;ImpOpcao&#62;;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure MasterData1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  MasterData1.Visible := (&#60;frxmDuplicata_Consulta.&#34;TIPO_ES&#34;&#62; = 'E');&#13;&#10;  Memo17.Visible      := (&#60;frxmDuplicata_Consulta.&#34;DTULTPAGAMENTO&#34;&#62; &#62; 10);&#13;&#10;  Memo19.Visible      := (&#60;frxmDuplicata_Consulta.&#34;VLR_PAGO&#34;&#62; &#62; 0);&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxDBDataset3" DataSetName="frxmDuplicata_Consulta"/>
+  </Datasets>
+  <Variables>
+    <item Name=" New Category1"/>
+    <item Name="ImpOpcao"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="8" RightMargin="8" TopMargin="8" BottomMargin="8" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="181,41744" Width="733,22882" OnBeforePrint="MasterData1OnBeforePrint" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset3" DataSetName="frxmDuplicata_Consulta" RowCount="0" Stretched="True">
+      <TfrxMemoView Name="Memo13" Left="2" Top="2,58256" Width="102,04731" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxmDuplicata_Consulta.&#34;NUMDUPLICATA&#34;]/[frxmDuplicata_Consulta.&#34;PARCELA&#34;]"/>
+      <TfrxMemoView Name="Memo14" Left="106" Top="2,58256" Width="249,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" WordWrap="False" Text="[frxmDuplicata_Consulta.&#34;NOME_PESSOA&#34;]"/>
+      <TfrxMemoView Name="Memo15" Left="357,35436" Top="2,58256" Width="53,81107" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxmDuplicata_Consulta.&#34;DTEMISSAO&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="413,35436" Top="2,58256" Width="53,81107" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxmDuplicata_Consulta.&#34;DTVENCIMENTO&#34;]"/>
+      <TfrxMemoView Name="Memo17" Left="469,35436" Top="2,58256" Width="53,81107" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxmDuplicata_Consulta.&#34;DTULTPAGAMENTO&#34;]"/>
+      <TfrxMemoView Name="Memo18" Left="526,13389" Top="2,58256" Width="65,00787402" Height="11,33859" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxmDuplicata_Consulta.&#34;VLR_PARCELA&#34;]"/>
+      <TfrxMemoView Name="Memo19" Left="593,91342" Top="2,58256" Width="65,00787402" Height="11,33859" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxmDuplicata_Consulta.&#34;VLR_PAGO&#34;]"/>
+      <TfrxMemoView Name="Memo20" Left="662,47248" Top="2,58256" Width="65,14966" Height="11,33859" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxmDuplicata_Consulta.&#34;VLR_RESTANTE&#34;]"/>
+      <TfrxLineView Name="Line3" Left="2" Top="15,58256" Width="731" Height="0" Color="0" Frame.Style="fsDot" Frame.Typ="4"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="15,11812" Left="0" Top="302,3624" Width="733,22882">
+      <TfrxMemoView Name="Memo1" Left="477" Top="0,99196" Width="234,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Extrato_Dup_Vendedor    [Time]"/>
+    </TfrxPageFooter>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="59,11812" Left="0" Top="18,89765" Width="733,22882" OnBeforePrint="PageHeader1OnBeforePrint">
+      <TfrxMemoView Name="Memo2" Left="214" Top="3,10235" Width="277,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="5" ParentFont="False" Text="Relatório de Extrato Por Vendedor"/>
+      <TfrxMemoView Name="Memo23" Left="659" Top="4,10235" Width="62,94496" Height="10,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Pag: [Page] / [TotalPages#]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo24" Left="641" Top="15,10235" Width="81,94496" Height="10,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Data: [Date]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo21" Left="2" Top="29" Width="593,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Opção:"/>
+      <TfrxMemoView Name="Memo3" Left="2" Top="44,10235" Width="102,04731" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Nº Título"/>
+      <TfrxMemoView Name="Memo4" Left="106" Top="44,10235" Width="249,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Cliente"/>
+      <TfrxMemoView Name="Memo5" Left="357,35436" Top="44,10235" Width="53,81107" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Emissão"/>
+      <TfrxMemoView Name="Memo6" Left="413,35436" Top="44,10235" Width="53,81107" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Vencimento"/>
+      <TfrxMemoView Name="Memo7" Left="469,35436" Top="44,10235" Width="53,81107" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Dt.Pgto"/>
+      <TfrxMemoView Name="Memo8" Left="526,13389" Top="44,10235" Width="65,00787402" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Vlr. Título"/>
+      <TfrxMemoView Name="Memo9" Left="593,91342" Top="44,10235" Width="65,00787402" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Vlr.Pago"/>
+      <TfrxMemoView Name="Memo10" Left="662,47248" Top="44,10235" Width="65,14966" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Saldo"/>
+      <TfrxLineView Name="Line1" Left="1" Top="42,10235" Width="731" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line2" Left="1" Top="57,10235" Width="731" Height="0" Color="0" Frame.Typ="4"/>
+    </TfrxPageHeader>
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="139,84261" Width="733,22882" Condition="frxmDuplicata_Consulta.&#34;NOME_VENDEDOR&#34;" StartNewPage="True">
+      <TfrxMemoView Name="Memo11" Left="37" Top="1,15739" Width="104,48825" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Representante:"/>
+      <TfrxMemoView Name="Memo12" Left="146" Top="1,15739" Width="533,48825" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxmDuplicata_Consulta.&#34;NOME_VENDEDOR&#34;]"/>
+    </TfrxGroupHeader>
+    <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="17,44094" Left="0" Top="222,99227" Width="733,22882" AllowSplit="True" Stretched="True">
+      <TfrxMemoView Name="Memo22" Left="390,22047" Top="3,78726" Width="122,5906" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Total por Vendedor ==&#62;"/>
+      <TfrxSysMemoView Name="SysMemo1" Left="518,44094" Top="3,78726" Width="71,81107" Height="11,33859" StretchMode="smMaxHeight" AutoWidth="True" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxmDuplicata_Consulta.&#34;VLR_PARCELA&#34;&#62;,MasterData1)]"/>
+      <TfrxSysMemoView Name="SysMemo2" Left="592" Top="3,78726" Width="68,03154" Height="11,33859" StretchMode="smMaxHeight" AutoWidth="True" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxmDuplicata_Consulta.&#34;VLR_PAGO&#34;&#62;,MasterData1)]"/>
+      <TfrxSysMemoView Name="SysMemo3" Left="662" Top="3,78726" Width="68,03154" Height="11,33859" StretchMode="smMaxHeight" AutoWidth="True" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxmDuplicata_Consulta.&#34;VLR_RESTANTE&#34;&#62;,MasterData1)]"/>
+    </TfrxGroupFooter>
+  </TfrxReportPage>
+</TfrxReport>

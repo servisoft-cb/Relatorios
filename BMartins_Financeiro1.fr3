@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="5.1.5" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42235,7278185069" ReportOptions.Description.Text="" ReportOptions.LastChange="42236,644030081" ScriptLanguage="PascalScript" ScriptText.Text="var&#13;&#10;  vDataIni, vDataFim: String;                                                                     &#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False">
+  <Datasets>
+    <item DataSet="frxDBDataset1" DataSetName="frxFinAgrupado"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="5" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="113,3859" Width="718,1107" Condition="frxFinAgrupado.&#34;DTMOVIMENTO&#34;">
+      <TfrxMemoView Name="frxDBDataset1DTMOVIMENTO" Left="0" Top="7,55906" Width="718,1107" Height="15,11812" DataSet="frxDBDataset1" DataSetName="frxFinAgrupado" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxFinAgrupado.&#34;DTMOVIMENTO&#34;]"/>
+      <TfrxLineView Name="Line1" Align="baWidth" Left="0" Top="0" Width="718,1107" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo3" Left="298,58287" Top="7,55906" Width="79,37007874" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Saída"/>
+      <TfrxMemoView Name="Memo4" Left="377,953" Top="7,55906" Width="79,37007874" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Entrada"/>
+      <TfrxMemoView Name="Memo5" Left="457,32313" Top="7,55906" Width="79,37007874" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Saldo"/>
+    </TfrxGroupHeader>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="15,11812" Left="0" Top="158,74026" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset1" DataSetName="frxFinAgrupado" RowCount="0">
+      <TfrxMemoView Name="Memo1" Left="26,45671" Top="0" Width="272,12616" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxFinAgrupado.&#34;NOME&#34;]"/>
+      <TfrxMemoView Name="frxFinAgrupadoSAIDA" Left="298,58287" Top="0" Width="79,37013" Height="15,11812" DataField="SAIDA" DataSet="frxDBDataset1" DataSetName="frxFinAgrupado" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxFinAgrupado.&#34;SAIDA&#34;]"/>
+      <TfrxMemoView Name="frxFinAgrupadoENTRADA" Left="377,953" Top="0" Width="79,37013" Height="15,11812" DataField="ENTRADA" DataSet="frxDBDataset1" DataSetName="frxFinAgrupado" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxFinAgrupado.&#34;ENTRADA&#34;]"/>
+      <TfrxMemoView Name="frxFinAgrupadoclSALDO" Left="457,32313" Top="0" Width="79,37013" Height="15,11812" DataField="clSALDO" DataSet="frxDBDataset1" DataSetName="frxFinAgrupado" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxFinAgrupado.&#34;clSALDO&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="34,01577" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxMemoView Name="Memo2" Left="188,9765" Top="1,889765" Width="340,1577" Height="30,23624" AutoWidth="True" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Relatório Financeiro de Caixa&#13;&#10;Período de: até:"/>
+    </TfrxPageHeader>
+  </TfrxReportPage>
+</TfrxReport>

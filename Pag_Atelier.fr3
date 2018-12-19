@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="5.1.1" DotMatrixReport="False" EngineOptions.PrintIfEmpty="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42203,6786510185" ReportOptions.Description.Text="" ReportOptions.LastChange="42207,6950285069" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;procedure Header1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if &#60;Imp_Detalhado&#62; = 'S' then           &#13;&#10;    Header1.Visible := True&#13;&#10;  else&#13;&#10;    Header1.Visible := False;          &#13;&#10;end;&#13;&#10;&#13;&#10;procedure DetailData2OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if &#60;Imp_Detalhado&#62; = 'S' then           &#13;&#10;    DetailData2.Visible := True&#13;&#10;  else&#13;&#10;    DetailData2.Visible := False;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure PageHeader1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  Memo2.Text := &#60;Opcao_Imp&#62;;                                              &#13;&#10;end;&#13;&#10;&#13;&#10;procedure MasterData1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if &#60;Imp_Detalhado&#62; = 'S' then&#13;&#10;    MasterData1.StartNewPage := True&#13;&#10;  else&#13;&#10;    MasterData1.StartNewPage := False;          &#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False">
+  <Datasets>
+    <item DataSet="frxDBDataset2" DataSetName="frxConsAtelier_Ret"/>
+    <item DataSet="frxDBDataset3" DataSetName="frxConsMov_Pagto"/>
+    <item DataSet="frxDBDataset1" DataSetName="frxTalao_Aux"/>
+  </Datasets>
+  <Variables>
+    <item Name=" New Category1"/>
+    <item Name="Opcao_Imp"/>
+    <item Name="Imp_Atelier"/>
+    <item Name="Imp_Detalhado"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="8" RightMargin="8" TopMargin="8" BottomMargin="8" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="" OnBeforePrint="Page1OnBeforePrint">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Height="37,67718" Left="0" ParentFont="False" Top="109,60637" Width="733,22882" OnBeforePrint="MasterData1OnBeforePrint" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset2" DataSetName="frxConsAtelier_Ret" RowCount="0" StartNewPage="True">
+      <TfrxMemoView Name="Memo6" Left="4,66141" Top="19,71645" Width="396,48825" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" Fill.BackColor="15263976" ParentFont="False" Text="[frxConsAtelier_Ret.&#34;NOME_ATELIER&#34;]"/>
+      <TfrxMemoView Name="Memo7" Left="420" Top="18,71645" Width="124,48825" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" Fill.BackColor="15263976" HAlign="haRight" ParentFont="False" Text="[frxConsAtelier_Ret.&#34;VLR_TOTAL&#34;]"/>
+      <TfrxMemoView Name="Memo8" Left="551" Top="17,71645" Width="124,48825" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" Fill.BackColor="15263976" HAlign="haRight" ParentFont="False" Text="[frxConsAtelier_Ret.&#34;VLR_PAGAMENTO&#34;]"/>
+      <TfrxMemoView Name="Memo9" Left="449" Top="1,71645" Width="94,48825" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Vlr. a Pagar"/>
+      <TfrxMemoView Name="Memo10" Left="579,33859" Top="1,71645" Width="94,48825" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Vlr. Pago"/>
+    </TfrxMasterData>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" Height="28,65351889" Left="0" ParentFont="False" Top="18,89765" Width="733,22882" OnBeforePrint="PageHeader1OnBeforePrint">
+      <TfrxMemoView Name="Memo2" Left="8" Top="3,10235" Width="590,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="5" HAlign="haCenter" ParentFont="False" Text="Relatório Pagamentos de Atelier"/>
+      <TfrxSysMemoView Name="SysMemo1" Left="666,11812" Top="2,10235" Width="47,04731" Height="12,47244094" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[PAGE#]"/>
+      <TfrxMemoView Name="Memo3" Left="643,11812" Top="2,02362205" Width="20,92919" Height="12,47244094" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Pag:"/>
+      <TfrxSysMemoView Name="SysMemo2" Left="667" Top="16,18107795" Width="47,04731" Height="12,47244094" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[DATE]"/>
+      <TfrxMemoView Name="Memo4" Left="640" Top="16,10235" Width="24,70872" Height="12,47244094" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Data:"/>
+    </TfrxPageHeader>
+    <TfrxDetailData Name="DetailData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="15,89765" Left="0" Top="211,65368" Width="733,22882" OnBeforePrint="DetailData2OnBeforePrint" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset1" DataSetName="frxTalao_Aux" RowCount="0">
+      <TfrxMemoView Name="Memo15" Left="2" Top="1,88961" Width="43,81107" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxTalao_Aux.&#34;NUM_ORDEM&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="48" Top="1,88961" Width="36,14966" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxTalao_Aux.&#34;NUM_LOTE&#34;]"/>
+      <TfrxMemoView Name="Memo17" Left="86" Top="1,88961" Width="16,92919" Height="13,22834646" DataField="ITEM" DataSet="frxDBDataset1" DataSetName="frxTalao_Aux" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxTalao_Aux.&#34;ITEM&#34;]"/>
+      <TfrxMemoView Name="Memo22" Left="106" Top="1,88961" Width="93,92919" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxTalao_Aux.&#34;REFERENCIA&#34;]"/>
+      <TfrxMemoView Name="Memo23" Left="203" Top="1,88961" Width="191,06308" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxTalao_Aux.&#34;NOME_PRODUTO&#34;]"/>
+      <TfrxMemoView Name="Memo24" Left="397,67718" Top="1,88961" Width="43,70872" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxTalao_Aux.&#34;QTD_TALAO&#34;]"/>
+      <TfrxMemoView Name="Memo25" Left="447,67718" Top="1,88961" Width="51,26778" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxTalao_Aux.&#34;VLR_PAR&#34;]"/>
+      <TfrxMemoView Name="Memo26" Left="502,67718" Top="1,88961" Width="51,26778" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxTalao_Aux.&#34;VLR_TOTAL&#34;]"/>
+      <TfrxMemoView Name="Memo27" Left="633,26778" Top="1,88961" Width="58,82684" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxTalao_Aux.&#34;DTRETORNO&#34;]"/>
+      <TfrxMemoView Name="Memo28" Left="559,26778" Top="1,88961" Width="69,48825" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxTalao_Aux.&#34;DTSAIDA&#34;]"/>
+    </TfrxDetailData>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="17,22047" Left="0" Top="170,07885" Width="733,22882" OnBeforePrint="Header1OnBeforePrint">
+      <TfrxMemoView Name="Memo1" Left="3" Top="1,66914" Width="43,81107" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Nº Ordem"/>
+      <TfrxMemoView Name="Memo5" Left="49" Top="1,66914" Width="36,14966" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Lote"/>
+      <TfrxMemoView Name="Memo11" Left="87" Top="1,66914" Width="16,92919" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Tal"/>
+      <TfrxMemoView Name="Memo12" Left="107" Top="1,66914" Width="93,92919" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Referência"/>
+      <TfrxMemoView Name="Memo13" Left="204" Top="1,66914" Width="191,06308" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Produto"/>
+      <TfrxMemoView Name="Memo14" Left="398,67718" Top="1,66914" Width="43,70872" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Qtd"/>
+      <TfrxMemoView Name="Memo18" Left="448,67718" Top="1,66914" Width="51,26778" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Vlr.Unit."/>
+      <TfrxMemoView Name="Memo19" Left="503,67718" Top="1,66914" Width="51,26778" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Vlr.Total"/>
+      <TfrxMemoView Name="Memo20" Left="634,26778" Top="1,66914" Width="58,82684" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Dt.Retorno"/>
+      <TfrxMemoView Name="Memo21" Left="560,26778" Top="1,66914" Width="69,48825" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Dt.Saida Atelier"/>
+    </TfrxHeader>
+  </TfrxReportPage>
+</TfrxReport>

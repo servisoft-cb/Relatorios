@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="5.1.1" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42222,4144922454" ReportOptions.Description.Text="" ReportOptions.LastChange="42222,6654262384" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;&#13;&#10;procedure Page1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  Memo8.Visible    := (&#60;ImpServico&#62; = 'S');&#13;&#10;  Memo16.Visible   := (&#60;ImpServico&#62; = 'S');&#13;&#10;  SysMemo2.Visible := (&#60;ImpServico&#62; = 'S');        &#13;&#10;  SysMemo7.Visible := (&#60;ImpServico&#62; = 'S');        &#13;&#10;  Memo9.Visible  := (&#60;ImpST&#62; = 'S');&#13;&#10;  Memo18.Visible  := (&#60;ImpST&#62; = 'S');&#13;&#10;  SysMemo3.Visible := (&#60;ImpST&#62; = 'S');        &#13;&#10;  SysMemo8.Visible := (&#60;ImpST&#62; = 'S');        &#13;&#10;  Memo19.Visible := ((&#60;ImpServico&#62; = 'S') or (&#60;ImpST&#62; = 'S'));&#13;&#10;  Memo20.Visible := ((&#60;ImpServico&#62; = 'S') or (&#60;ImpST&#62; = 'S'));  &#13;&#10;  SysMemo4.Visible := ((&#60;ImpServico&#62; = 'S') or (&#60;ImpST&#62; = 'S'));        &#13;&#10;  SysMemo9.Visible := ((&#60;ImpServico&#62; = 'S') or (&#60;ImpST&#62; = 'S'));        &#13;&#10;end;&#13;&#10;&#13;&#10;procedure PageHeader1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if &#60;ImpOpcao&#62; = Null then&#13;&#10;    Memo21.Text := ''&#13;&#10;  else                  &#13;&#10;    Memo21.Text := &#60;ImpOpcao&#62;;                                        &#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False">
+  <Datasets>
+    <item DataSet="frxDBDataset2" DataSetName="frxNotaFiscal_VendCli"/>
+  </Datasets>
+  <Variables>
+    <item Name=" New Category1"/>
+    <item Name="ImpServico"/>
+    <item Name="ImpST"/>
+    <item Name="NomeEmpresa"/>
+    <item Name="ImpOpcao"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="8" RightMargin="8" TopMargin="8" BottomMargin="8" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="" OnBeforePrint="Page1OnBeforePrint">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Height="15,11811024" Left="0" ParentFont="False" Top="188,9765" Width="733,22882" OnBeforePrint="MasterData1OnBeforePrint" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset2" DataSetName="frxNotaFiscal_VendCli" RowCount="0">
+      <TfrxMemoView Name="Memo13" Align="baLeft" Left="0" Top="1,88976378" Width="366,61417323" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxNotaFiscal_VendCli.&#34;NOME_CLIFORN&#34;]"/>
+      <TfrxMemoView Name="Memo14" Align="baLeft" Left="366,61417323" Top="1,88976378" Width="80,88188976" Height="11,33859" DisplayFormat.FormatStr="%2.2f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxNotaFiscal_VendCli.&#34;VLR_DUPLICATA&#34;]"/>
+      <TfrxMemoView Name="Memo15" Align="baLeft" Left="637,17328693" Top="1,88976378" Width="46,86614173" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxNotaFiscal_VendCli.&#34;QTD&#34;]"/>
+      <TfrxMemoView Name="Memo16" Align="baLeft" Left="447,49606299" Top="1,88976378" Width="65,76377953" Height="11,33859" DisplayFormat.FormatStr="%2.2f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxNotaFiscal_VendCli.&#34;VLR_LIQUIDO_NFSE&#34;]"/>
+      <TfrxMemoView Name="Memo17" Align="baLeft" Left="684,03942866" Top="1,88976378" Width="46,81107" Height="11,33859" DisplayFormat.FormatStr="%3.3f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxNotaFiscal_VendCli.&#34;clPerc_SobreFat&#34;]"/>
+      <TfrxMemoView Name="Memo18" Align="baLeft" Left="513,25984252" Top="1,88976378" Width="58,20472441" Height="11,33859" DisplayFormat.FormatStr="%2.2f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxNotaFiscal_VendCli.&#34;VLR_ICMSSUBST&#34;]"/>
+      <TfrxMemoView Name="Memo20" Align="baLeft" Left="571,46456693" Top="1,88976378" Width="65,70872" Height="11,33859" DisplayFormat.FormatStr="%2.2f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxNotaFiscal_VendCli.&#34;VLR_VENDAS&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Height="15,11812" Left="0" ParentFont="False" Top="347,71676" Width="733,22882">
+      <TfrxMemoView Name="Memo1" Left="602,77953" Top="1,55102" Width="124,72449" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Faturamento_Vend_Cli.fr3"/>
+    </TfrxPageFooter>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Height="61,94488921" Left="0" ParentFont="False" Top="18,89765" Width="733,22882" OnBeforePrint="PageHeader1OnBeforePrint">
+      <TfrxMemoView Name="Memo2" Left="157,67718" Top="13,32282" Width="450,48825" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="5" ParentFont="False" Text="Relatório de Faturamento Por Vendedor (Clientes/Fornecedores)"/>
+      <TfrxMemoView Name="Memo22" Left="5" Top="3,2047" Width="325,48825" Height="10,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[NomeEmpresa]"/>
+      <TfrxMemoView Name="Memo23" Left="661" Top="5,2047" Width="62,94496" Height="10,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Pag: [Page] / [TotalPages#]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo24" Left="643" Top="16,2047" Width="81,94496" Height="10,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Data: [Date]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo4" Align="baLeft" Left="0" Top="47,77952024" Width="366,53556" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Cliente/Fornecedor"/>
+      <TfrxMemoView Name="Memo5" Align="baLeft" Left="366,53556" Top="47,77952024" Width="80,82684" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Vlr. Faturamento"/>
+      <TfrxMemoView Name="Memo7" Align="baLeft" Left="640,70903" Top="48" Width="46,81107" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Qtde."/>
+      <TfrxMemoView Name="Memo8" Align="baLeft" Left="447,3624" Top="46,77952024" Width="65,70872" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Vlr.Serviços"/>
+      <TfrxMemoView Name="Memo6" Align="baLeft" Left="687,5201" Top="48" Width="43,03154" Height="11,33858268" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="% Fat."/>
+      <TfrxMemoView Name="Memo9" Align="baLeft" Left="513,07112" Top="47,77952024" Width="58,14966" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Vlr. ST"/>
+      <TfrxLineView Name="Line1" Left="1" Top="60,10235" Width="727" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo19" Align="baLeft" Left="571,22078" Top="48,10235" Width="69,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Vlr.Venda"/>
+      <TfrxLineView Name="Line2" Left="1" Top="46,10235" Width="730,77953" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo21" Left="4" Top="32,10235" Width="593,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Opção:"/>
+    </TfrxPageHeader>
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="24,77953" Left="0" Top="139,84261" Width="733,22882" Condition="frxNotaFiscal_VendCli.&#34;NOME_VENDEDOR&#34;">
+      <TfrxMemoView Name="Memo10" Left="7" Top="7,15739" Width="54,92919" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Vendedor:"/>
+      <TfrxMemoView Name="Memo11" Left="66" Top="7,15739" Width="552,48825" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxNotaFiscal_VendCli.&#34;NOME_VENDEDOR&#34;]"/>
+    </TfrxGroupHeader>
+    <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Height="19,89765" Left="0" ParentFont="False" Top="226,7718" Width="733,22882">
+      <TfrxSysMemoView Name="SysMemo1" Align="baLeft" Left="366,614173228346" Top="2,88961" Width="80,88188976" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxNotaFiscal_VendCli.&#34;VLR_DUPLICATA&#34;&#62;,MasterData1)]"/>
+      <TfrxMemoView Name="Memo25" Align="baLeft" Left="0" Top="2,88961" Width="366,614173228346" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Total ==&#62;"/>
+      <TfrxSysMemoView Name="SysMemo2" Align="baLeft" Left="447,496062988346" Top="2,88961" Width="65,76377953" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxNotaFiscal_VendCli.&#34;VLR_LIQUIDO_NFSE&#34;&#62;,MasterData1)]"/>
+      <TfrxSysMemoView Name="SysMemo3" Align="baLeft" Left="513,259842518346" Top="2,88961" Width="54,42519685" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxNotaFiscal_VendCli.&#34;VLR_ICMSSUBST&#34;&#62;,MasterData1)]"/>
+      <TfrxSysMemoView Name="SysMemo4" Align="baLeft" Left="567,685039368346" Top="2,88961" Width="65,76377953" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxNotaFiscal_VendCli.&#34;VLR_VENDAS&#34;&#62;,MasterData1)]"/>
+      <TfrxSysMemoView Name="SysMemo5" Align="baLeft" Left="633,448818898346" Top="2,88961" Width="46,86614173" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxNotaFiscal_VendCli.&#34;QTD&#34;&#62;,MasterData1)]"/>
+    </TfrxGroupFooter>
+    <TfrxReportSummary Name="ReportSummary1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="306,14193" Width="733,22882">
+      <TfrxSysMemoView Name="SysMemo6" Align="baLeft" Left="366,614173228346" Top="1,73995" Width="80,88188976" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxNotaFiscal_VendCli.&#34;VLR_DUPLICATA&#34;&#62;,MasterData1)]"/>
+      <TfrxMemoView Name="Memo26" Align="baLeft" Left="0" Top="1,73995" Width="366,614173228346" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Total Geral ==&#62;"/>
+      <TfrxSysMemoView Name="SysMemo7" Align="baLeft" Left="447,496062988346" Top="1,73995" Width="65,76377953" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxNotaFiscal_VendCli.&#34;VLR_LIQUIDO_NFSE&#34;&#62;,MasterData1)]"/>
+      <TfrxSysMemoView Name="SysMemo8" Align="baLeft" Left="513,259842518346" Top="1,73995" Width="58,20472441" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxNotaFiscal_VendCli.&#34;VLR_ICMSSUBST&#34;&#62;,MasterData1)]"/>
+      <TfrxSysMemoView Name="SysMemo9" Align="baLeft" Left="571,464566928346" Top="1,73995" Width="65,76377953" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxNotaFiscal_VendCli.&#34;VLR_VENDAS&#34;&#62;,MasterData1)]"/>
+      <TfrxSysMemoView Name="SysMemo10" Align="baLeft" Left="637,228346458346" Top="2,73995" Width="46,86614173" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxNotaFiscal_VendCli.&#34;QTD&#34;&#62;,MasterData1)]"/>
+    </TfrxReportSummary>
+  </TfrxReportPage>
+</TfrxReport>
