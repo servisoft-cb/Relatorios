@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43402,7004246875" ReportOptions.Description.Text="" ReportOptions.LastChange="43490,4739543519" ScriptLanguage="PascalScript" ScriptText.Text="var&#13;&#10; vImpCodeBar : Boolean;&#13;&#10;&#13;&#10;procedure Shape3OnAfterPrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;    vImpCodeBar := True;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure DetailData2OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  vImpCodeBar := not vImpCodeBar;&#13;&#10;  if vImpCodeBar = True then&#13;&#10;  begin&#13;&#10;    barcode1.visible := True;&#13;&#10;    barcode2.visible := False;&#13;&#10;    line1.visible    := True;&#13;&#10;    line7.visible    := False;&#13;&#10;    memo11.visible   := True;&#13;&#10;    memo36.visible   := False;&#13;&#10;    line2.visible    := True;&#13;&#10;    line14.visible   := False;&#13;&#10;    memo12.visible   := True;&#13;&#10;    memo37.visible   := False;&#13;&#10;  end&#13;&#10;  else&#13;&#10;  begin&#13;&#10;    barcode1.visible := False;&#13;&#10;    barcode2.visible := True;&#13;&#10;    line1.visible    := False;&#13;&#10;    line7.visible    := True;&#13;&#10;    memo11.visible   := False;&#13;&#10;    memo36.visible   := True;&#13;&#10;    line2.visible    := False;&#13;&#10;    line14.visible   := True;&#13;&#10;    memo12.visible   := False;&#13;&#10;    memo37.visible   := True;&#13;&#10;  end;&#13;&#10;end;&#13;&#10;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43402,7004246875" ReportOptions.Description.Text="" ReportOptions.LastChange="43514,6485042477" ScriptLanguage="PascalScript" ScriptText.Text="var&#13;&#10; vImpCodeBar : Boolean;&#13;&#10;&#13;&#10;procedure Shape3OnAfterPrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;    vImpCodeBar := True;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure DetailData2OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  vImpCodeBar := not vImpCodeBar;&#13;&#10;  if vImpCodeBar = True then&#13;&#10;  begin&#13;&#10;    barcode1.visible := True;&#13;&#10;    barcode2.visible := False;&#13;&#10;    line1.visible    := True;&#13;&#10;    line7.visible    := False;&#13;&#10;    memo11.visible   := True;&#13;&#10;    memo36.visible   := False;&#13;&#10;    line2.visible    := True;&#13;&#10;    line14.visible   := False;&#13;&#10;    memo12.visible   := True;&#13;&#10;    memo37.visible   := False;&#13;&#10;  end&#13;&#10;  else&#13;&#10;  begin&#13;&#10;    barcode1.visible := False;&#13;&#10;    barcode2.visible := True;&#13;&#10;    line1.visible    := False;&#13;&#10;    line7.visible    := True;&#13;&#10;    memo11.visible   := False;&#13;&#10;    memo36.visible   := True;&#13;&#10;    line2.visible    := False;&#13;&#10;    line14.visible   := True;&#13;&#10;    memo12.visible   := False;&#13;&#10;    memo37.visible   := True;&#13;&#10;  end;&#13;&#10;end;&#13;&#10;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
   <Datasets>
     <item DataSet="frxConsLote_Novo" DataSetName="frxConsLote_Novo"/>
     <item DataSet="frxConsLote_Processo" DataSetName="frxConsLote_Processo"/>
     <item DataSet="frxConsTalao_Novo" DataSetName="frxConsTalao_Novo"/>
     <item DataSet="frxConsTalao_Tam" DataSetName="frxConsTalao_Tam"/>
     <item DataSet="frxmImpAux" DataSetName="frxmImpAux"/>
+    <item DataSet="frxmMaterial" DataSetName="frxmMaterial"/>
     <item DataSet="frxProdMat" DataSetName="frxProdMat"/>
   </Datasets>
   <Variables>
@@ -78,10 +79,26 @@
       <TfrxMemoView Name="Memo35" Left="664,63822" Top="4,55906" Width="60,47248" Height="13,98425197" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Verdana" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Consumo"/>
       <TfrxLineView Name="Line9" Left="503,67749" Top="11,33859" Width="162,51979" Height="0" Color="0" Frame.Typ="4"/>
     </TfrxHeader>
-    <TfrxMasterData Name="MasterData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89764024" Left="0" Top="64,25201" Width="733,22882" Columns="2" ColumnWidth="366,614173228346" ColumnGap="0" DataSet="frxProdMat" DataSetName="frxProdMat" RowCount="28">
-      <TfrxMemoView Name="Memo6" Left="0" Top="1,55906" Width="287,24428" Height="15,1181102362205" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxProdMat.&#34;NOME_POSICAO&#34;]/[frxProdMat.&#34;NOME_MATERIAL&#34;]/[frxProdMat.&#34;NOME_COR_MAT&#34;]"/>
-      <TfrxMemoView Name="Memo9" Left="289,24428" Top="1,55906" Width="71,81107" Height="15,11811024" DisplayFormat.FormatStr="%2.4f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxProdMat.&#34;QTD_CONSUMO&#34;]"/>
+    <TfrxMasterData Name="MasterData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89764024" Left="0" Top="64,25201" Width="733,22882" ColumnWidth="366,614173228346" ColumnGap="0" DataSet="frxmMaterial" DataSetName="frxmMaterial" RowCount="0">
+      <TfrxMemoView Name="Memo6" Left="0" Top="1,55906" Width="287,24428" Height="15,11811024" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxmMaterial.&#34;Nome_Posicao1&#34;]/[frxmMaterial.&#34;Nome_Material1&#34;]/[frxmMaterial.&#34;Nome_Cor1&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo9" Left="289,24428" Top="1,55906" Width="71,81107" Height="15,11811024" DisplayFormat.FormatStr="%2.4f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxmMaterial.&#34;Qtd_Consumo1&#34;]"/>
       <TfrxLineView Name="Line6" Left="363,590551181102" Top="0" Width="0" Height="18,8976378" Color="0" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo4" Left="366,61441" Top="2" Width="287,24428" Height="15,11811024" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxmMaterial.&#34;Nome_Posicao2&#34;]/[frxmMaterial.&#34;Nome_Material2&#34;]/[frxmMaterial.&#34;Nome_Cor2&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo27" Left="655,85869" Top="2" Width="71,81107" Height="15,11811024" DisplayFormat.FormatStr="%2.4f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxmMaterial.&#34;Qtd_Consumo2&#34;]"/>
     </TfrxMasterData>
   </TfrxReportPage>
 </TfrxReport>
