@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43402,7004246875" ReportOptions.Description.Text="" ReportOptions.LastChange="43515,5477546181" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;procedure DetailData2OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;end;&#13;&#10;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43402,7004246875" ReportOptions.Description.Text="" ReportOptions.LastChange="43515,9031465046" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;procedure DetailData2OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;end;&#13;&#10;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
   <Datasets>
     <item DataSet="frxConsProcesso" DataSetName="frxConsProcesso"/>
     <item DataSet="frxConsTalao_Tam" DataSetName="frxConsTalao_Tam"/>
-    <item DataSet="frxMatProc" DataSetName="frxMatProc"/>
     <item DataSet="frxmImpAux" DataSetName="frxmImpAux"/>
   </Datasets>
   <Variables>
     <item Name=" variaveis"/>
     <item Name="vImpCodBar"/>
+    <item Name="PosicaoMaterial"/>
   </Variables>
   <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
   <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="8" RightMargin="8" TopMargin="4" BottomMargin="1" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="" OnBeforePrint="Page1OnBeforePrint">
@@ -46,7 +46,12 @@
           <item/>
         </Formats>
       </TfrxMemoView>
-      <TfrxMemoView Name="Memo11" Left="86,92919" Top="74,5906" Width="411,96877" Height="13,9842519685039" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="verdana" Font.Style="0" ParentFont="False" Text="[frxMatProc.&#34;NOME_POSICAO&#34;]: [frxMatProc.&#34;NOME&#34;]"/>
+      <TfrxMemoView Name="Memo11" Left="86,92919" Top="74,5906" Width="642,5201" Height="13,98425197" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[PosicaoMaterial]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
     </TfrxMasterData>
     <TfrxDetailData Name="DetailData3" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="120,56693157" Left="0" Top="196,53556" Width="733,22882" ColumnWidth="0" ColumnGap="0" DataSet="frxConsTalao_Tam" DataSetName="frxConsTalao_Tam" RowCount="0">
       <TfrxSubreport Name="Subreport3" Left="1,89765" Top="1,77953" Width="60,47248" Height="18,89765" Page="Page4"/>
