@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43402,7004246875" ReportOptions.Description.Text="" ReportOptions.LastChange="43516,6876210995" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;procedure Shape3OnAfterPrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;end;&#13;&#10;&#13;&#10;procedure DetailData2OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;end;&#13;&#10;&#13;&#10;&#13;&#10;procedure Memo6OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;end;&#13;&#10;&#13;&#10;procedure Memo4OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." OnReportPrint="frxReportOnReportPrint">
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43402,7004246875" ReportOptions.Description.Text="" ReportOptions.LastChange="43514,6951246528" ScriptLanguage="PascalScript" ScriptText.Text="var&#13;&#10; vImpCodeBar : Boolean;&#13;&#10;&#13;&#10;procedure Shape3OnAfterPrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;    vImpCodeBar := True;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure DetailData2OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  vImpCodeBar := not vImpCodeBar;&#13;&#10;  if vImpCodeBar = True then&#13;&#10;  begin&#13;&#10;    barcode1.visible := True;&#13;&#10;    barcode2.visible := False;&#13;&#10;    line1.visible    := True;&#13;&#10;    line7.visible    := False;&#13;&#10;    memo11.visible   := True;&#13;&#10;    memo36.visible   := False;&#13;&#10;    line2.visible    := True;&#13;&#10;    line14.visible   := False;&#13;&#10;    memo12.visible   := True;&#13;&#10;    memo37.visible   := False;&#13;&#10;  end&#13;&#10;  else&#13;&#10;  begin&#13;&#10;    barcode1.visible := False;&#13;&#10;    barcode2.visible := True;&#13;&#10;    line1.visible    := False;&#13;&#10;    line7.visible    := True;&#13;&#10;    memo11.visible   := False;&#13;&#10;    memo36.visible   := True;&#13;&#10;    line2.visible    := False;&#13;&#10;    line14.visible   := True;&#13;&#10;    memo12.visible   := False;&#13;&#10;    memo37.visible   := True;&#13;&#10;  end;&#13;&#10;end;&#13;&#10;&#13;&#10;&#13;&#10;procedure Memo6OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if &#60;frxmMaterial.&#34;Nome_Posicao1&#34;&#62; = '' then&#13;&#10;  begin&#13;&#10;    Memo6.Visible := false;&#13;&#10;    Memo9.Visible := false;&#13;&#10;  end;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure Memo4OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if &#60;frxmMaterial.&#34;Nome_Posicao2&#34;&#62; = '' then&#13;&#10;  begin&#13;&#10;    Memo4.Visible := false;&#13;&#10;    Memo27.Visible := false;&#13;&#10;  end;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
   <Datasets>
-    <item DataSetName="frxConsLote_Novo"/>
-    <item DataSetName="frxConsLote_Processo"/>
-    <item DataSetName="frxConsTalao_Novo"/>
-    <item DataSetName="frxConsTalao_Tam"/>
-    <item DataSetName="frxmImpAux"/>
-    <item DataSetName="frxmMaterial"/>
-    <item DataSetName="frxProdMat"/>
+    <item DataSet="frxConsLote_Novo" DataSetName="frxConsLote_Novo"/>
+    <item DataSet="frxConsLote_Processo" DataSetName="frxConsLote_Processo"/>
+    <item DataSet="frxConsTalao_Novo" DataSetName="frxConsTalao_Novo"/>
+    <item DataSet="frxConsTalao_Tam" DataSetName="frxConsTalao_Tam"/>
+    <item DataSet="frxmImpAux" DataSetName="frxmImpAux"/>
+    <item DataSet="frxmMaterial" DataSetName="frxmMaterial"/>
+    <item DataSet="frxProdMat" DataSetName="frxProdMat"/>
   </Datasets>
   <Variables>
     <item Name=" variaveis"/>
@@ -15,7 +15,7 @@
   </Variables>
   <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
   <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="8" RightMargin="8" TopMargin="8" BottomMargin="8" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="" OnBeforePrint="Page1OnBeforePrint">
-    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="434,64595" Left="0" Top="18,89765" Width="733,22882" ColumnWidth="0" ColumnGap="0" DataSetName="frxmImpAux" RowCount="0">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="434,64595" Left="0" Top="18,89765" Width="733,22882" ColumnWidth="0" ColumnGap="0" DataSet="frxmImpAux" DataSetName="frxmImpAux" RowCount="0">
       <TfrxShapeView Name="Shape3" Left="0" Top="0" Width="733,22882" Height="434,64566929" OnAfterPrint="Shape3OnAfterPrint"/>
       <TfrxMemoView Name="Memo2" Left="166,29932" Top="3,55906" Width="94,48825" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Verdana" Font.Style="1" ParentFont="False" Text="Lote: [frxConsLote_Novo.&#34;NUM_LOTE&#34;]"/>
       <TfrxMemoView Name="Memo3" Left="3,77953" Top="3,77953" Width="109,60637" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Verdana" Font.Style="1" ParentFont="False" Text="Nº OP: [frxConsLote_Novo.&#34;NUM_ORDEM&#34;]"/>
@@ -40,15 +40,20 @@
       <TfrxSubreport Name="Subreport1" Left="2,77953" Top="150,1812" Width="94,48825" Height="18,89765" Page="Page2"/>
       <TfrxBarCodeView Name="BarCode3" Left="464,88219" Top="7,55906" Width="79" Height="46,33859" BarType="bcCode128" Expression="&#60;frxConsLote_Novo.&#34;clCodBarra&#34;&#62;" Rotation="0" TestLine="False" Text="12345678" WideBarRatio="2" Zoom="1" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0"/>
     </TfrxMasterData>
-    <TfrxDetailData Name="DetailData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="113,3859" Left="0" Top="619,84292" Width="733,22882" OnBeforePrint="DetailData2OnBeforePrint" Columns="4" ColumnWidth="182,173228346457" ColumnGap="0,94488188976378" DataSetName="frxConsTalao_Novo" RowCount="0">
+    <TfrxDetailData Name="DetailData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="113,3859" Left="0" Top="619,84292" Width="733,22882" OnBeforePrint="DetailData2OnBeforePrint" Columns="4" ColumnWidth="182,173228346457" ColumnGap="0,94488188976378" DataSet="frxConsTalao_Novo" DataSetName="frxConsTalao_Novo" RowCount="0">
       <TfrxShapeView Name="Shape1" Left="0" Top="0,77953" Width="180,28348654" Height="109,60637" OnBeforePrint="Shape1OnBeforePrint"/>
-      <TfrxLineView Name="Line14" Left="20" Top="18,67718" Width="142,48821583" Height="0" Color="0" Frame.Typ="4"/>
-      <TfrxBarCodeView Name="BarCode2" Left="52,77953" Top="61,69295" Width="79" Height="46,33859" OnBeforePrint="BarCode1OnBeforePrint" BarType="bcCode128" Expression="&#60;frxConsTalao_Novo.&#34;clCodBarra&#34;&#62;" Rotation="0" TestLine="False" Text="12345678" WideBarRatio="2" Zoom="1" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0"/>
-      <TfrxLineView Name="Line7" Left="20" Top="36,55906" Width="142,48821583" Height="0" Color="0" Frame.Typ="4"/>
-      <TfrxMemoView Name="Memo36" Left="22,55906" Top="4,55906" Width="136,06308" Height="12,09448819" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Verdana" Font.Style="0" GapX="1" GapY="0" HAlign="haCenter" ParentFont="False" Text="Tam:  [frxConsTalao_Novo.&#34;TAMANHO&#34;]"/>
-      <TfrxMemoView Name="Memo37" Left="23,55906" Top="21,67718" Width="136,06308" Height="12,09448819" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Verdana" Font.Style="0" GapX="1" GapY="0" HAlign="haCenter" ParentFont="False" Text="Qtd: [frxConsTalao_Novo.&#34;QTD&#34;]"/>
+      <TfrxLineView Name="Line1" Left="0" Top="68,53546724" Width="142,48821583" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo11" Left="2,55906" Top="71,53546724" Width="136,06308" Height="12,09448819" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Verdana" Font.Style="0" GapX="1" GapY="0" HAlign="haCenter" ParentFont="False" Text="Tam: [frxConsTalao_Novo.&#34;TAMANHO&#34;]"/>
+      <TfrxMemoView Name="Memo12" Left="3,55906" Top="88,65358724" Width="136,06308" Height="12,09448819" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Verdana" Font.Style="0" GapX="1" GapY="0" HAlign="haCenter" ParentFont="False" Text="Qtd: [frxConsTalao_Novo.&#34;QTD&#34;]"/>
+      <TfrxLineView Name="Line2" Left="0" Top="85,65358724" Width="142,48821583" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxBarCodeView Name="BarCode1" Left="3,77953" Top="3,77952756" Width="79" Height="46,33859" OnBeforePrint="BarCode1OnBeforePrint" BarType="bcCode128" Expression="&#60;frxConsTalao_Novo.&#34;clCodBarra&#34;&#62;" Rotation="0" TestLine="False" Text="12345678" WideBarRatio="2" Zoom="1" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0"/>
+      <TfrxBarCodeView Name="BarCode2" Left="3,77953" Top="61,69295" Width="79" Height="46,33859" OnBeforePrint="BarCode1OnBeforePrint" BarType="bcCode128" Expression="&#60;frxConsTalao_Novo.&#34;clCodBarra&#34;&#62;" Rotation="0" TestLine="False" Text="12345678" WideBarRatio="2" Zoom="1" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0"/>
+      <TfrxLineView Name="Line7" Left="0" Top="36,55906" Width="142,48821583" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo36" Left="2,55906" Top="4,55906" Width="136,06308" Height="12,09448819" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Verdana" Font.Style="0" GapX="1" GapY="0" HAlign="haCenter" ParentFont="False" Text="Tam:  [frxConsTalao_Novo.&#34;TAMANHO&#34;]"/>
+      <TfrxMemoView Name="Memo37" Left="3,55906" Top="21,67718" Width="136,06308" Height="12,09448819" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Verdana" Font.Style="0" GapX="1" GapY="0" HAlign="haCenter" ParentFont="False" Text="Qtd: [frxConsTalao_Novo.&#34;QTD&#34;]"/>
+      <TfrxLineView Name="Line14" Left="0" Top="18,67718" Width="142,48821583" Height="0" Color="0" Frame.Typ="4"/>
     </TfrxDetailData>
-    <TfrxDetailData Name="DetailData3" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="514,01608" Width="733,22882" ColumnWidth="0" ColumnGap="0" DataSetName="frxConsTalao_Tam" RowCount="0">
+    <TfrxDetailData Name="DetailData3" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="514,01608" Width="733,22882" ColumnWidth="0" ColumnGap="0" DataSet="frxConsTalao_Tam" DataSetName="frxConsTalao_Tam" RowCount="0">
       <TfrxSubreport Name="Subreport3" Left="1,89765" Top="1,77953" Width="60,47248" Height="18,89765" Page="Page4"/>
     </TfrxDetailData>
     <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="15,11812" Left="0" Top="476,22078" Width="733,22882"/>
@@ -58,7 +63,7 @@
     </TfrxHeader>
   </TfrxReportPage>
   <TfrxReportPage Name="Page4" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="8" RightMargin="8" TopMargin="8" BottomMargin="8" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
-    <TfrxMasterData Name="MasterData4" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="41,57483" Left="0" Top="18,89765" Width="733,22882" Columns="16" ColumnWidth="45,3543307086614" ColumnGap="0" DataSetName="frxConsTalao_Tam" RowCount="0">
+    <TfrxMasterData Name="MasterData4" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="41,57483" Left="0" Top="18,89765" Width="733,22882" Columns="16" ColumnWidth="45,3543307086614" ColumnGap="0" DataSet="frxConsTalao_Tam" DataSetName="frxConsTalao_Tam" RowCount="0">
       <TfrxShapeView Name="Shape2" Left="0" Top="0" Width="45,35436" Height="41,57483"/>
       <TfrxMemoView Name="Memo25" Left="1,77953" Top="2,77953" Width="41,57483" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxConsTalao_Tam.&#34;TAMANHO&#34;]"/>
       <TfrxMemoView Name="Memo26" Left="1,77953" Top="21,67718" Width="41,57483" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxConsTalao_Tam.&#34;QTD&#34;]"/>
@@ -74,7 +79,7 @@
       <TfrxMemoView Name="Memo35" Left="664,63822" Top="4,55906" Width="60,47248" Height="13,98425197" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Verdana" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Consumo"/>
       <TfrxLineView Name="Line9" Left="503,67749" Top="11,33859" Width="162,51979" Height="0" Color="0" Frame.Typ="4"/>
     </TfrxHeader>
-    <TfrxMasterData Name="MasterData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89764024" Left="0" Top="64,25201" Width="733,22882" ColumnWidth="366,614173228346" ColumnGap="0" DataSetName="frxmMaterial" RowCount="0">
+    <TfrxMasterData Name="MasterData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89764024" Left="0" Top="64,25201" Width="733,22882" ColumnWidth="366,614173228346" ColumnGap="0" DataSet="frxmMaterial" DataSetName="frxmMaterial" RowCount="0">
       <TfrxMemoView Name="Memo6" Left="0" Top="1,55906" Width="287,24428" Height="15,11811024" OnBeforePrint="Memo6OnBeforePrint" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxmMaterial.&#34;Nome_Posicao1&#34;]/[frxmMaterial.&#34;Nome_Material1&#34;]/[frxmMaterial.&#34;Nome_Cor1&#34;]">
         <Formats>
           <item/>
