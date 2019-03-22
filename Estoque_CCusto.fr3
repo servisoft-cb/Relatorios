@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42032,5770381366" ReportOptions.Description.Text="" ReportOptions.LastChange="43487,0142427315" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42032,5770381366" ReportOptions.Description.Text="" ReportOptions.LastChange="43544,8138990046" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
   <Datasets>
     <item DataSet="frxEstoque_Mov" DataSetName="frxEstoque_Mov"/>
   </Datasets>
@@ -17,40 +17,67 @@
       <TfrxLineView Name="Line1" Align="baBottom" Left="2" Top="37,7953" Width="714,33117" Height="0" Color="0" Frame.Typ="4"/>
       <TfrxMemoView Name="Memo9" Left="3,77953" Top="22,67718" Width="581,48825" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Opção: [Opcao_Imp]"/>
     </TfrxReportTitle>
-    <TfrxMasterData Name="MasterData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="207,87415" Width="733,22882" OnBeforePrint="MasterData2OnBeforePrint" AllowSplit="True" ColumnWidth="0" ColumnGap="0" DataSet="frxEstoque_Mov" DataSetName="frxEstoque_Mov" RowCount="0" Stretched="True">
-      <TfrxMemoView Name="Memo3" Left="58,91342" Top="2,55906" Width="399,89796" Height="11,33859" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxEstoque_Mov.&#34;NOMEPRODUTO&#34;] [frxEstoque_Mov.&#34;NOME_COR&#34;] [frxEstoque_Mov.&#34;TAMANHO&#34;]"/>
-      <TfrxMemoView Name="Memo7" Left="517,79561" Top="1,55906" Width="71,81107" Height="11,33859" DataField="QTD_ENT" DataSet="frxEstoque_Mov" DataSetName="frxEstoque_Mov" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[frxEstoque_Mov.&#34;QTD_ENT&#34;]"/>
-      <TfrxMemoView Name="Memo8" Left="663,97681" Top="1,55906" Width="68,03154" Height="11,33859" DataField="VLR_TOTAL" DataSet="frxEstoque_Mov" DataSetName="frxEstoque_Mov" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[frxEstoque_Mov.&#34;VLR_TOTAL&#34;]"/>
-      <TfrxMemoView Name="Memo11" Left="460,50402" Top="2,24397" Width="56,69295" Height="11,33859" DataField="DTMOVIMENTO" DataSet="frxEstoque_Mov" DataSetName="frxEstoque_Mov" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[frxEstoque_Mov.&#34;DTMOVIMENTO&#34;]"/>
+    <TfrxMasterData Name="MasterData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="272,12616" Width="733,22882" OnBeforePrint="MasterData2OnBeforePrint" AllowSplit="True" ColumnWidth="0" ColumnGap="0" DataSet="frxEstoque_Mov" DataSetName="frxEstoque_Mov" RowCount="0" Stretched="True">
+      <TfrxMemoView Name="Memo3" Left="58,91342" Top="2,55906" Width="324,30736" Height="11,33859" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxEstoque_Mov.&#34;NOMEPRODUTO&#34;] [frxEstoque_Mov.&#34;NOME_COR&#34;] [frxEstoque_Mov.&#34;TAMANHO&#34;]"/>
+      <TfrxMemoView Name="Memo8" Left="485,33110409" Top="2,55906" Width="64,25201" Height="11,33859" DataSet="frxEstoque_Mov" DataSetName="frxEstoque_Mov" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[frxEstoque_Mov.&#34;VLR_TOTAL&#34;]"/>
+      <TfrxMemoView Name="Memo11" Left="384,50402" Top="2,55906" Width="52,91342" Height="11,33859" DataField="DTMOVIMENTO" DataSet="frxEstoque_Mov" DataSetName="frxEstoque_Mov" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[frxEstoque_Mov.&#34;DTMOVIMENTO&#34;]"/>
       <TfrxMemoView Name="Memo12" Left="2,31478" Top="2,6141" Width="52,91342" Height="11,33859" DataField="ID_PRODUTO" DataSet="frxEstoque_Mov" DataSetName="frxEstoque_Mov" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[frxEstoque_Mov.&#34;ID_PRODUTO&#34;]"/>
-      <TfrxMemoView Name="Memo13" Left="592,16574" Top="1,58267717" Width="68,03154" Height="11,33859" DataField="QTD_SAI" DataSet="frxEstoque_Mov" DataSetName="frxEstoque_Mov" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[frxEstoque_Mov.&#34;QTD_SAI&#34;]"/>
+      <TfrxMemoView Name="Memo13" Left="441,50433" Top="2,55906" Width="41,57483" Height="11,33859" DataField="QTD_SAI" DataSet="frxEstoque_Mov" DataSetName="frxEstoque_Mov" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[frxEstoque_Mov.&#34;QTD_SAI&#34;]"/>
+      <TfrxMemoView Name="Memo20" Left="556,19728" Top="2,55906" Width="173,85838" Height="11,33859" DataSet="frxEstoque_Mov" DataSetName="frxEstoque_Mov" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxEstoque_Mov.&#34;MOTIVO&#34;]"/>
     </TfrxMasterData>
     <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="117,16543" Width="733,22882">
       <TfrxShapeView Name="Shape1" Left="-0,22047" Top="2,55906" Width="733,22882" Height="18,89765"/>
-      <TfrxMemoView Name="Memo10" Left="59,69295" Top="6,55906" Width="396,11843" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Produto"/>
-      <TfrxMemoView Name="Memo14" Left="519,1342" Top="5,55906" Width="68,03154" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Q.Entrada"/>
-      <TfrxMemoView Name="Memo15" Left="677,3154" Top="5,55906" Width="54,04724409" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Valor"/>
-      <TfrxMemoView Name="Memo24" Left="458,06308" Top="6,24397" Width="56,69295" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Data"/>
+      <TfrxMemoView Name="Memo10" Left="59,69295" Top="6,55906" Width="320,52783" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Produto"/>
+      <TfrxMemoView Name="Memo15" Left="499,3154" Top="5,55906" Width="50,26771409" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Valor"/>
+      <TfrxMemoView Name="Memo24" Left="382,06308" Top="6,24397" Width="52,91342" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Data"/>
       <TfrxMemoView Name="Memo1" Left="3,09431" Top="6,6141" Width="52,91342" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="ID"/>
-      <TfrxMemoView Name="Memo6" Left="589,7248" Top="5,58267717" Width="71,81107" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Q.Saída"/>
+      <TfrxMemoView Name="Memo6" Left="437,7248" Top="5,58267717" Width="45,35436" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Q.Saída"/>
+      <TfrxMemoView Name="Memo19" Left="556,19728" Top="5,55906" Width="75,5906" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="OBS"/>
     </TfrxHeader>
-    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="162,51979" Width="733,22882" Condition="frxEstoque_Mov.&#34;NOME_CENTROCUSTO&#34;">
-      <TfrxMemoView Name="Memo4" Left="18" Top="2,70068" Width="541,22078" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Verdana" Font.Style="1" ParentFont="False" Text="Centro Custo: [frxEstoque_Mov.&#34;NOME_CENTROCUSTO&#34;]"/>
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="45,35436" Left="0" Top="162,51979" Width="733,22882" Condition="frxEstoque_Mov.&#34;NOME_CENTROCUSTO&#34;">
+      <TfrxMemoView Name="Memo4" Left="30" Top="25,70068" Width="541,22078" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Verdana" Font.Style="1" ParentFont="False" Text="[frxEstoque_Mov.&#34;CODIGO_CCUSTO&#34;] - [frxEstoque_Mov.&#34;NOME_CENTROCUSTO&#34;] ">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo7" Left="3,77953" Top="7,55906" Width="624,37044" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Verdana" Font.Style="1" ParentFont="False" Text=" [frxEstoque_Mov.&#34;CODIGO_SUPERIOR&#34;] - [frxEstoque_Mov.&#34;DESC_SUPERIOR&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
     </TfrxGroupHeader>
-    <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Height="22,67718" Left="0" ParentFont="False" Top="249,44898" Width="733,22882">
+    <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Height="34,01577" Left="0" ParentFont="False" Top="359,05535" Width="733,22882">
       <TfrxLineView Name="Line2" Left="2" Top="3,77953" Width="729,44929" Height="0" Color="0" Frame.Typ="4"/>
       <TfrxSysMemoView Name="SysMemo3" Left="511,57514" Top="7,55906" Width="75,5906" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxEstoque_Mov.&#34;QTD_ENT&#34;&#62;,MasterData2)]"/>
       <TfrxSysMemoView Name="SysMemo4" Left="589,60668" Top="7,55906" Width="68,03154" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxEstoque_Mov.&#34;QTD_SAI&#34;&#62;,MasterData2)]"/>
       <TfrxSysMemoView Name="SysMemo5" Left="659,63822" Top="7,55906" Width="71,81107" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxEstoque_Mov.&#34;VLR_TOTAL&#34;&#62;,MasterData2)]"/>
+      <TfrxMemoView Name="Memo18" Left="18" Top="7,55906" Width="124,72449" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Total Centro de Custo"/>
     </TfrxGroupFooter>
-    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="294,80334" Width="733,22882">
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="415,7483" Width="733,22882">
       <TfrxLineView Name="Line3" Left="0" Top="3,77953" Width="729,44929" Height="0" Color="0" Frame.Typ="4"/>
       <TfrxSysMemoView Name="SysMemo6" Left="510,57514" Top="7,55906" Width="75,5906" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxEstoque_Mov.&#34;QTD_ENT&#34;&#62;,MasterData2)]"/>
       <TfrxSysMemoView Name="SysMemo7" Left="587,60668" Top="7,55906" Width="68,03154" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxEstoque_Mov.&#34;QTD_SAI&#34;&#62;,MasterData2)]"/>
       <TfrxSysMemoView Name="SysMemo8" Left="657,63822" Top="7,55906" Width="71,81107" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxEstoque_Mov.&#34;VLR_TOTAL&#34;&#62;,MasterData2)]"/>
     </TfrxFooter>
-    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="15,11812" Left="0" Top="377,953" Width="733,22882">
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="15,11812" Left="0" Top="498,89796" Width="733,22882">
       <TfrxMemoView Name="Memo5" Left="627,40198" Top="2" Width="94,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Estoque_CCusto.,fr3"/>
     </TfrxPageFooter>
+    <TfrxGroupHeader Name="GroupHeader2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="230,55133" Width="733,22882" Condition="frxEstoque_Mov.&#34;CODIGO_GRUPO&#34;">
+      <TfrxMemoView Name="Memo16" Left="58,91342" Top="0,77953" Width="506,45702" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="Grupo:  [frxEstoque_Mov.&#34;CODIGO_GRUPO&#34;] [frxEstoque_Mov.&#34;NOME_GRUPO&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+    </TfrxGroupHeader>
+    <TfrxGroupFooter Name="GroupFooter2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="313,70099" Width="733,22882">
+      <TfrxSysMemoView Name="SysMemo9" Left="514,01608" Top="3,77953" Width="75,5906" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxEstoque_Mov.&#34;QTD_ENT&#34;&#62;,MasterData2)]"/>
+      <TfrxSysMemoView Name="SysMemo10" Left="592,04762" Top="3,77953" Width="68,03154" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxEstoque_Mov.&#34;QTD_SAI&#34;&#62;,MasterData2)]"/>
+      <TfrxSysMemoView Name="SysMemo11" Left="662,07916" Top="3,77953" Width="71,81107" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxEstoque_Mov.&#34;VLR_TOTAL&#34;&#62;,MasterData2)]"/>
+      <TfrxLineView Name="Line4" Left="58,91342" Top="0" Width="668,97681" Height="0" Color="0" Frame.Style="fsDot" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo17" Left="58,91342" Top="3,77953" Width="94,48825" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Total por Grupo:"/>
+    </TfrxGroupFooter>
   </TfrxReportPage>
 </TfrxReport>
