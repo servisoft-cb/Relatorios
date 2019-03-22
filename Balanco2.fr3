@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43284,725669537" ReportOptions.Description.Text="" ReportOptions.LastChange="43538,5610262847" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43284,725669537" ReportOptions.Description.Text="" ReportOptions.LastChange="43542,6899350579" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
   <Datasets>
     <item DataSet="frxBalanco" DataSetName="frxBalanco"/>
   </Datasets>
@@ -11,16 +11,17 @@
   <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
   <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="8" RightMargin="8" TopMargin="8" BottomMargin="8" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
     <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="207,87415" Width="733,22882" ColumnWidth="0" ColumnGap="0" DataSet="frxBalanco" DataSetName="frxBalanco" RowCount="0" Stretched="True">
-      <TfrxMemoView Name="Memo10" Left="64,25201" Top="2" Width="56,69295" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxBalanco.&#34;REFERENCIA&#34;]"/>
-      <TfrxMemoView Name="Memo11" Left="131,25201" Top="2" Width="188,9765" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxBalanco.&#34;NOME_PRODUTO&#34;] [frxBalanco.&#34;TAMANHO&#34;]">
+      <TfrxMemoView Name="Memo10" Left="44,13389" Top="2" Width="83,14966" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxBalanco.&#34;REFERENCIA&#34;]"/>
+      <TfrxMemoView Name="Memo11" Left="131,25201" Top="2" Width="188,9765" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxBalanco.&#34;NOME_PRODUTO&#34;] [frxBalanco.&#34;NOME_COMBINACAO&#34;] [frxBalanco.&#34;TAMANHO&#34;]">
         <Formats>
+          <item/>
           <item/>
           <item/>
         </Formats>
       </TfrxMemoView>
       <TfrxMemoView Name="Memo12" Left="323,48052" Top="2" Width="83,14966" Height="11,33859" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxBalanco.&#34;QTD_ESTOQUE&#34;]"/>
       <TfrxMemoView Name="Memo13" Left="409,40971" Top="2" Width="71,81107" Height="11,33859" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxBalanco.&#34;clPreco_Medio&#34;]"/>
-      <TfrxMemoView Name="Memo19" Left="0" Top="2" Width="56,69295" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxBalanco.&#34;ID_PRODUTO&#34;]"/>
+      <TfrxMemoView Name="Memo19" Left="0" Top="2" Width="41,57483" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxBalanco.&#34;ID_PRODUTO&#34;]"/>
       <TfrxMemoView Name="Memo8" Left="487,55937" Top="2" Width="71,81107" Height="11,33859" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxBalanco.&#34;PERC_ICMS&#34;]"/>
       <TfrxMemoView Name="Memo14" Left="566,70903" Top="2" Width="71,81107" Height="11,33859" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxBalanco.&#34;PERC_IPI&#34;]"/>
       <TfrxMemoView Name="Memo15" Left="646,29963" Top="2" Width="71,81107" Height="11,33859" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxBalanco.&#34;clVlr_Total&#34;]"/>
