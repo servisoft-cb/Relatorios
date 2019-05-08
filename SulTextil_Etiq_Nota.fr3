@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41928,5781444097" ReportOptions.Description.Text="" ReportOptions.LastChange="43592,4830782755" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" EngineOptions.PrintIfEmpty="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41928,5781444097" ReportOptions.Description.Text="" ReportOptions.LastChange="43593,697200706" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
   <Datasets>
-    <item DataSet="frxmEtiqueta_Nav" DataSetName="frxmEtiqueta_Nav"/>
+    <item DataSetName="frxmEtiqueta_Nav"/>
   </Datasets>
   <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
   <TfrxReportPage Name="Page1" PaperWidth="100" PaperHeight="50" PaperSize="256" LeftMargin="3" RightMargin="3" TopMargin="4" BottomMargin="1" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
-    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Width="0,1" Height="148,15748031" Left="0" Top="18,89765" Width="355,27582" OnBeforePrint="MasterData1OnBeforePrint" ColumnWidth="0" ColumnGap="0" DataSet="frxmEtiqueta_Nav" DataSetName="frxmEtiqueta_Nav" RowCount="0">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Width="0,1" Height="148,15748031" Left="0" Top="18,89765" Width="355,27582" OnBeforePrint="MasterData1OnBeforePrint" ColumnWidth="0" ColumnGap="0" DataSetName="frxmEtiqueta_Nav" RowCount="0">
       <TfrxMemoView Name="Memo8" Left="0" Top="89,9527559055118" Width="355,27559055" Height="27,2125984251969" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="11" Frame.Width="0,5" LineSpacing="0" ParentFont="False" Text="[frxmEtiqueta_Nav.&#34;Nome_Produto&#34;]">
         <Formats>
           <item/>
           <item/>
         </Formats>
       </TfrxMemoView>
-      <TfrxShapeView Name="Shape6" Left="236,67178557" Top="117,16535433" Width="118,67716535" Height="35,1496062992126" Frame.Width="0,5"/>
-      <TfrxShapeView Name="Shape7" Left="118,32286882" Top="117,16535433" Width="118,2992126" Height="35,1496062992126" Frame.Width="0,5"/>
+      <TfrxShapeView Name="Shape6" Left="236,67178557" Top="117,16535433" Width="118,67716535" Height="35,1496063" Frame.Width="0,5"/>
+      <TfrxShapeView Name="Shape7" Left="118,32286882" Top="117,16535433" Width="118,2992126" Height="35,1496063" Frame.Width="0,5"/>
       <TfrxShapeView Name="Shape1" Left="0" Top="117,002685" Width="118,2992126" Height="35,1496062992126" Frame.ShadowWidth="1" Frame.Width="0,5" Frame.RightLine.Color="16777215"/>
-      <TfrxMemoView Name="Memo1" Left="0" Top="0" Width="355,27559055" Height="15,11812" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="1,5" HAlign="haCenter" ParentFont="False" Text="[frxmEtiqueta_Nav.&#34;Nome_Empresa&#34;]"/>
-      <TfrxMemoView Name="Memo2" Left="38,34914614" Top="33,38188" Width="131,79654268" Height="41,42446993" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-21" Font.Name="Arial" Font.Style="0" Frame.Typ="2" Frame.Width="0,5" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="[frxmEtiqueta_Nav.&#34;Num_Nota&#34;]"/>
+      <TfrxMemoView Name="Memo1" Left="0" Top="0" Width="355,27559055" Height="26,45671" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="1,5" HAlign="haCenter" ParentFont="False" Text="[frxmEtiqueta_Nav.&#34;Nome_Empresa&#34;]"/>
+      <TfrxMemoView Name="Memo2" Left="38,34914614" Top="44,72047" Width="131,79654268" Height="30,08587993" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-21" Font.Name="Arial" Font.Style="0" Frame.Typ="2" Frame.Width="0,5" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="[frxmEtiqueta_Nav.&#34;Num_Nota&#34;]"/>
       <TfrxMemoView Name="Memo4" Left="0" Top="74,83464567" Width="355,27559055" Height="15,11809803" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="7" Frame.Width="0,5" LineSpacing="0" ParentFont="False" Text="Produto: ([frxmEtiqueta_Nav.&#34;Prod_Cliente&#34;]) [frxmEtiqueta_Nav.&#34;Cod_Cor_Cliente&#34;] [frxmEtiqueta_Nav.&#34;Nome_Cor_Cliente&#34;]">
         <Formats>
           <item/>
@@ -24,17 +24,17 @@
           <item/>
         </Formats>
       </TfrxMemoView>
-      <TfrxMemoView Name="Memo5" Left="3" Top="118,38583409" Width="49,13389" Height="13,22834646" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Qtd:"/>
-      <TfrxMemoView Name="Memo6" Left="207,87401575" Top="33,25984252" Width="147,40167" Height="41,57480315" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-21" Font.Name="Arial" Font.Style="0" Frame.Typ="2" Frame.Width="0,5" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="[frxmEtiqueta_Nav.&#34;Pedido_Cliente&#34;]"/>
-      <TfrxMemoView Name="Memo7" Left="241,6851126" Top="133,37008606" Width="111,37844678" Height="15,87401575" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxmEtiqueta_Nav.&#34;DtEmissao&#34;]"/>
-      <TfrxMemoView Name="Memo10" Left="3" Top="133,37008606" Width="112,56934263" Height="15,87401575" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxmEtiqueta_Nav.&#34;Qtd&#34;]"/>
-      <TfrxMemoView Name="Memo11" Left="170,07874016" Top="33,25984252" Width="37,79527559" Height="41,57480315" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Width="0,5" ParentFont="False" VAlign="vaCenter" Text="OC:"/>
-      <TfrxMemoView Name="Memo12" Left="241,90837295" Top="118,38583409" Width="52,91342" Height="13,22834646" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Emissão:"/>
-      <TfrxMemoView Name="Memo13" Left="122,15751449" Top="118,38583409" Width="37,7953" Height="13,22834646" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Unid.:"/>
-      <TfrxMemoView Name="Memo14" Left="122,15751449" Top="133,60380254" Width="110,29643709" Height="15,87401575" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxmEtiqueta_Nav.&#34;Unidade&#34;]"/>
-      <TfrxMemoView Name="Memo15" Left="0" Top="33,38188" Width="37,89905572" Height="28,39765" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Typ="1" Frame.Width="0,5" HAlign="haRight" ParentFont="False" VAlign="vaBottom" Text="NF:"/>
-      <TfrxMemoView Name="Memo9" Left="0" Top="61,88188" Width="37,89483211" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Frame.Typ="1" Frame.Width="0,5" ParentFont="False" Text="It: [frxmEtiqueta_Nav.&#34;Item_Ped&#34;]"/>
-      <TfrxMemoView Name="Memo3" Left="0" Top="15,32283465" Width="355,27559055" Height="17,76378197" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="0,5" ParentFont="False" Text="Cliente: [frxmEtiqueta_Nav.&#34;Fantasia_Cli&#34;]"/>
+      <TfrxMemoView Name="Memo5" Left="1" Top="117,38583409" Width="49,13389" Height="13,22834646" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Qtd:"/>
+      <TfrxMemoView Name="Memo6" Left="207,87401575" Top="44,59843252" Width="147,40167" Height="30,23621315" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-21" Font.Name="Arial" Font.Style="0" Frame.Typ="2" Frame.Width="0,5" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="[frxmEtiqueta_Nav.&#34;Pedido_Cliente&#34;]"/>
+      <TfrxMemoView Name="Memo7" Left="241,6851126" Top="131,37008606" Width="111,37844678" Height="15,87401575" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[frxmEtiqueta_Nav.&#34;DtEmissao&#34;]"/>
+      <TfrxMemoView Name="Memo10" Left="3" Top="131,37008606" Width="112,56934263" Height="15,87401575" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[frxmEtiqueta_Nav.&#34;Qtd&#34;]"/>
+      <TfrxMemoView Name="Memo11" Left="170,07874016" Top="44,59843252" Width="37,79527559" Height="30,23621315" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Width="0,5" ParentFont="False" VAlign="vaCenter" Text="OC:"/>
+      <TfrxMemoView Name="Memo12" Left="237,90837295" Top="117,38583409" Width="52,91342" Height="13,22834646" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Emissão:"/>
+      <TfrxMemoView Name="Memo13" Left="120,15751449" Top="117,38583409" Width="37,7953" Height="13,22834646" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Unid.:"/>
+      <TfrxMemoView Name="Memo14" Left="122,15751449" Top="131,60380254" Width="110,29643709" Height="15,87401575" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[frxmEtiqueta_Nav.&#34;Unidade&#34;]"/>
+      <TfrxMemoView Name="Memo15" Left="0" Top="44,72047" Width="37,89905572" Height="17,05906" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Typ="1" Frame.Width="0,5" HAlign="haRight" ParentFont="False" VAlign="vaBottom" Text="NF:"/>
+      <TfrxMemoView Name="Memo9" Left="0" Top="61,88188" Width="37,89483211" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Frame.Typ="1" Frame.Width="0,5" HAlign="haCenter" ParentFont="False" Text="It: [frxmEtiqueta_Nav.&#34;Item_Ped&#34;]"/>
+      <TfrxMemoView Name="Memo3" Left="0" Top="26,66142465" Width="355,27559055" Height="17,76378197" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Frame.Width="0,5" ParentFont="False" Text="Cliente: [frxmEtiqueta_Nav.&#34;Fantasia_Cli&#34;]"/>
     </TfrxMasterData>
   </TfrxReportPage>
 </TfrxReport>
