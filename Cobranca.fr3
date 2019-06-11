@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TfrxReport Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43039,6510995949" ReportOptions.Description.Text="" ReportOptions.LastChange="43299,4588819444" ScriptLanguage="PascalScript" ScriptText.Text="var&#13;&#10;  nCor: Byte;&#13;&#10;&#13;&#10;procedure MasterData1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if (nCor = 0) then&#13;&#10;  begin&#13;&#10;    Memo14.Color := $00E2E2E2;&#13;&#10;    nCor := 1;&#13;&#10;  end&#13;&#10;  else&#13;&#10;  begin&#13;&#10;    Memo14.Color := clNone;&#13;&#10;    nCor := 0;&#13;&#10;  end;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure GroupHeader1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  nCor := 1;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43039,6510995949" ReportOptions.Description.Text="" ReportOptions.LastChange="43515,5591138889" ScriptLanguage="PascalScript" ScriptText.Text="var&#13;&#10;  nCor: Byte;&#13;&#10;&#13;&#10;procedure MasterData1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if (nCor = 0) then&#13;&#10;  begin&#13;&#10;    Memo14.Color := $00E2E2E2;&#13;&#10;    nCor := 1;&#13;&#10;  end&#13;&#10;  else&#13;&#10;  begin&#13;&#10;    Memo14.Color := clNone;&#13;&#10;    nCor := 0;&#13;&#10;  end;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure GroupHeader1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  nCor := 1;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." OnReportPrint="frxReportOnReportPrint">
   <Datasets>
     <item DataSet="frxDBDataset3" DataSetName="frxmDuplicata_Consulta"/>
   </Datasets>
@@ -21,12 +21,18 @@
       <TfrxMemoView Name="Memo1" Left="0" Top="3,77953" Width="718,1107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="4" HAlign="haRight" ParentFont="False" Text="[Page#]"/>
     </TfrxPageFooter>
     <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="124,72449" Width="718,1107" OnBeforePrint="GroupHeader1OnBeforePrint" Condition="frxmDuplicata_Consulta.&#34;NOME_PESSOA&#34;">
-      <TfrxMemoView Name="Memo3" Left="15,89765" Top="0" Width="383,62203748" Height="18,89765" Fill.BackColor="3385832" Text="[frxmDuplicata_Consulta.&#34;NOME_PESSOA&#34;]"/>
+      <TfrxMemoView Name="Memo3" Left="15,89765" Top="0" Width="281,57472748" Height="18,89765" Fill.BackColor="3385832" Text="[frxmDuplicata_Consulta.&#34;NOME_PESSOA&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
       <TfrxMemoView Name="Memo8" Left="399,85065" Top="0" Width="92,5984252" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Fill.BackColor="3385832" HAlign="haCenter" ParentFont="False" Text="Vencimento"/>
       <TfrxMemoView Name="Memo9" Left="494,3389" Top="0" Width="92,5984252" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Fill.BackColor="3385832" HAlign="haCenter" ParentFont="False" Text="Documento"/>
       <TfrxMemoView Name="Memo10" Left="588,82715" Top="0" Width="55,1811023622047" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Fill.BackColor="3385832" HAlign="haCenter" ParentFont="False" Text="Parc."/>
       <TfrxMemoView Name="Memo11" Left="646,29963" Top="0" Width="71,81107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Fill.BackColor="3385832" HAlign="haCenter" ParentFont="False" Text="Valor"/>
       <TfrxMemoView Name="Memo17" Left="0,77953" Top="0" Width="13,22809748" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Fill.BackColor="3385832" ParentFont="False" Text="[frxmDuplicata_Consulta.&#34;INF_SPC&#34;]"/>
+      <TfrxMemoView Name="Memo18" Left="299,3624" Top="0" Width="98,26778" Height="18,89765" Fill.BackColor="3385832" Text="[frxmDuplicata_Consulta.&#34;TELEFONE1&#34;]"/>
     </TfrxGroupHeader>
     <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="15,11812" Left="0" Top="204,09462" Width="718,1107">
       <TfrxMemoView Name="Memo12" Left="646,29963" Top="0" Width="71,81107" Height="15,11812" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="4" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxmDuplicata_Consulta.&#34;VLR_RESTANTE&#34;&#62;,MasterData1)]"/>
