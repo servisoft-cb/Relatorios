@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41864,6688586227" ReportOptions.Description.Text="" ReportOptions.LastChange="43634,4659004398" ScriptLanguage="PascalScript" ScriptText.Text="var&#13;&#10;  nCor: Byte;&#13;&#10;&#13;&#10;procedure MasterData1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if (nCor = 0) then&#13;&#10;  begin&#13;&#10;    Memo5.Color := $00E2E2E2;&#13;&#10;    nCor := 1;&#13;&#10;  end&#13;&#10;  else&#13;&#10;  begin&#13;&#10;    Memo5.Color := clNone;&#13;&#10;    nCor := 0;&#13;&#10;  end;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure ReportTitle1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  nCor := 1;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+  <Datasets>
+    <item DataSet="frxOsCons" DataSetName="frxOsCons"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="18,89765" Width="718,1107" OnBeforePrint="ReportTitle1OnBeforePrint">
+      <TfrxMemoView Name="Memo1" Left="227,755875" Top="0,10235" Width="263,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="RELAÇÃO DE OSs"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="147,40167" Width="718,1107" OnBeforePrint="MasterData1OnBeforePrint" ColumnWidth="0" ColumnGap="0" DataSet="frxOsCons" DataSetName="frxOsCons" RowCount="0">
+      <TfrxMemoView Name="Memo5" Left="0" Top="0" Width="717,43906967" Height="18,89765" Text=""/>
+      <TfrxMemoView Name="Memo2" Left="0" Top="0" Width="94,48825" Height="18,89765" Text="[frxOsCons.&#34;NUM_OS&#34;]"/>
+      <TfrxMemoView Name="Memo4" Left="189,8852459" Top="0" Width="302,48825" Height="18,89765" Text="[frxOsCons.&#34;NOME_CLIENTE&#34;]"/>
+      <TfrxMemoView Name="Memo3" Left="95" Top="0" Width="94,48825" Height="18,89765" Text="[frxOsCons.&#34;DTEMISSAO&#34;]"/>
+      <TfrxMemoView Name="Memo9" Left="491,80327869" Top="0" Width="302,48825" Height="18,89765" Text="[frxOsCons.&#34;DESC_STATUS&#34;]"/>
+    </TfrxMasterData>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="102,04731" Width="718,1107">
+      <TfrxMemoView Name="Memo6" Left="0,81967213" Top="2,05105066" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="NUM. OS"/>
+      <TfrxMemoView Name="Memo7" Left="190,70491803" Top="2,05105066" Width="302,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="CLIENTE"/>
+      <TfrxMemoView Name="Memo8" Left="95,81967213" Top="2,05105066" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="DT. EMISSÃO"/>
+      <TfrxMemoView Name="Memo10" Left="493,80327869" Top="2,05105066" Width="223,49560525" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="STATUS"/>
+    </TfrxHeader>
+  </TfrxReportPage>
+</TfrxReport>
