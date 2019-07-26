@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" EngineOptions.PrintIfEmpty="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43339,3581720949" ReportOptions.Description.Text="" ReportOptions.LastChange="43671,6360538079" ScriptLanguage="PascalScript" ScriptText.Text="var&#13;&#10;  vVista, vParcelado: Currency;&#13;&#10;&#13;&#10;procedure Memo5OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;{  vParcelado := &#60;frxmEtiq_Individual.&#34;Preco_Produto&#34;&#62; /2;&#13;&#10;  lb2Vezes.Text := FormatFloat('R$ 0.00',vParcelado);}&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+  <Datasets>
+    <item DataSet="frxDBDataset1" DataSetName="frxmEtiq_Individual"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="94" PaperHeight="10" PaperSize="256" LeftMargin="2" RightMargin="3" TopMargin="0" BottomMargin="0" Columns="1" ColumnWidth="190" ColumnPositions.Text="0" PrintIfEmpty="False" TitleBeforeHeader="False" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="37,79527559" Left="0" Top="18,89765" Width="336,37817" Columns="1" ColumnWidth="370,393700787402" ColumnGap="0" DataSet="frxDBDataset1" DataSetName="frxmEtiq_Individual" RowCount="0" Stretched="True">
+      <TfrxMemoView Name="Memo2" Left="0" Top="18,8976377952756" Width="113,3859" Height="15,11811024" StretchMode="smActualHeight" DataSet="frxDBDataset1" DataSetName="frxmEtiq_Individual" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[frxmEtiq_Individual.&#34;Preco_Produto&#34;]"/>
+      <TfrxMemoView Name="Memo5" Left="118,3859" Top="18,8976377952756" Width="109,60637" Height="15,11811024" StretchMode="smMaxHeight" DataSet="frxDBDataset1" DataSetName="frxmEtiq_Individual" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[frxmEtiq_Individual.&#34;Referencia&#34;]"/>
+      <TfrxMemoView Name="Memo1" Left="0" Top="3,77952755905512" Width="113,3859" Height="15,11811024" DataSet="frxDBDataset1" DataSetName="frxmEtiq_Individual" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Cód: [frxmEtiq_Individual.&#34;ID_Produto&#34;]"/>
+      <TfrxMemoView Name="Memo3" Left="118,3859" Top="3,77952755905512" Width="109,60637" Height="15,11811024" DataSet="frxDBDataset1" DataSetName="frxmEtiq_Individual" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[frxmEtiq_Individual.&#34;Marca&#34;]"/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>
