@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42052,4364735417" ReportOptions.Description.Text="" ReportOptions.LastChange="43670,467443912" ScriptLanguage="PascalScript" ScriptText.Text="procedure ReportTitle1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if &#60;ImpOpcao&#62; = Null then&#13;&#10;    Memo4.Text := ''&#13;&#10;  else&#13;&#10;    Memo4.Text := 'Op��o:' + &#60;ImpOpcao&#62;;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+  <Datasets>
+    <item DataSet="frxEstoque2" DataSetName="frxEstoque2"/>
+  </Datasets>
+  <Variables>
+    <item Name=" New Category1"/>
+    <item Name="ImpOpcao"/>
+    <item Name="ImpValor"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="8" RightMargin="8" TopMargin="8" BottomMargin="8" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Height="52,91338583" Left="0" ParentFont="False" Top="16" Width="733,22882" OnBeforePrint="ReportTitle1OnBeforePrint">
+      <TfrxMemoView Name="Memo1" Left="194" Top="2,10235" Width="344,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="5" HAlign="haCenter" ParentFont="False" Text="Relatório do Estoque - (Espessura)"/>
+      <TfrxSysMemoView Name="SysMemo1" Left="647" Top="16,10235" Width="66,70872" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[DATE]"/>
+      <TfrxMemoView Name="Memo2" Left="620,22047" Top="16,10235" Width="24,5906" Height="11,33859" AutoWidth="True" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Data:"/>
+      <TfrxMemoView Name="Memo3" Left="620" Top="3,10235" Width="24,5906" Height="11,33859" AutoWidth="True" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Pág:"/>
+      <TfrxSysMemoView Name="SysMemo2" Left="647" Top="3,10235" Width="66,70872" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[PAGE#] of [TOTALPAGES#]"/>
+      <TfrxMemoView Name="Memo4" Left="6" Top="23,10235" Width="614,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Opção:"/>
+      <TfrxMemoView Name="Memo5" Left="3" Top="40,10235" Width="49,13389" Height="11,33859" Text="Id Produto"/>
+      <TfrxMemoView Name="Memo6" Left="55" Top="40,10235" Width="231,84261" Height="11,33859" Text="Nome Produto"/>
+      <TfrxMemoView Name="Memo9" Left="290" Top="40,10235" Width="90,70872" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Qtd.Entrada"/>
+      <TfrxMemoView Name="Memo10" Left="385" Top="40,10235" Width="90,70872" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Qtd.Saída"/>
+      <TfrxMemoView Name="Memo11" Left="481" Top="40,10235" Width="90,70872" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Saldo"/>
+      <TfrxMemoView Name="Memo12" Left="576" Top="40,10235" Width="75,5906" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Espessura"/>
+      <TfrxLineView Name="Line1" Left="2" Top="52,10235" Width="730" Height="0" Color="0" Frame.Typ="4"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Height="15,87401575" Left="0" ParentFont="False" Top="88" Width="733,22882" ColumnWidth="0" ColumnGap="0" DataSet="frxEstoque2" DataSetName="frxEstoque2" RowCount="0">
+      <TfrxMemoView Name="Memo14" Left="4" Top="1,88976378" Width="49,13389" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxEstoque2.&#34;ID&#34;]"/>
+      <TfrxMemoView Name="Memo15" Left="56" Top="1,88976378" Width="231,84261" Height="11,33859" Text="[frxEstoque2.&#34;NOMEPRODUTO&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="291" Top="1,88976378" Width="90,70872" Height="11,33859" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxEstoque2.&#34;ENTRADA&#34;]"/>
+      <TfrxMemoView Name="Memo17" Left="386" Top="1,88976378" Width="90,70872" Height="11,33859" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxEstoque2.&#34;SAIDA&#34;]"/>
+      <TfrxMemoView Name="Memo18" Left="482" Top="1,88976378" Width="90,70872" Height="11,33859" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxEstoque2.&#34;SALDO&#34;]"/>
+      <TfrxMemoView Name="Memo19" Left="577" Top="1,88976378" Width="75,5906" Height="11,33859" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxEstoque2.&#34;ESPESSURA&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="124" Width="733,22882"/>
+  </TfrxReportPage>
+</TfrxReport>
