@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42032,5770381366" ReportOptions.Description.Text="" ReportOptions.LastChange="43720,4519248495" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+  <Datasets>
+    <item DataSet="frxOC_Projeto_Acum" DataSetName="frxOC_Projeto_Acum"/>
+  </Datasets>
+  <Variables>
+    <item Name=" Variaveis"/>
+    <item Name="Opcao_Imp"/>
+    <item Name="Pedidos_Sel"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="8" RightMargin="8" TopMargin="8" BottomMargin="8" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="" OnBeforePrint="Page1OnBeforePrint">
+    <TfrxMasterData Name="MasterData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="173,85838" Width="733,22882" OnBeforePrint="MasterData2OnBeforePrint" AllowSplit="True" ColumnWidth="0" ColumnGap="0" DataSet="frxOC_Projeto_Acum" DataSetName="frxOC_Projeto_Acum" RowCount="0" Stretched="True">
+      <TfrxMemoView Name="Memo3" Left="59,37817" Top="2,6141" Width="64,25176102" Height="11,33859" DataField="DTEMISSAO" DataSet="frxOC_Projeto_Acum" DataSetName="frxOC_Projeto_Acum" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxOC_Projeto_Acum.&#34;DTEMISSAO&#34;]"/>
+      <TfrxMemoView Name="Memo8" Left="446,0872" Top="2,6141" Width="171,2126326" Height="11,33859" DataField="NOME_FUNCIONARIO" DataSet="frxOC_Projeto_Acum" DataSetName="frxOC_Projeto_Acum" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxOC_Projeto_Acum.&#34;NOME_FUNCIONARIO&#34;]"/>
+      <TfrxMemoView Name="Memo12" Left="2,77953" Top="2,6141" Width="52,91342" Height="11,33859" DataField="NUM_PEDIDO" DataSet="frxOC_Projeto_Acum" DataSetName="frxOC_Projeto_Acum" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxOC_Projeto_Acum.&#34;NUM_PEDIDO&#34;]"/>
+      <TfrxMemoView Name="Memo13" Left="127,26816079" Top="2,6141" Width="313,70091921" Height="11,33859" DataField="NOME_FORNECEDOR" DataSet="frxOC_Projeto_Acum" DataSetName="frxOC_Projeto_Acum" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxOC_Projeto_Acum.&#34;NOME_FORNECEDOR&#34;]"/>
+      <TfrxMemoView Name="Memo14" Left="620,52814" Top="2,55906" Width="109,60629921" Height="11,33859" DataSet="frxOC_Projeto_Acum" DataSetName="frxOC_Projeto_Acum" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxOC_Projeto_Acum.&#34;VLR_PROJETO&#34;]"/>
+      <TfrxLineView Name="Line2" Left="1" Top="17,67718" Width="729,44860654" Height="0" Color="0" Frame.Style="fsDot" Frame.Typ="4"/>
+    </TfrxMasterData>
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Height="22,67718" Left="0" ParentFont="False" Top="132,28355" Width="733,22882" Condition="frxOC_Projeto_Acum.&#34;NOME_PROJETO&#34;">
+      <TfrxMemoView Name="Memo7" Left="3,77953" Top="2,55906" Width="431,61441" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="5" ParentFont="False" Text="Projeto: [frxOC_Projeto_Acum.&#34;NOME_PROJETO&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo4" Left="442,20501" Top="2,55906" Width="133,03154" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="5" ParentFont="False" Text="Nº Contrato: [frxOC_Projeto_Acum.&#34;NUM_CONTRATO&#34;]"/>
+      <TfrxMemoView Name="Memo11" Left="582,04762" Top="2,55906" Width="61,22047" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="5" ParentFont="False" Text="Vlr.Contrato:"/>
+      <TfrxMemoView Name="Memo17" Left="646,29963" Top="2,77953" Width="83,89765" Height="15,11812" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="5" ParentFont="False" Text="[frxOC_Projeto_Acum.&#34;VLR_CONTRATO&#34;]"/>
+    </TfrxGroupHeader>
+    <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Height="20,78740157" Left="0" ParentFont="False" Top="211,65368" Width="733,22882">
+      <TfrxMemoView Name="Memo18" Left="441,30736" Top="0,755905511811024" Width="124,72449" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Total do Projeto ==&#62;"/>
+      <TfrxSysMemoView Name="SysMemo4" Left="591,76381126" Top="0,755905511811024" Width="137,1968748" Height="15,11812" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxOC_Projeto_Acum.&#34;VLR_PROJETO&#34;&#62;,MasterData2)]"/>
+    </TfrxGroupFooter>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="15,11812" Left="0" Top="328,81911" Width="733,22882">
+      <TfrxMemoView Name="Memo5" Left="627,40198" Top="2" Width="94,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="OC_Projeto_Acum"/>
+    </TfrxPageFooter>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="56,69292559" Left="0" Top="18,89765" Width="733,22882">
+      <TfrxMemoView Name="Memo2" Left="173,29932" Top="0,55906" Width="404,40971" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="5" HAlign="haCenter" ParentFont="False" Text="Relatório de Ordens de Compras Por Projeto"/>
+      <TfrxSysMemoView Name="SysMemo1" Left="632,62245" Top="0" Width="94,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text=".Pag.: [Page]"/>
+      <TfrxSysMemoView Name="SysMemo2" Left="632,62245" Top="12,33859" Width="94,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text=".Data: [Date]"/>
+      <TfrxMemoView Name="Memo9" Left="3,22047" Top="23,67718" Width="721,33086" Height="12,47244094" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Opção: [Opcao_Imp]"/>
+      <TfrxShapeView Name="Shape1" Left="0" Top="38,57483" Width="733,22882" Height="18,89765"/>
+      <TfrxMemoView Name="Memo10" Left="59,69295" Top="42,62987" Width="64,25176102" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Dt.Emissão"/>
+      <TfrxMemoView Name="Memo15" Left="446,40198" Top="42,62987" Width="167,4331026" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Solicitante"/>
+      <TfrxMemoView Name="Memo1" Left="3,09431" Top="42,62987" Width="52,91342" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Nº OC"/>
+      <TfrxMemoView Name="Memo6" Left="127,58294079" Top="42,62987" Width="226,77172921" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Fornecedor"/>
+      <TfrxMemoView Name="Memo19" Left="639,74057" Top="42,57483" Width="90,70864921" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Vlr. Total"/>
+    </TfrxPageHeader>
+    <TfrxReportSummary Name="ReportSummary1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="287,24428" Width="733,22882">
+      <TfrxMemoView Name="Memo16" Left="445,76407" Top="3,77953" Width="124,72449" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Total Geral ==&#62;"/>
+      <TfrxSysMemoView Name="SysMemo3" Left="592,44099126" Top="3,77953" Width="137,1968748" Height="15,11812" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxOC_Projeto_Acum.&#34;VLR_PROJETO&#34;&#62;,MasterData2)]"/>
+      <TfrxLineView Name="Line3" Left="425,30736" Top="3,33859" Width="306,14193" Height="0" Color="0" Frame.Typ="4"/>
+    </TfrxReportSummary>
+  </TfrxReportPage>
+</TfrxReport>
