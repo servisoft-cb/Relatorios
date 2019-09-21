@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42052,4364735417" ReportOptions.Description.Text="" ReportOptions.LastChange="43628,7222301736" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;procedure MasterData1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;//  Memo38.Text := &#60;frxPedidoImp_Itens.&#34;PERC_ICMS&#34;&#62;;&#13;&#10;//  if (&#60;frxPedidoImp_Itens.&#34;PERC_TRIBICMS&#34;&#62; &#62; 0) and&#13;&#10;  //   (&#60;frxPedidoImp_Itens.&#34;PERC_TRIBICMS&#34;&#62; &#60;&#62; 100) then&#13;&#10;  //begin&#13;&#10;//    Memo38.Text := FormatFloat('0',&#60;frxPedidoImp_Itens.&#34;PERC_ICMS&#34;&#62;) + ' *';&#13;&#10;  //  vBaseRed    := True;&#13;&#10;//  end;&#13;&#10;&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42052,4364735417" ReportOptions.Description.Text="" ReportOptions.LastChange="43729,6773490278" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;procedure MasterData1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;//  Memo38.Text := &#60;frxPedidoImp_Itens.&#34;PERC_ICMS&#34;&#62;;&#13;&#10;//  if (&#60;frxPedidoImp_Itens.&#34;PERC_TRIBICMS&#34;&#62; &#62; 0) and&#13;&#10;  //   (&#60;frxPedidoImp_Itens.&#34;PERC_TRIBICMS&#34;&#62; &#60;&#62; 100) then&#13;&#10;  //begin&#13;&#10;//    Memo38.Text := FormatFloat('0',&#60;frxPedidoImp_Itens.&#34;PERC_ICMS&#34;&#62;) + ' *';&#13;&#10;  //  vBaseRed    := True;&#13;&#10;//  end;&#13;&#10;&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
   <Datasets>
     <item DataSet="frxDBDataset1" DataSetName="frxPedidoImp"/>
     <item DataSet="frxDBDataset2" DataSetName="frxPedidoImp_Cli"/>
@@ -212,6 +212,12 @@
       <TfrxMemoView Name="Memo38" Left="81,14966" Top="451,97641457" Width="472,44125" Height="14,36220472" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxTriCCusto.&#34;CONTATO_CCUSTO&#34;]"/>
       <TfrxMemoView Name="Memo24" Left="564,14997" Top="429,18924" Width="30,23624" Height="14,36220472" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="CEP:"/>
       <TfrxMemoView Name="Memo39" Left="612,06339" Top="428,40971" Width="117,16543" Height="14,36220472" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxTriCCusto.&#34;CEP_CCUSTO&#34;]"/>
+      <TfrxMemoView Name="Memo43" Left="566,9295" Top="468,66172" Width="158,74026" Height="14,36220472" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="CEI: [frxTriCCusto.&#34;CEI&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
     </TfrxPageHeader>
   </TfrxReportPage>
 </TfrxReport>
