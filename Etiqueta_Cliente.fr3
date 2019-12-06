@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42543,3869298611" ReportOptions.Description.Text="" ReportOptions.LastChange="43805,5791402083" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+  <Datasets>
+    <item DataSet="frxEtiqueta" DataSetName="frxEtiqueta"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="215,9" PaperHeight="279,4" PaperSize="1" LeftMargin="4,8" RightMargin="4,8" TopMargin="12,7" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="96" Left="0" Top="18,89765" Width="779,717039" Columns="3" ColumnWidth="252,094488188976" ColumnGap="9,4488188976378" DataSet="frxEtiqueta" DataSetName="frxEtiqueta" RowCount="0">
+      <TfrxMemoView Name="Memo1" Left="3,77953" Top="7,55906" Width="241,88992" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxEtiqueta.&#34;NOME&#34;]"/>
+      <TfrxMemoView Name="Memo2" Left="3,77953" Top="33,23624" Width="241,88992" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxEtiqueta.&#34;ENDERECO&#34;] [frxEtiqueta.&#34;NUM_END&#34;] [frxEtiqueta.&#34;COMPLEMENTO_END&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo3" Left="3,77953" Top="47,13389" Width="241,88992" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxEtiqueta.&#34;BAIRRO&#34;]"/>
+      <TfrxMemoView Name="Memo4" Left="3,77953" Top="63,03154" Width="241,88992" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxEtiqueta.&#34;CIDADE&#34;] - [frxEtiqueta.&#34;UF&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxLineView Name="Line1" Left="3,77953" Top="22,67718" Width="241,88992" Height="0" Color="0" Diagonal="True"/>
+      <TfrxMemoView Name="Memo5" Left="3,77953" Top="79,37013" Width="241,88992" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Cep: [frxEtiqueta.&#34;CEP&#34;]"/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>
