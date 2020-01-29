@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43399,6440619676" ReportOptions.Description.Text="" ReportOptions.LastChange="43691,7368587269" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43399,6440619676" ReportOptions.Description.Text="" ReportOptions.LastChange="43859,5588806597" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
   <Datasets>
     <item DataSet="frxRecibo" DataSetName="frxRecibo"/>
   </Datasets>
@@ -34,7 +34,7 @@
       <TfrxMemoView Name="Memo10" Left="18,89765" Top="162,51979" Width="510,23655" Height="18,89765" Text="Referente a [frxRecibo.&#34;Financeiro_Descr&#34;]"/>
       <TfrxMemoView Name="Memo12" Left="18,89765" Top="200,31509" Width="510,23655" Height="18,89765" Text="([frxRecibo.&#34;Financeiro_VlrExtenso&#34;])"/>
       <TfrxShapeView Name="Shape3" Left="0,77953" Top="234,33086" Width="714,33117" Height="75,5906" Shape="skRoundRectangle"/>
-      <TfrxMemoView Name="Memo1" Left="22,67718" Top="245,66945" Width="370,39394" Height="18,89765" Text="[&#60;frxRecibo.&#34;Filial_Cidade&#34;&#62;], [&#60;Date&#62;]">
+      <TfrxMemoView Name="Memo1" Left="22,67718" Top="245,66945" Width="370,39394" Height="18,89765" Text="[&#60;frxRecibo.&#34;Filial_Cidade&#34;&#62;], [frxRecibo.&#34;Financeiro_Data&#34;]">
         <Formats>
           <item/>
           <item/>
@@ -42,7 +42,7 @@
       </TfrxMemoView>
       <TfrxLineView Name="Line1" Left="411,96877" Top="287,02381" Width="287,24428" Height="0" Color="0" Frame.Typ="4"/>
       <TfrxMemoView Name="Memo2" Left="529,1342" Top="7,33859" Width="181,41744" Height="18,89765" Text="CNPJ: [frxRecibo.&#34;Filial_CNPJ&#34;]"/>
-      <TfrxMemoView Name="Memo11" Left="18,85245902" Top="181,0584059" Width="510,23655" Height="18,89765" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Text="A quantida de [frxRecibo.&#34;Financeiro_Valor&#34;]"/>
+      <TfrxMemoView Name="Memo11" Left="18,85245902" Top="181,0584059" Width="510,23655" Height="18,89765" DisplayFormat.DecimalSeparator="," DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Text="A quantidade [frxRecibo.&#34;Financeiro_Valor&#34;]"/>
     </TfrxMasterData>
   </TfrxReportPage>
 </TfrxReport>
