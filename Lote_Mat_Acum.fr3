@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43860,6007926736" ReportOptions.Description.Text="" ReportOptions.LastChange="43860,6126766667" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+  <Datasets>
+    <item DataSet="frxConsLote_Mat_Acum" DataSetName="frxConsLote_Mat_Acum"/>
+  </Datasets>
+  <Variables>
+    <item Name=" New Category1"/>
+    <item Name="ImpOpcao"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="8" RightMargin="8" TopMargin="8" BottomMargin="8" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="19,6535433070866" Left="0" Top="136,06308" Width="733,22882" ColumnWidth="0" ColumnGap="0" DataSet="frxConsLote_Mat_Acum" DataSetName="frxConsLote_Mat_Acum" RowCount="0">
+      <TfrxMemoView Name="Memo11" Left="2" Top="2,1338778" Width="79,37013" Height="15,11812" DataField="ID_MATERIAL" DataSet="frxConsLote_Mat_Acum" DataSetName="frxConsLote_Mat_Acum" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxConsLote_Mat_Acum.&#34;ID_MATERIAL&#34;]"/>
+      <TfrxMemoView Name="Memo12" Left="83,14966" Top="1,9134078" Width="487,55937" Height="15,11812" DataField="NOME" DataSet="frxConsLote_Mat_Acum" DataSetName="frxConsLote_Mat_Acum" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxConsLote_Mat_Acum.&#34;NOME&#34;]"/>
+      <TfrxMemoView Name="Memo13" Left="574,70903" Top="1,9134078" Width="49,13389" Height="15,11812" DataField="UNIDADE" DataSet="frxConsLote_Mat_Acum" DataSetName="frxConsLote_Mat_Acum" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxConsLote_Mat_Acum.&#34;UNIDADE&#34;]"/>
+      <TfrxMemoView Name="Memo14" Left="629,40198" Top="1,77953" Width="102,04731" Height="15,11812" DataSet="frxConsLote_Mat_Acum" DataSetName="frxConsLote_Mat_Acum" DisplayFormat.FormatStr="%2.4n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxConsLote_Mat_Acum.&#34;QTD_CONSUMO&#34;]"/>
+      <TfrxLineView Name="Line2" Left="0" Top="18,89765" Width="733,22882" Height="0" Color="0" Frame.Style="fsDot" Frame.Typ="4"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="15,11812" Left="0" Top="211,65368" Width="733,22882">
+      <TfrxMemoView Name="Memo1" Left="631,18151" Top="3,77953" Width="94,48825" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Lote_Mat_Acum.fr3"/>
+    </TfrxPageFooter>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Height="60,4724409448819" Left="0" ParentFont="False" Top="18,89765" Width="733,22882">
+      <TfrxMemoView Name="Memo2" Left="173,85838" Top="2,77953" Width="309,92146" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="5" ParentFont="False" Text="Relatório de Materiais Acumulados Por OP"/>
+      <TfrxMemoView Name="Memo3" Left="627,40198" Top="0,755905511811024" Width="26,45671" Height="12,47244094" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Pág:"/>
+      <TfrxSysMemoView Name="SysMemo1" Left="657,63822" Top="0,755905511811024" Width="68,03154" Height="12,47244094" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[PAGE#]"/>
+      <TfrxMemoView Name="Memo4" Left="627,40198" Top="13,9842519685039" Width="26,45671" Height="12,47244094" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Data:"/>
+      <TfrxSysMemoView Name="SysMemo2" Left="657,63822" Top="13,9842519685039" Width="68,03154" Height="12,47244094" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[DATE]"/>
+      <TfrxMemoView Name="Memo5" Left="1,77953" Top="41,57483" Width="79,37013" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="ID Material"/>
+      <TfrxMemoView Name="Memo6" Left="82,92919" Top="41,35436" Width="487,55937" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Nome Material"/>
+      <TfrxMemoView Name="Memo7" Left="574,48856" Top="41,35436" Width="49,13389" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Unidade"/>
+      <TfrxMemoView Name="Memo8" Left="629,18151" Top="41,2204822" Width="102,04731" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Qtd. Consumo"/>
+      <TfrxLineView Name="Line1" Left="0" Top="58,25201" Width="733,22882" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo9" Left="1,77953" Top="22,67718" Width="34,01577" Height="13,2283464566929" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Opção:"/>
+      <TfrxMemoView Name="Memo10" Left="38,57483" Top="22,67718" Width="582,04762" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[ImpOpcao]"/>
+      <TfrxLineView Name="Line3" Left="-0,44094" Top="37,7953" Width="733,22882" Height="0" Color="0" Frame.Typ="4"/>
+    </TfrxPageHeader>
+  </TfrxReportPage>
+</TfrxReport>
