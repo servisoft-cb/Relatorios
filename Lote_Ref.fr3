@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42841,8678182986" ReportOptions.Description.Text="" ReportOptions.LastChange="43486,4013705556" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;procedure Page1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42841,8678182986" ReportOptions.Description.Text="" ReportOptions.LastChange="43894,6341788426" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;procedure Page1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if &#60;Tipo&#62; = 'F' then&#13;&#10;  begin&#13;&#10;    GroupHeader2.Condition := 'frxConsulta_Lote.&#34;FUSO&#34;';&#13;&#10;    Memo28.Memo.Text := 'Fuso:';&#13;&#10;    Memo29.Memo.Text := '[frxConsulta_Lote.&#34;FUSO&#34;]';&#13;&#10;    GroupHeader2.Visible := True;&#13;&#10;  end&#13;&#10;  else&#13;&#10;  if &#60;Tipo&#62; = 'T' then&#13;&#10;  begin&#13;&#10;    GroupHeader2.Condition := 'frxConsulta_Lote.&#34;DESC_TIPO_PRODUTO&#34;';&#13;&#10;    Memo28.Memo.Text := 'Tipo:';&#13;&#10;    Memo29.Memo.Text := '[frxConsulta_Lote.&#34;DESC_TIPO_PRODUTO&#34;]';&#13;&#10;    GroupHeader2.Visible := True;&#13;&#10;  end&#13;&#10;  else&#13;&#10;  begin&#13;&#10;    //GroupHeader2.Condition := '';&#13;&#10;    GroupHeader2.Visible := False;&#13;&#10;  end;&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
   <Datasets>
     <item DataSet="frxConsulta_Lote" DataSetName="frxConsulta_Lote"/>
   </Datasets>
@@ -8,6 +8,7 @@
     <item Name="ImpOpcao"/>
     <item Name="OpcaoTitulo"/>
     <item Name="Processo"/>
+    <item Name="Tipo"/>
   </Variables>
   <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
   <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="7" RightMargin="7" TopMargin="8" BottomMargin="8" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="" OnBeforePrint="Page1OnBeforePrint">
@@ -20,7 +21,7 @@
       <TfrxLineView Name="Line2" Align="baBottom" Left="0,05504" Top="36,33859" Width="1057,13385827" Height="0" Color="0" Frame.Typ="4"/>
       <TfrxMemoView Name="Memo30" Left="2,77953" Top="0" Width="188,97637795" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Verdana" Font.Style="5" ParentFont="False" Text="[Processo]"/>
     </TfrxReportTitle>
-    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="17,76377953" Left="0" Top="185,19697" Width="740,78788" ColumnWidth="0" ColumnGap="0" DataSet="frxConsulta_Lote" DataSetName="frxConsulta_Lote" RowCount="0" Stretched="True">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="17,76377953" Left="0" Top="215,43321" Width="740,78788" ColumnWidth="0" ColumnGap="0" DataSet="frxConsulta_Lote" DataSetName="frxConsulta_Lote" RowCount="0" Stretched="True">
       <TfrxLineView Name="Line1" Left="0,37795276" Top="0,37795276" Width="1057,13385827" Height="0" Color="0" Frame.Style="fsDot" Frame.Typ="4"/>
       <TfrxMemoView Name="Memo12" Left="1,77953" Top="2,77953" Width="110,26778" Height="13,22834646" DataField="REFERENCIA" DataSet="frxConsulta_Lote" DataSetName="frxConsulta_Lote" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxConsulta_Lote.&#34;REFERENCIA&#34;]"/>
       <TfrxMemoView Name="Memo13" Left="208,04731" Top="2,77953" Width="114,04731" Height="13,22834646" StretchMode="smMaxHeight" DataField="NOME_COMBINACAO" DataSet="frxConsulta_Lote" DataSetName="frxConsulta_Lote" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxConsulta_Lote.&#34;NOME_COMBINACAO&#34;]"/>
@@ -33,10 +34,10 @@
       <TfrxMemoView Name="Memo26" Left="648,4094" Top="2,77953" Width="91" Height="13,22834646" DataField="NOME_CLIENTE" DataSet="frxConsulta_Lote" DataSetName="frxConsulta_Lote" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxConsulta_Lote.&#34;NOME_CLIENTE&#34;]"/>
       <TfrxMemoView Name="Memo27" Left="114,21274" Top="3,14966" Width="91,37013" Height="13,22834646" StretchMode="smMaxHeight" DataField="NOME_PRODUTO" DataSet="frxConsulta_Lote" DataSetName="frxConsulta_Lote" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxConsulta_Lote.&#34;NOME_PRODUTO&#34;]"/>
     </TfrxMasterData>
-    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="15,11812" Left="0" Top="306,14193" Width="740,78788">
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="15,11812" Left="0" Top="328,81911" Width="740,78788">
       <TfrxMemoView Name="Memo2" Left="620" Top="1,80303" Width="56,69295" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Lote_Ref.fr3"/>
     </TfrxPageFooter>
-    <TfrxChild Name="Child1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="79,37013" Width="740,78788">
+    <TfrxChild Name="Child1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="75,5906" Width="740,78788">
       <TfrxMemoView Name="Memo7" Left="0,95269" Top="1,62987" Width="110,26778" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Referência"/>
       <TfrxMemoView Name="Memo9" Left="207,22047" Top="1,62987" Width="114,04731" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Cor"/>
       <TfrxMemoView Name="Memo10" Left="323,11812" Top="1,62987" Width="54,81107" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Dt.Entrega"/>
@@ -48,10 +49,14 @@
       <TfrxMemoView Name="Memo20" Left="647,58256" Top="1,62987" Width="91" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Cliente"/>
       <TfrxMemoView Name="Memo8" Left="113,3859" Top="2" Width="91,37013" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Nome"/>
     </TfrxChild>
-    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="3,77953" Left="0" Top="158,74026" Width="740,78788" Condition="frxConsulta_Lote.&#34;ORDEM_REF&#34;"/>
-    <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="226,7718" Width="740,78788">
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="3,77953" Left="0" Top="192,75603" Width="740,78788" Condition="frxConsulta_Lote.&#34;ORDEM_REF&#34;"/>
+    <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="253,22851" Width="740,78788">
       <TfrxMemoView Name="Memo11" Left="204,43321" Top="3" Width="56,69295" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Total ==&#62;"/>
       <TfrxSysMemoView Name="SysMemo1" Left="265,90569" Top="2,77953" Width="117,16543" Height="15,87401575" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxConsulta_Lote.&#34;QTD&#34;&#62;,MasterData1)]"/>
     </TfrxGroupFooter>
+    <TfrxGroupHeader Name="GroupHeader2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="151,1812" Width="740,78788" Condition="frxConsulta_Lote.&#34;ORDEM_REF_FUSO&#34;">
+      <TfrxMemoView Name="Memo28" Left="18,89765" Top="3,77953" Width="68,03154" Height="15,11811024" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Verdana" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Fuso:"/>
+      <TfrxMemoView Name="Memo29" Left="90,70872" Top="3,77953" Width="370,39394" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Verdana" Font.Style="1" ParentFont="False" Text="[frxConsulta_Lote.&#34;FUSO&#34;]"/>
+    </TfrxGroupHeader>
   </TfrxReportPage>
 </TfrxReport>
