@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43895,7631752778" ReportOptions.Description.Text="" ReportOptions.LastChange="43895,7756037269" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False">
+  <Datasets>
+    <item DataSet="frxCupom_Cons" DataSetName="frxCupom_Cons"/>
+  </Datasets>
+  <Variables>
+    <item Name=" New Category1"/>
+    <item Name="ImpOpcao"/>
+    <item Name="ImpData"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="8" RightMargin="8" TopMargin="8" BottomMargin="8" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Height="22,67718" Left="0" ParentFont="False" Top="120,94496" Width="733,22882" ColumnWidth="0" ColumnGap="0" DataSet="frxCupom_Cons" DataSetName="frxCupom_Cons" RowCount="0">
+      <TfrxMemoView Name="Memo12" Left="3,77953" Top="3,77953" Width="37,7953" Height="11,33859" DataField="TIPO" DataSet="frxCupom_Cons" DataSetName="frxCupom_Cons" Text="[frxCupom_Cons.&#34;TIPO&#34;]"/>
+      <TfrxMemoView Name="Memo13" Left="45,35436" Top="3,77953" Width="64,25201" Height="11,33859" DataSet="frxCupom_Cons" DataSetName="frxCupom_Cons" Text="[frxCupom_Cons.&#34;DTEMISSAO&#34;]"/>
+      <TfrxMemoView Name="Memo14" Left="113,3859" Top="3,77953" Width="26,45671" Height="11,33859" DataField="SERIE" DataSet="frxCupom_Cons" DataSetName="frxCupom_Cons" Text="[frxCupom_Cons.&#34;SERIE&#34;]"/>
+      <TfrxMemoView Name="Memo15" Left="143,62214" Top="3,77953" Width="56,69295" Height="11,33859" DataField="NUMCUPOM" DataSet="frxCupom_Cons" DataSetName="frxCupom_Cons" Text="[frxCupom_Cons.&#34;NUMCUPOM&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="204,09462" Top="3,77953" Width="75,5906" Height="11,33859" DataField="VLR_TOTAL" DataSet="frxCupom_Cons" DataSetName="frxCupom_Cons" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxCupom_Cons.&#34;VLR_TOTAL&#34;]"/>
+      <TfrxMemoView Name="Memo17" Left="283,46475" Top="3,77953" Width="60,47248" Height="11,33859" DataField="VLR_TROCA" DataSet="frxCupom_Cons" DataSetName="frxCupom_Cons" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxCupom_Cons.&#34;VLR_TROCA&#34;]"/>
+      <TfrxMemoView Name="Memo18" Left="347,71676" Top="3,77953" Width="30,23624" Height="11,33859" DataField="CANCELADO" DataSet="frxCupom_Cons" DataSetName="frxCupom_Cons" Text="[frxCupom_Cons.&#34;CANCELADO&#34;]"/>
+      <TfrxMemoView Name="Memo19" Left="381,73253" Top="3,77953" Width="34,01577" Height="11,33859" DataField="NFEDENEGADA" DataSet="frxCupom_Cons" DataSetName="frxCupom_Cons" Text="[frxCupom_Cons.&#34;NFEDENEGADA&#34;]"/>
+      <TfrxMemoView Name="Memo20" Left="424,08689" Top="3,77953" Width="245,66945" Height="11,33859" DataField="CLIENTE_NOME" DataSet="frxCupom_Cons" DataSetName="frxCupom_Cons" Text="[frxCupom_Cons.&#34;CLIENTE_NOME&#34;]"/>
+      <TfrxLineView Name="Line1" Left="3,77953" Top="18,89765" Width="718,1107" Height="0" Color="0" Frame.Typ="4"/>
+    </TfrxMasterData>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" Height="41,57483" Left="0" ParentFont="False" Top="18,89765" Width="733,22882">
+      <TfrxMemoView Name="Memo2" Left="109,60637" Top="0" Width="434,64595" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="5" HAlign="haCenter" ParentFont="False" Text="Relatório das Vendas - [ImpData]"/>
+      <TfrxMemoView Name="Memo3" Left="3,77953" Top="26,45671" Width="37,7953" Height="11,33859" Text="Tipo"/>
+      <TfrxMemoView Name="Memo4" Left="45,35436" Top="26,45671" Width="64,25201" Height="11,33859" Text="Dt.Emissão"/>
+      <TfrxMemoView Name="Memo5" Left="113,3859" Top="26,45671" Width="26,45671" Height="11,33859" Text="Série"/>
+      <TfrxMemoView Name="Memo6" Left="143,62214" Top="26,45671" Width="56,69295" Height="11,33859" Text="Nº Cupom"/>
+      <TfrxMemoView Name="Memo7" Left="204,09462" Top="26,45671" Width="75,5906" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Vlr. Total"/>
+      <TfrxMemoView Name="Memo8" Left="283,46475" Top="26,45671" Width="60,47248" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Vlr. Troca"/>
+      <TfrxMemoView Name="Memo9" Left="347,71676" Top="26,45671" Width="30,23624" Height="11,33859" Text="Canc."/>
+      <TfrxMemoView Name="Memo10" Left="381,73253" Top="26,45671" Width="34,01577" Height="11,33859" Text="Deneg."/>
+      <TfrxMemoView Name="Memo11" Left="427,08689" Top="26,45671" Width="245,66945" Height="11,33859" Text="Cliente"/>
+    </TfrxPageHeader>
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Height="22,67718" Left="0" ParentFont="False" Top="166,29932" Width="733,22882">
+      <TfrxMemoView Name="Memo1" Left="75,5906" Top="0" Width="94,48825" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Total:"/>
+      <TfrxSysMemoView Name="SysMemo1" Left="183,19697" Top="0" Width="94,48825" Height="15,11812" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxCupom_Cons.&#34;VLR_TOTAL&#34;&#62;,MasterData1)]"/>
+      <TfrxSysMemoView Name="SysMemo2" Left="281,46475" Top="0" Width="64,25201" Height="15,11812" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxCupom_Cons.&#34;VLR_TROCA&#34;&#62;,MasterData1)]"/>
+    </TfrxFooter>
+  </TfrxReportPage>
+</TfrxReport>
