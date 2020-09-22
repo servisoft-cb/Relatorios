@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42992,4272334028" ReportOptions.Description.Text="" ReportOptions.LastChange="43803,553243287" ScriptLanguage="PascalScript" ScriptText.Text="var&#13;&#10;  nCor: Byte;&#13;&#10;&#13;&#10;procedure MasterData1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;    if (nCor = 0) then&#13;&#10;  begin&#13;&#10;    Memo3.Color := $00E2E2E2;&#13;&#10;    nCor := 1;&#13;&#10;  end&#13;&#10;  else&#13;&#10;  begin&#13;&#10;    Memo3.Color := clNone;&#13;&#10;    nCor := 0;&#13;&#10;  end;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure ReportTitle1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  nCor := 1;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+  <Datasets>
+    <item DataSet="frxCupomFiscalAnalitico" DataSetName="frxCupomFiscalAnalitico"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Orientation="poLandscape" PaperWidth="297" PaperHeight="210" PaperSize="9" LeftMargin="5" RightMargin="5" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="41,57483" Left="0" Top="18,89765" Width="1084,72511" OnBeforePrint="ReportTitle1OnBeforePrint">
+      <TfrxMemoView Name="Memo1" Left="421,417595" Top="0" Width="241,88992" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Lucida Console" Font.Style="1" ParentFont="False" Text="RELATÓRIO DE CUPONS EMITIDOS"/>
+      <TfrxMemoView Name="Memo2" Left="393,07112" Top="18,89765" Width="298,58287" Height="18,89765" Visible="False" AutoWidth="True" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Lucida Console" Font.Style="0" ParentFont="False" Text="Período de 99/99/9999 até 99/99/9999"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="162,51979" Width="1084,72511" OnBeforePrint="MasterData1OnBeforePrint" ColumnWidth="0" ColumnGap="0" DataSet="frxCupomFiscalAnalitico" DataSetName="frxCupomFiscalAnalitico" RowCount="0">
+      <TfrxMemoView Name="Memo6" Left="0" Top="0" Width="253,22851" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxCupomFiscalAnalitico.&#34;NOME&#34;]"/>
+      <TfrxMemoView Name="Memo8" Left="259,9765" Top="0" Width="238,11039" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxCupomFiscalAnalitico.&#34;REFERENCIA&#34;]"/>
+      <TfrxMemoView Name="Memo17" Left="527,8893019" Top="0" Width="102,04731" Height="15,11812" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxCupomFiscalAnalitico.&#34;QTD&#34;]"/>
+      <TfrxMemoView Name="Memo18" Left="647,97186238" Top="0" Width="102,04731" Height="15,11812" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxCupomFiscalAnalitico.&#34;VLR_TOTAL&#34;]"/>
+      <TfrxMemoView Name="Memo3" Left="3,25201" Top="2,44094" Width="1080,94558" Height="9,4488189" Text=""/>
+    </TfrxMasterData>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="83,14966" Width="1084,72511" OnBeforePrint="PageHeader1OnBeforePrint">
+      <TfrxMemoView Name="Memo4" Left="0" Top="0,77953" Width="253,22851" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" ParentFont="False" VAlign="vaCenter" Text="Nome Produto"/>
+      <TfrxMemoView Name="Memo5" Left="259,9765" Top="0,77953" Width="238,11039" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" ParentFont="False" VAlign="vaCenter" Text="Referência"/>
+      <TfrxMemoView Name="Memo12" Left="580,8027219" Top="0,77953" Width="49,13389" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" VAlign="vaCenter" Text="Qtde"/>
+      <TfrxMemoView Name="Memo13" Left="678,20810238" Top="0,77953" Width="71,81107" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" VAlign="vaCenter" Text="Valor Total"/>
+      <TfrxLineView Name="Line2" Left="-0,9047619" Top="15,85034" Width="1081,84477429" Height="-0,02999381" Color="0" Diagonal="True"/>
+    </TfrxPageHeader>
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="36,67718" Left="0" Top="204,09462" Width="1084,72511">
+      <TfrxMemoView Name="Memo34" Left="20,95238095" Top="7,63729095" Width="120,94496" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="TOTAIS:"/>
+      <TfrxLineView Name="Line1" Left="0,57142857" Top="1,63729095" Width="1081,84477429" Height="-0,02999381" Color="0" Diagonal="True"/>
+      <TfrxSysMemoView Name="SysMemo3" Left="535,4483619" Top="7,55906" Width="94,48825" Height="18,89765" DisplayFormat.FormatStr="%2.2n" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[SUM(&#60;frxCupomFiscalAnalitico.&#34;QTD&#34;&#62;,MasterData1)]"/>
+      <TfrxSysMemoView Name="SysMemo1" Left="655,53092238" Top="7,55906" Width="94,48825" Height="18,89765" DisplayFormat.FormatStr="%2.2n" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[SUM(&#60;frxCupomFiscalAnalitico.&#34;VLR_TOTAL&#34;&#62;,MasterData1)]"/>
+    </TfrxFooter>
+  </TfrxReportPage>
+</TfrxReport>
