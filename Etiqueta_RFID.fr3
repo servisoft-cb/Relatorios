@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" EngineOptions.PrintIfEmpty="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41928,5781444097" ReportOptions.Description.Text="" ReportOptions.LastChange="44156,5938235995" ScriptLanguage="PascalScript" ScriptText.Text=" begin&#13;&#10; end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+  <Datasets>
+    <item DataSet="frxmEtiqueta_Nav" DataSetName="frxmEtiqueta_Nav"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="100" PaperHeight="100" PaperSize="256" LeftMargin="1" RightMargin="1" TopMargin="1" BottomMargin="1" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="345,66945" Left="0" Top="18,89765" Width="370,39394" OnBeforePrint="MasterData1OnBeforePrint" ColumnWidth="0" ColumnGap="0" DataSet="frxmEtiqueta_Nav" DataSetName="frxmEtiqueta_Nav" RowCount="0" Stretched="True">
+      <TfrxMemoView Name="Memo1" Left="68,37013" Top="9,55906" Width="117,16543" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxmEtiqueta_Nav.&#34;Nome_Empresa&#34;]"/>
+      <TfrxBarCodeView Name="BarCode1" Left="7,55906" Top="264,5671" Width="79" Height="49,13389" BarType="bcCode128" Expression="&#60;frxmEtiqueta_Nav.&#34;NUM_RFID&#34;&#62;" Rotation="0" TestLine="False" Text="12345678" WideBarRatio="2" Zoom="1" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0"/>
+      <TfrxBarcode2DView Name="Barcode2D1" Left="275,90569" Top="238,11039" Width="84" Height="100" StretchMode="smActualHeight" Expression="&#60;frxmEtiqueta_Nav.&#34;NUM_RFID&#34;&#62;" BarType="bcCodeQR" BarProperties.Encoding="qrAuto" BarProperties.QuietZone="0" BarProperties.ErrorLevels="ecL" BarProperties.PixelSize="4" BarProperties.CodePage="0" Rotation="0" ShowText="True" Text="12345678" Zoom="1" FontScaled="True" QuietZone="0"/>
+      <TfrxMemoView Name="Memo2" Left="3,77953" Top="11,33859" Width="63,11811024" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Fornecedor:"/>
+      <TfrxMemoView Name="Memo3" Left="230,55133" Top="11,33859" Width="30,23622047" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Data:"/>
+      <TfrxMemoView Name="Memo4" Left="263,5671" Top="9,55906" Width="102,04731" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxmEtiqueta_Nav.&#34;DtEmissao&#34;]"/>
+      <TfrxMemoView Name="Memo5" Left="3,77953" Top="39,7953" Width="29,10234024" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Item:"/>
+      <TfrxMemoView Name="Memo6" Left="34,7953" Top="37,7953" Width="124,72449" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxmEtiqueta_Nav.&#34;Referencia&#34;]"/>
+      <TfrxMemoView Name="Memo7" Left="230,55133" Top="37,7953" Width="30,23622047" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Cor:"/>
+      <TfrxMemoView Name="Memo8" Left="3,77953" Top="77,5906" Width="59,33858024" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Qtde./Med.:"/>
+      <TfrxMemoView Name="Memo9" Left="65,81107" Top="75,5906" Width="287,24428" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxmEtiqueta_Nav.&#34;Qtd&#34;]                   [frxmEtiqueta_Nav.&#34;Unidade&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo10" Left="3,77953" Top="102,04731" Width="34,01575047" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Tam.:"/>
+      <TfrxMemoView Name="Memo11" Left="3,77953" Top="138,06308" Width="47,99999024" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Material:"/>
+      <TfrxMemoView Name="Memo12" Left="54,81107" Top="136,06308" Width="309,92146" Height="49,13389" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxmEtiqueta_Nav.&#34;Nome_Produto&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo13" Left="264,5671" Top="34,01577" Width="102,04731" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxmEtiqueta_Nav.&#34;Nome_Cor_Cliente&#34;]"/>
+      <TfrxMemoView Name="Memo14" Left="24,45671" Top="206,09462" Width="24,56692913" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="NF:"/>
+      <TfrxMemoView Name="Memo15" Left="54,47248" Top="204,09462" Width="86,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxmEtiqueta_Nav.&#34;Num_Nota&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo16" Left="188,9765" Top="206,09462" Width="32,12598913" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="O.C.:"/>
+      <TfrxMemoView Name="Memo17" Left="222,7718" Top="204,09462" Width="136,06308" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxmEtiqueta_Nav.&#34;Pedido_Cliente&#34;]"/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>

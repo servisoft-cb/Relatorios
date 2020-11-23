@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43411,4004385417" ReportOptions.Description.Text="" ReportOptions.LastChange="43724,9307884491" ScriptLanguage="PascalScript" ScriptText.Text="procedure Page1OnAfterPrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43411,4004385417" ReportOptions.Description.Text="" ReportOptions.LastChange="43998,4508351389" ScriptLanguage="PascalScript" ScriptText.Text="procedure Page1OnAfterPrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
   <Datasets>
     <item DataSet="frxLote_Ped" DataSetName="frxLote_Ped"/>
     <item DataSet="frxmImpAux" DataSetName="frxmImpAux"/>
@@ -12,6 +12,7 @@
   <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
   <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="148,5" PaperSize="256" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
     <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="476,22078" Left="0" Top="18,89765" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxmImpAux" DataSetName="frxmImpAux" RowCount="0" StartNewPage="True">
+      <TfrxShapeView Name="Shape3" Left="0" Top="72,91342" Width="444,8503937" Height="52,91342" Frame.ShadowWidth="1" Frame.Width="0,5"/>
       <TfrxShapeView Name="Shape7" Left="0" Top="7,55906" Width="718,1107" Height="457,32313"/>
       <TfrxShapeView Name="Shape6" Left="0" Top="226,33086" Width="714,33070866" Height="37,7953"/>
       <TfrxShapeView Name="Shape2" Left="0" Top="31,67718" Width="444,8503937" Height="41,57483" Frame.ShadowWidth="1" Frame.Width="0,5"/>
@@ -20,19 +21,18 @@
       <TfrxMemoView Name="Memo3" Left="154,65368" Top="51,7953" Width="64,25201" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxLote_Ped.&#34;DTENTREGA&#34;]"/>
       <TfrxShapeView Name="Shape1" Left="445,3389" Top="12,77953" Width="139,84251969" Height="113,3859" Frame.ShadowWidth="1" Frame.Width="0,5"/>
       <TfrxBarCodeView Name="BarCode1" Left="456,45702" Top="27,89765" Width="112" Height="56,69295" BarType="bcCodeEAN128A" Expression="&#60;frxLote_Ped.&#34;clCodBarra&#34;&#62;" Rotation="0" TestLine="False" Text="123456" WideBarRatio="2" Zoom="1" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0"/>
-      <TfrxShapeView Name="Shape3" Left="0" Top="72,91342" Width="444,8503937" Height="52,91342" Frame.ShadowWidth="1" Frame.Width="0,5"/>
       <TfrxMemoView Name="Memo4" Left="9,55906" Top="33,33859" Width="49,13389" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Nº OP"/>
       <TfrxLineView Name="Line1" Left="0" Top="0" Width="718,11023622" Height="0" Color="0" Frame.Color="16777215" Frame.Style="fsDot" Frame.Typ="4" Diagonal="True"/>
-      <TfrxMemoView Name="Memo12" Left="21,01577" Top="78,47248" Width="60,47248" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Cliente:"/>
-      <TfrxMemoView Name="Memo13" Left="80,5906" Top="78,47248" Width="359,05535" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxLote_Ped.&#34;NOME_CLIENTE&#34;]"/>
-      <TfrxMemoView Name="Memo14" Left="7,55906" Top="102,14966" Width="68,03154" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Cidade:"/>
-      <TfrxMemoView Name="Memo15" Left="80,5906" Top="102,14966" Width="275,90569" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxLote_Ped.&#34;CIDADE_CLI&#34;]"/>
-      <TfrxMemoView Name="Memo16" Left="369,81911" Top="102,14966" Width="22,67718" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="UF:"/>
-      <TfrxMemoView Name="Memo17" Left="401,85065" Top="102,14966" Width="30,23624" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxLote_Ped.&#34;UF_CLI&#34;]"/>
+      <TfrxMemoView Name="Memo12" Left="4,89765" Top="75,47248" Width="60,47248" Height="22,67718" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Cliente:"/>
+      <TfrxMemoView Name="Memo13" Left="65,47248" Top="75,47248" Width="377,953" Height="30,23624" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxLote_Ped.&#34;NOME_CLIENTE&#34;]"/>
+      <TfrxMemoView Name="Memo14" Left="3,77953" Top="108,14966" Width="60,47248" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Cidade:"/>
+      <TfrxMemoView Name="Memo15" Left="65,47248" Top="108,14966" Width="298,58287" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxLote_Ped.&#34;CIDADE_CLI&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="369,81911" Top="108,14966" Width="22,67718" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="UF:"/>
+      <TfrxMemoView Name="Memo17" Left="401,85065" Top="108,14966" Width="30,23624" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxLote_Ped.&#34;UF_CLI&#34;]"/>
       <TfrxShapeView Name="Shape4" Left="585,16574" Top="12,77953" Width="128,50393701" Height="113,38582677" Frame.ShadowWidth="1" Frame.Width="0,5"/>
       <TfrxShapeView Name="Shape5" Left="0" Top="126,04731" Width="714,33070866" Height="86,92919" Frame.ShadowWidth="1" Frame.Width="0,5"/>
       <TfrxMemoView Name="Memo18" Left="6,69295" Top="137,48825" Width="79,37013" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Referência:"/>
-      <TfrxMemoView Name="Memo19" Left="93,26778" Top="137,48825" Width="321,26005" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxLote_Ped.&#34;REFERENCIA&#34;]"/>
+      <TfrxMemoView Name="Memo19" Left="93,26778" Top="137,48825" Width="597,16574" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxLote_Ped.&#34;REFERENCIA&#34;]"/>
       <TfrxMemoView Name="Memo20" Left="6,69295" Top="169,3859" Width="79,37013" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Produto:"/>
       <TfrxMemoView Name="Memo21" Left="93,26778" Top="169,3859" Width="597,16574" Height="39,68505402" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="1" GapX="0" GapY="0" ParentFont="False" Text="[frxLote_Ped.&#34;NOME_PRODUTO&#34;]"/>
       <TfrxMemoView Name="Memo22" Left="269,72449" Top="236,75603" Width="68,03154" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Unidade:"/>
@@ -52,6 +52,8 @@
       <TfrxLineView Name="Line6" Left="281,12616" Top="32,01577" Width="0" Height="41,57483" Color="0" Diagonal="True"/>
       <TfrxMemoView Name="Memo7" Left="226,43321" Top="52,91342" Width="52,91342" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxLote_Ped.&#34;NUM_PEDIDO&#34;]"/>
       <TfrxMemoView Name="Memo5" Left="283,24428" Top="35,7953" Width="158,74026" Height="34,01577" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Vendedor Interno:&#13;&#10;[frxLote_Ped.&#34;NOME_VENDEDOR_INT&#34;]"/>
+      <TfrxMemoView Name="Memo26" Left="548,03185" Top="231,7718" Width="68,03154" Height="28,34646402" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Q.Usada do Estoque:"/>
+      <TfrxMemoView Name="Memo27" Left="618,60668" Top="238,11039" Width="86,92919" Height="17,00787402" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxLote_Ped.&#34;QTD_ESTOQUE_RES&#34;]"/>
     </TfrxMasterData>
   </TfrxReportPage>
 </TfrxReport>
