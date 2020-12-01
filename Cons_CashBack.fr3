@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Tag="1" Version="5.6.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="44103,6292271296" ReportOptions.Description.Text="" ReportOptions.LastChange="44165,680693287" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+  <Datasets>
+    <item DataSet="frxConsCash" DataSetName="frxConsCash"/>
+  </Datasets>
+  <Variables>
+    <item Name=" New Category1"/>
+    <item Name="OpcaoImp"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="8" RightMargin="8" TopMargin="8" BottomMargin="8" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="49,13389" Left="0" Top="188,9765" Width="733,22882" ColumnWidth="0" ColumnGap="0" DataSet="frxConsCash" DataSetName="frxConsCash" RowCount="0" Stretched="True">
+      <TfrxLineView Name="Line2" Left="1" Top="17,67718" Width="733,22882" Height="0" Color="0" Frame.Style="fsDot" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo4" Left="1,77953" Top="3,77953" Width="56,69295" Height="11,33859" DataField="ID" DataSet="frxConsCash" DataSetName="frxConsCash" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxConsCash.&#34;ID&#34;]"/>
+      <TfrxMemoView Name="Memo5" Left="67,03154" Top="3,77953" Width="56,69295" Height="11,33859" DataField="DATA" DataSet="frxConsCash" DataSetName="frxConsCash" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxConsCash.&#34;DATA&#34;]"/>
+      <TfrxMemoView Name="Memo15" Left="127,50402" Top="3,77953" Width="49,13389" Height="11,33859" DataField="HORA" DataSet="frxConsCash" DataSetName="frxConsCash" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxConsCash.&#34;HORA&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="494,11843" Top="3,77953" Width="83,14966" Height="11,33859" DataField="VALOR2" DataSet="frxConsCash" DataSetName="frxConsCash" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxConsCash.&#34;VALOR2&#34;]"/>
+      <TfrxMemoView Name="Memo17" Left="237,11039" Top="3,77953" Width="86,92919" Height="11,33859" DataField="NUMCUPOM" DataSet="frxConsCash" DataSetName="frxConsCash" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxConsCash.&#34;NUMCUPOM&#34;]"/>
+      <TfrxMemoView Name="Memo18" Left="335,37817" Top="3,77953" Width="26,45671" Height="11,33859" DataField="SERIE" DataSet="frxConsCash" DataSetName="frxConsCash" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxConsCash.&#34;SERIE&#34;]"/>
+      <TfrxMemoView Name="Memo19" Left="376,953" Top="3,77953" Width="26,45671" Height="11,33859" DataField="TIPO_CUPOM" DataSet="frxConsCash" DataSetName="frxConsCash" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxConsCash.&#34;TIPO_CUPOM&#34;]"/>
+      <TfrxMemoView Name="Memo20" Left="428,08689" Top="3,77953" Width="41,57483" Height="11,33859" DataField="TIPO_ES" DataSet="frxConsCash" DataSetName="frxConsCash" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxConsCash.&#34;TIPO_ES&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="64,25201" Left="0" Top="18,89765" Width="733,22882" Stretched="True">
+      <TfrxMemoView Name="Memo2" Left="241,88992" Top="1,77953" Width="185,19697" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="5" ParentFont="False" Text="Relatório CashBack (Histórico)"/>
+      <TfrxSysMemoView Name="SysMemo1" Left="638,74057" Top="16,11812" Width="71,81107" Height="12,8503937007874" Text="[DATE]"/>
+      <TfrxMemoView Name="Memo3" Left="589,60668" Top="16,11812" Width="45,35436" Height="12,8503937" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Data:"/>
+      <TfrxSysMemoView Name="SysMemo2" Left="638,74057" Top="0" Width="71,81107" Height="12,8503937" Text="[PAGE#] of [TOTALPAGES#]"/>
+      <TfrxMemoView Name="Memo1" Left="589,60668" Top="0" Width="45,35436" Height="12,8503937" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Pág:"/>
+      <TfrxMemoView Name="Memo10" Left="2,77953" Top="21,89765" Width="34,01577" Height="13,98425197" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Opção:"/>
+      <TfrxMemoView Name="Memo11" Left="38,57483" Top="21,67718" Width="544,25232" Height="13,98425197" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[OpcaoImp]"/>
+      <TfrxMemoView Name="Memo6" Left="2,77953" Top="38,7953" Width="56,69295" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="ID Cash"/>
+      <TfrxLineView Name="Line1" Left="0,77953" Top="52,91342" Width="733,22882" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo7" Left="68,03154" Top="38,7953" Width="56,69295" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Emissão"/>
+      <TfrxMemoView Name="Memo8" Left="128,50402" Top="38,7953" Width="49,13389" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Hora"/>
+      <TfrxMemoView Name="Memo9" Left="495,11843" Top="38,7953" Width="83,14966" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Valor"/>
+      <TfrxMemoView Name="Memo12" Left="238,11039" Top="38,7953" Width="86,92919" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Nº Cupom"/>
+      <TfrxMemoView Name="Memo13" Left="336,37817" Top="38,7953" Width="26,45671" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Série"/>
+      <TfrxMemoView Name="Memo14" Left="377,953" Top="38,7953" Width="26,45671" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Tipo"/>
+      <TfrxMemoView Name="Memo30" Left="429,08689" Top="38,7953" Width="41,57483" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Tipo E/S"/>
+    </TfrxPageHeader>
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="143,62214" Width="733,22882" Condition="frxConsCash.&#34;ID_CLIENTE&#34;">
+      <TfrxMemoView Name="Memo28" Left="22,67718" Top="3,77953" Width="668,97681" Height="13,22834646" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Cliente: [&#60;frxConsCash.&#34;ID_CLIENTE&#34;&#62; ]  [frxConsCash.&#34;NOME_CLIENTE&#34;]"/>
+    </TfrxGroupHeader>
+    <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="260,78757" Width="733,22882" Stretched="True">
+      <TfrxMemoView Name="Memo29" Left="370,39394" Top="0,37795276" Width="90,70872" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Total Por Cliente: "/>
+      <TfrxSysMemoView Name="SysMemo3" Left="483,77984" Top="0,22047" Width="94,48825" Height="15,11812" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxConsCash.&#34;VALOR2&#34;&#62;,MasterData1)]"/>
+    </TfrxGroupFooter>
+    <TfrxReportSummary Name="ReportSummary1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="64,25201" Left="0" Top="343,93723" Width="733,22882" Stretched="True">
+      <TfrxMemoView Name="Memo21" Left="370,39394" Top="7,71654276" Width="90,70872" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Total Por Geral: "/>
+      <TfrxSysMemoView Name="SysMemo4" Left="483,77984" Top="7,55906" Width="94,48825" Height="15,11812" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxConsCash.&#34;VALOR2&#34;&#62;,MasterData1)]"/>
+      <TfrxLineView Name="Line3" Left="368,61441" Top="4,55906" Width="211,65368" Height="0" Color="0" Frame.Typ="4"/>
+    </TfrxReportSummary>
+  </TfrxReportPage>
+</TfrxReport>
